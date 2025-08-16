@@ -1,0 +1,48 @@
+{{#> default }}
+
+    {{#if isTheme}}
+    <div class="radio-btn">
+        <div class="radio-inner"></div>
+    </div>
+    {{/if}}
+
+    <!-- Start Preloader
+    ============================================= -->
+    <div id="preloader">
+        <div class="dixor-loader-inner">
+            <div class="dixor-loader">
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    {{> header }}
+
+
+    <div class="smooth-scroll-container">
+
+        {{> components/banner banner}}
+
+        {{> components/running-section runningSection}}
+
+        {{> components/abouts/about1 about}}
+
+        {{> components/services/service1 service}}
+
+        {{> components/portfolio/portfolio1}}
+
+        {{> components/testimonial}}
+
+        {{> components/team}}
+
+        {{> footer footer}}
+    </div>
+{{/default }}

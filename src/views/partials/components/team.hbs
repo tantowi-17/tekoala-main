@@ -1,0 +1,41 @@
+<!-- Start Team Area 
+============================================= -->
+<div class="team-style-three-area default-padding bg-gray bottom-less">
+    <div class="container">
+        <div class="site-heading">
+            <div class="row align-center">
+                <div class="col-lg-6">
+                    <h4 class="sub-title">Team member</h4>
+                    <h2 class="title split-text">Meet our experts</h2>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <a href="services.html" class="btn-circle">
+                        <div class="button-content">
+                            <span><img src="../../assets/img/icon/arrow-long-right.png" alt="Image Not Found"></span> <strong>All Members</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-full">
+        <div class="row">
+            <!-- Single Item -->
+            {{#each team}}
+            <div class="col-xl-3 col-md-6 mb-30">
+                <div class="team-style-three-item">
+                    <div class="thumb">
+                        <img src="{{this.image}}" width="667px" alt="Image Not Found">
+                    </div>
+                    <div class="info">
+                        <h4><a href="#">{{this.name}}</a></h4>
+                        <span>{{this.title}}</span>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+            <!-- Single Item -->
+        </div>
+    </div>
+</div>
+<!-- End Team Area -->

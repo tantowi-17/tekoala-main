@@ -1,0 +1,104 @@
+{
+    "page_title": "Tekoala Developers",
+    "meta": {
+        "description": "Tekoala Homepage",
+        "keywords": "Tekoala",
+        "property": {
+            "locale": "en_US",
+            "type": "Pages",
+            "title": "Tekoala",
+            "url": "#",
+            "site_name": "Tekoala"
+        }
+    },
+    "isTheme": false,
+    "logoLight": "../../assets/img/logo-tekoala.png",
+    "logoDark": "../../assets/img/logo-dark-tekoala.png",
+    "email": "tekoaladigital@gmail.com",
+    "phone": "6282366667326",
+    "instagram": "https://www.instagram.com/tekoala_",
+    "banner": {
+        "bgShape1": "../../assets/img/shape/3.jpg",
+        "bgShape2": "../../assets/img/shape/4.jpg",
+        "heading": {
+            "left": "Tekoala",
+            "right": "Developers"
+        },
+        "illustration": "../../assets/img/illustration/1.png",
+        "description": "<p>Delivering innovative solutions in web development, advertising, design, and data analysis. We collaborate with brands to create unique campaigns, impactful visual identities, and data-driven digital strategies that connect with the right audience. Our services include website development, creative design, digital advertising, content creation, social media optimization, and data analysis to empower smarter business decisions.</p>"
+    },
+    "runningSection": [
+        {
+            "title": "Marketing"
+        },
+        {
+            "title": "Branding"
+        },
+        {
+            "title": "Design"
+        },
+        {
+            "title": "Development"
+        },
+        {
+            "title": "DataAnalyst"
+        },
+        {
+            "title": "WebDevelopment"
+        },
+        {
+            "title": "UI"
+        },
+        {
+            "title": "WebApp"
+        },
+        {
+            "title": "Mobile"
+        }
+    ],
+    "about": {
+        "title": "Boost the growth development agency your branding!",
+        "description": "At Tekoala Developers, we craft digital experiences that help brands grow and stay ahead in the fast-changing digital world.\nOur team specializes in web development, design, advertising, and data analysis, combining creativity with technology to deliver solutions that truly make an impact."
+    },
+    "team": [
+        {
+            "name": "Tanto Wibowo",
+            "title": "Software Engineer",
+            "image": "../../assets/img/team/1.jpg"
+
+        },
+        {
+            "name": "Muhammad Awaluddin",
+            "title": "Project Manager",
+            "image": "../../assets/img/team/1.jpg"
+
+        },
+        {
+            "name": "Gede Wardaya",
+            "title": "Digital Marketing",
+            "image": "../../assets/img/team/1.jpg"
+
+        },
+        {
+            "name": "Elfrid Hasman",
+            "title": "Data Analytics",
+            "image": "../../assets/img/team/1.jpg"
+        }
+
+    ],
+    "footer": {
+        "address": [
+            {
+                "label": "<h4>Makassar</h4><p>Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan, Indonesia</p>"
+            },
+            {
+                "label": "<h4>Mamuju</h4><p>Kec. Tobadaka, Kabupaten Mamuju Tengah, Sulawesi Barat, Indonesia</p>"
+            }
+        ],
+        "logoLight": "../../assets/img/logo-tekoala.png",
+        "logoDark": "../../assets/img/logo-dark-tekoala.png",
+        "email": "tekoaladigital@gmail.com",
+        "phone": "6282366667326",
+        "instagram": "https://www.instagram.com/tekoala_"
+    }
+}

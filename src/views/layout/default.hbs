@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ page_title }} – Empowering Your Digital Experience</title>
+    <meta name="description"
+          content="Discover Tekoala – your trusted partner for innovative solutions, digital tools, and resources to help you grow online."/>
+    <meta name="keywords" content="Tekoala, digital solutions, online growth, business tools, innovation"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="{{ meta.property.locale }}"/>
+    <meta property="og:type" content="{{ meta.property.type }}"/>
+    <meta property="og:title" content="{{ page_title }} – Empowering Your Digital Experience"/>
+    <meta property="og:description"
+          content="Discover Tekoala – your trusted partner for innovative solutions, digital tools, and resources to help you grow online."/>
+    <meta property="og:url" content="{{ meta.property.url }}"/>
+    <meta property="og:site_name" content="{{ meta.property.site_name }}"/>
+    <meta property="og:image" content="{{ meta.property.image }}"/>
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="{{ page_title }} – Empowering Your Digital Experience"/>
+    <meta name="twitter:description"
+          content="Discover Tekoala – your trusted partner for innovative solutions, digital tools, and resources to help you grow online."/>
+    <meta name="twitter:image" content="{{ meta.property.image }}"/>
+
+    <!-- Disable phone number auto-detection on iOS Safari -->
+    <!-- Ref: https://stackoverflow.com/questions/226131 -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/img/favicon.png" type="image/x-icon">
+
+    <!-- Plugins CSS -->
+    <link href="../../scss/styles.scss" rel="stylesheet"/>
+
+</head>
+<body class="bg-dark">
+<!-- Start Main -->
+<main>
+    {{> @partial-block }}
+</main>
+<!-- End Main -->
+
+<!-- Theme Scripts -->
+<script src="../../js/scripts.js"></script>
+</body>
+</html>
