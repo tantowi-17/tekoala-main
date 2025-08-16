@@ -17,64 +17,19 @@
         <div class="services-style-one-items">
             <div class="row">
                 <!-- Single Item -->
+                {{# each this}}
                 <div class="col-xl-3 col-lg-6 col-md-6 single-item">
                     <div class="services-style-one-item">
                         <div class="icon">
-                            <img class="regular-img" src="../../assets/img/icon/1.png" alt="Image Not Found">
-                            <img class="light-img" src="../../assets/img/icon/23.png" alt="Image Not Found">
+                            <img class="regular-img" src="{{this.imgRegular}}" alt="Image Not Found">
+                            <img class="light-img" src="{{this.imgLight}}" alt="Image Not Found">
                         </div>
-                        <h4><a href="#">Marketting & SEO Optimization</a></h4>
-                        <p>
-                            Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.
-                        </p>
+                        <h4><a href="#">{{this.title}}</a></h4>
+                        <p>{{{this.description}}}</p>
                         <a class="btn-full" href="#">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-3 col-lg-6 col-md-6 single-item">
-                    <div class="services-style-one-item active">
-                        <div class="icon">
-                            <img class="regular-img" src="../../assets/img/icon/2.png" alt="Image Not Found">
-                            <img class="light-img" src="../../assets/img/icon/24.png" alt="Image Not Found">
-                        </div>
-                        <h4><a href="#">Mobile App & Web Development</a></h4>
-                        <p>
-                            Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.
-                        </p>
-                        <a class="btn-full" href="#">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-3 col-lg-6 col-md-6 single-item">
-                    <div class="services-style-one-item">
-                        <div class="icon">
-                            <img class="regular-img" src="../../assets/img/icon/3.png" alt="Image Not Found">
-                            <img class="light-img" src="../../assets/img/icon/25.png" alt="Image Not Found">
-                        </div>
-                        <h4><a href="#">UI/UX Design from Professionals </a></h4>
-                        <p>
-                            Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.
-                        </p>
-                        <a class="btn-full" href="#">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-3 col-lg-6 col-md-6 single-item">
-                    <div class="services-style-one-item">
-                        <div class="icon">
-                            <img class="regular-img" src="../../assets/img/icon/4.png" alt="Image Not Found">
-                            <img class="light-img" src="../../assets/img/icon/26.png" alt="Image Not Found">
-                        </div>
-                        <h4><a href="#">Access to the Latest Technology</a></h4>
-                        <p>
-                            Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.
-                        </p>
-                        <a class="btn-full" href="#">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+                {{/each}}
                 <!-- End Single Item -->
             </div>
         </div>

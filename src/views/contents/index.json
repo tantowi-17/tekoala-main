@@ -56,6 +56,36 @@
             "title": "Mobile"
         }
     ],
+    "service": [
+        {
+            "imgRegular": "../../assets/img/icon/1.png",
+            "imgLight": "../../assets/img/icon/23.png",
+            "title": "Marketing & SEO Optimization",
+            "description": "Boost your online presence with smart marketing and SEO strategies that help your business reach the right audience.",
+            "readMore": "Read More"
+        },
+        {
+            "imgRegular": "../../assets/img/icon/2.png",
+            "imgLight": "../../assets/img/icon/24.png",
+            "title": "Mobile App & Web Development",
+            "description": "We build fast, scalable, and user-friendly mobile apps and websites tailored to your business needs, designed to deliver great.",
+            "readMore": "Read More"
+        },
+        {
+            "imgRegular": "../../assets/img/icon/3.png",
+            "imgLight": "../../assets/img/icon/25.png",
+            "title": "UI/UX Design from Professionals",
+            "description": "Clean, engaging, and user-friendly designs crafted to enhance experience and align with your brand.",
+            "readMore": "Read More"
+        },
+        {
+            "imgRegular": "../../assets/img/icon/4.png",
+            "imgLight": "../../assets/img/icon/26.png",
+            "title": "Access to the Latest Technology",
+            "description": "Stay ahead with the latest tools and technologies that drive growth and keep your business competitive.",
+            "readMore": "Read More"
+        }
+    ],
     "about": {
         "title": "Boost the growth development agency your branding!",
         "description": "At Tekoala Developers, we craft digital experiences that help brands grow and stay ahead in the fast-changing digital world.\nOur team specializes in web development, design, advertising, and data analysis, combining creativity with technology to deliver solutions that truly make an impact."
