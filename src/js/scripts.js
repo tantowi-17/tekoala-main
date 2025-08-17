@@ -20,3 +20,6 @@ require('../js/frontend/ScrollTrigger.min');
 window.SplitText = require('../js/frontend/SplitText.min').SplitText;
 require('../js/frontend/main');
 require('../js/frontend/gsap-init');
+
+//Ai Assistance
+require('./ai-boot');

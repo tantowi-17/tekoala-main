@@ -1,0 +1,21 @@
+<div id="chatbot-container">
+    <button id="chatbot-button" aria-label="Buka chat">
+        <i class="far fa-envelope"></i>
+    </button>
+    <div id="chatbot-window" role="dialog" aria-label="AI Customer Service" style="display:none;">
+        <div id="chatbot-header">AI Customer Service</div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-suggestions">
+            <span class="chip" data-q="Berapa kisaran harga website?"><i class="fas fa-dollar-sign"></i> Harga Website</span>
+            <span class="chip" data-q="Apa saja layanan yang tersedia?"><i class="fas fa-headset"></i> Layanan</span>
+            <span class="chip" data-q="Bagaimana proses pengerjaan?"><i class="fas fa-laptop-code"></i> Pengerjaan</span>
+            <span class="chip" data-q="Bisa minta penawaran untuk toko online?"><i class="fas fa-store"></i> Toko Online</span>
+            <span class="chip" data-q="Saya mau hubungi admin langsung."><i class="fas fa-comment-dots"></i> Admin</span>
+        </div>
+        <div id="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Tulis pertanyaan..." />
+            <button id="chatbot-send"><i class="far fa-paper-plane"></i></button>
+        </div>
+        <div id="chatbot-footer-note">Direspon AI • by Tekoala Developers</div>
+    </div>
+</div>
