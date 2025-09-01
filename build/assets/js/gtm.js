@@ -1,0 +1,1 @@
+window.dataLayer=window.dataLayer||[],window.dataLayer.push({event:"page_view",page_title:document.title,page_url:window.location.href,page_path:window.location.pathname});
