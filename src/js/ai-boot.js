@@ -13,6 +13,13 @@
         chatbotButton.innerHTML = isHidden
             ? '<i class="far fa-envelope-open"></i>'
             : '<i class="far fa-envelope"></i>';
+
+        // Track Chatbot Toggle
+        if (typeof gtag === 'function') {
+            gtag('event', 'chatbot_toggle', {
+                'action': isHidden ? 'open' : 'close'
+            });
+        }
     });
 
     const staticReplies = {
@@ -123,6 +130,13 @@
 
         addMessage(message, "user");
 
+        // Track Chatbot Message Sent
+        if (typeof gtag === 'function') {
+            gtag('event', 'chatbot_message_sent', {
+                'message_text': message
+            });
+        }
+
         let reply = "default";
         for (const key in staticReplies) {
             if (message.toLowerCase().includes(key)) {
@@ -154,7 +168,15 @@
 
     document.querySelectorAll("#chatbot-suggestions .chip").forEach((chip) => {
         chip.addEventListener("click", () => {
-            sendMessage(chip.dataset.q);
+            const question = chip.dataset.q;
+            sendMessage(question);
+
+            // Track Suggestion Click
+            if (typeof gtag === 'function') {
+                gtag('event', 'chatbot_suggestion_click', {
+                    'suggestion_text': question
+                });
+            }
         });
     });
 })(jQuery);

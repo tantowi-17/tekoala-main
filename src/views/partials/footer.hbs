@@ -36,7 +36,10 @@
                                 <a href="mailto:{{this.email}}">{{this.email}}</a>
                             </li>
                             <li>
-                                <a href="https://api.whatsapp.com/send/?phone={{this.phone}}">+{{this.phone}}</a>
+                                <a href="https://api.whatsapp.com/send/?phone={{this.phone}}"
+                                    onclick="gtag('event', 'contact_whatsapp', { 'location': 'footer' });">
+                                    +{{this.phone}}
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -53,9 +56,13 @@
             <div class="row">
                 <div class="col-lg-6">
                     <ul class="footer-social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="{{this.instagram}}"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><img src="../../assets/img/icon/twitter.png" alt="Image Not Found"></a></li>
+                        <li><a href="#" onclick="gtag('event', 'social_click', { 'platform': 'facebook' });"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="{{this.instagram}}"
+                                onclick="gtag('event', 'social_click', { 'platform': 'instagram' });"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" onclick="gtag('event', 'social_click', { 'platform': 'twitter' });"><img
+                                    src="../../assets/img/icon/twitter.png" alt="Image Not Found"></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 text-end">
