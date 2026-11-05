@@ -1,0 +1,22 @@
+<!-- Start Breadcrumb
+============================================= -->
+<div class="breadcrumb-area text-center" style="background-image: url(../../assets/img/shape/10.jpg);">
+    <div class="light-banner-active bg-gray bg-cover" style="background-image: url(../../assets/img/shape/6.jpg);"></div>
+    <div class="container">
+        <div class="breadcrumb-item">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h1>{{this.title}}</h1>
+                    {{#if this.description}}<p class="breadcrumb-desc">{{this.description}}</p>{{/if}}
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                            <li class="active">{{this.current}}</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumb -->

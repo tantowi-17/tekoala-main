@@ -3,8 +3,14 @@ const HtmlBundlerPlugin = require('html-bundler-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const fs = require("fs");
+const { buildSchema, resolvePrograms } = require('./src/seo/schema');
+const SeoFilesPlugin = require('./src/seo/plugin');
 
 const buildDir = path.resolve('build');
+
+// Draft testimoni (approved: false) hanya tampil saat development
+const showDrafts = process.env.NODE_ENV !== 'production';
+const isDraft = (item) => !!item && item.approved === false;
 
 function generateHbsPaths(appPath, jsonPath) {
     // Create an empty object to store the entry paths
@@ -125,11 +131,18 @@ module.exports = {
     },
 
     plugins: [
+        new SeoFilesPlugin({
+            contentsDir: path.resolve(__dirname, 'src/views/contents'),
+            pagesDir: path.resolve(__dirname, 'src/views/pages'),
+            ogImageSrc: path.resolve(__dirname, 'src/assets/img/og-tekoala.jpg'),
+        }),
         new HtmlBundlerPlugin({
             entry: {
                 ...getHbsEntries()
             },
             outputPath: buildDir,
+            // global data (brand, kontak, navigasi) untuk semua halaman
+            data: path.resolve(__dirname, 'src/views/contents/global.json'),
             // specify the `handlebars` template engine
             preprocessor: 'handlebars',
             // define handlebars options
@@ -146,7 +159,30 @@ module.exports = {
                         const num = parseInt(value) + 1;
                         return num < 10 ? '0' + num : String(num);
                     },
-                    json: (context) => JSON.stringify(context)
+                    json: (context) => JSON.stringify(context),
+                    eq: (a, b) => a === b,
+                    // structured data schema.org untuk halaman aktif
+                    jsonLd: (options) => buildSchema(options.data.root),
+                    programList: (section, options) => resolvePrograms(section, options.data.root.programCatalog),
+                    slug: (v) => String(v || '').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
+                    or: (...args) => args.slice(0, -1).some(Boolean),
+                    // testimoni: production hanya menampilkan item yang lengkap & disetujui;
+                    // development (npm start) ikut menampilkan draft untuk preview
+                    filled: (items) => (items || []).filter((i) => i && i.text && (isDraft(i) ? showDrafts : !!i.name)),
+                    // ambil testimoni global sesuai tipe halaman (klien / alumni)
+                    ofType: (items, types) => (items || []).filter((i) => (types || []).includes(i.type)),
+                    approvedCount: (items) => (items || []).filter((i) => i && i.text && i.name && !isDraft(i) && i.rating).length,
+                    avgRating: (items) => {
+                        const r = (items || []).filter((i) => i && i.text && i.name && !isDraft(i) && i.rating).map((i) => parseFloat(i.rating));
+                        return r.length ? (r.reduce((a, b) => a + b, 0) / r.length).toFixed(1) : '';
+                    },
+                    initials: (name) => (name || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0].toUpperCase()).join(''),
+                    stars: (rating) => {
+                        const n = Math.round(parseFloat(rating) || 0);
+                        return Array.from({ length: 5 }, (_, i) => `<i class="${i < n ? 'fas' : 'far'} fa-star"></i>`).join('');
+                    },
+                    concat: (...args) => args.slice(0, -1).join(''),
+                    urlencode: (value) => encodeURIComponent(value || '')
                 },
             },
             js: {
@@ -165,6 +201,10 @@ module.exports = {
                     },
                     {
                         tag: 'section',
+                        attributes: ['style'],
+                    },
+                    {
+                        tag: 'li',
                         attributes: ['style'],
                     },
                 ],

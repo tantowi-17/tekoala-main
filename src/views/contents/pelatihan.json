@@ -1,0 +1,168 @@
+{
+    "page_title": "Program Pelatihan Web, Digital Marketing, AI & Data",
+    "pageKey": "pelatihan",
+    "meta": {
+        "description": "8 program pelatihan: bootcamp Web Development, Digital Marketing, AI Specialist, Data Analytics, kelas singkat, workshop AI, dan pelatihan instansi & desa.",
+        "path": "pelatihan.html"
+    },
+    "breadcrumb": {
+        "title": "Program Pelatihan",
+        "description": "Bootcamp intensif, kelas singkat, dan pelatihan in-house. Semua berbasis praktik dan dibimbing mentor praktisi.",
+        "current": "Program Pelatihan"
+    },
+    "programs": {
+        "id": "program",
+        "subTitle": "Semua Program",
+        "title": "Pilih Program yang Sesuai Tujuanmu",
+        "filters": {
+            "categories": [
+                "Web Development",
+                "Digital Marketing",
+                "AI",
+                "Data",
+                "Instansi & Desa"
+            ],
+            "formats": [
+                "Bootcamp",
+                "Kelas Singkat",
+                "Workshop",
+                "In-House"
+            ],
+            "levels": [
+                "Pemula",
+                "Menengah"
+            ]
+        }
+    },
+    "pricing": {
+        "bg": "bg-gray",
+        "subTitle": "Investasi Belajar",
+        "title": "Paket Bootcamp",
+        "items": [
+            {
+                "active": true,
+                "name": "Bootcamp Web Development",
+                "note": "10 minggu, kelas live",
+                "prefix": "Rp",
+                "price": "2,49jt",
+                "suitable": "Untuk calon developer & freelancer",
+                "features": [
+                    "20+ sesi live bersama mentor",
+                    "Akses rekaman materi selamanya",
+                    "3 proyek portofolio + review kode",
+                    "Grup diskusi & mentoring pasca kelas",
+                    "Sertifikat penyelesaian"
+                ]
+            },
+            {
+                "name": "Bootcamp Digital Marketing",
+                "note": "8 minggu, kelas live",
+                "prefix": "Rp",
+                "price": "1,99jt",
+                "suitable": "Untuk pemilik usaha & marketer",
+                "features": [
+                    "16+ sesi live bersama mentor",
+                    "Praktik iklan dengan budget nyata",
+                    "Template konten & kalender posting",
+                    "Studi kasus UMKM mitra",
+                    "Sertifikat penyelesaian"
+                ]
+            }
+        ],
+        "footnote": "Harga early bird untuk batch terdekat. Tersedia opsi cicilan, <a href=\"kontak.html\">hubungi kami</a> untuk detailnya."
+    },
+    "process": {
+        "subTitle": "Alur Belajar",
+        "title": "Bagaimana Kelas Berjalan",
+        "items": [
+            {
+                "imgRegular": "../../assets/img/icon/5.png",
+                "imgLight": "../../assets/img/icon/27.png",
+                "title": "Konsultasi",
+                "description": "Diskusi tujuan dan level kemampuanmu, lalu kami rekomendasikan program yang tepat."
+            },
+            {
+                "imgRegular": "../../assets/img/icon/6.png",
+                "imgLight": "../../assets/img/icon/28.png",
+                "title": "Daftar Kelas",
+                "description": "Pilih batch, selesaikan pembayaran (bisa dicicil), dan bergabung ke grup kelas."
+            },
+            {
+                "imgRegular": "../../assets/img/icon/7.png",
+                "imgLight": "../../assets/img/icon/29.png",
+                "title": "Belajar & Praktik",
+                "description": "Sesi live 2-3 kali seminggu, tugas mingguan, dan review langsung dari mentor."
+            },
+            {
+                "imgRegular": "../../assets/img/icon/8.png",
+                "imgLight": "../../assets/img/icon/30.png",
+                "title": "Proyek & Sertifikat",
+                "description": "Presentasikan proyek akhir, dapatkan feedback, sertifikat, dan portofolio siap pakai."
+            }
+        ]
+    },
+    "funFact": {
+        "padding": "default-padding-bottom",
+        "items": [
+            {
+                "value": "500",
+                "operator": "+",
+                "label": "Peserta Terlatih"
+            },
+            {
+                "value": "8",
+                "operator": "",
+                "label": "Program Aktif"
+            },
+            {
+                "value": "15",
+                "operator": "+",
+                "label": "Instansi & Desa Mitra"
+            },
+            {
+                "value": "98",
+                "operator": "%",
+                "label": "Peserta Puas"
+            }
+        ]
+    },
+    "faq": {
+        "bg": "bg-gray",
+        "subTitle": "FAQ Pelatihan",
+        "title": "Masih Ada Pertanyaan?",
+        "items": [
+            {
+                "q": "Apa saja yang perlu disiapkan sebelum ikut kelas?",
+                "a": "Laptop (Windows/Mac/Linux), koneksi internet yang stabil, dan waktu belajar sekitar 6-8 jam per minggu untuk bootcamp."
+            },
+            {
+                "q": "Kapan jadwal batch berikutnya dimulai?",
+                "a": "Jadwal batch diumumkan di Instagram dan WhatsApp kami. Hubungi admin untuk info batch terdekat dan kuota yang tersisa."
+            },
+            {
+                "q": "Kalau saya ketinggalan sesi live bagaimana?",
+                "a": "Semua sesi direkam dan bisa ditonton ulang. Pertanyaan tetap bisa diajukan di grup diskusi kelas."
+            },
+            {
+                "q": "Apakah ada opsi cicilan?",
+                "a": "Ada. Bootcamp bisa dibayar bertahap. Detail skema cicilan bisa ditanyakan ke admin via WhatsApp."
+            },
+            {
+                "q": "Bisakah membuat pelatihan khusus untuk kantor atau desa kami?",
+                "a": "Bisa. Kami menyusun kurikulum, durasi, dan lokasi sesuai kebutuhan instansi. Lihat <a href=\"layanan.html#corporate\">Corporate & Instansi Training</a>."
+            }
+        ]
+    },
+    "cta": {
+        "subTitle": "Kuota Terbatas",
+        "title": "Amankan Kursimu di Batch Berikutnya",
+        "description": "Tanyakan jadwal, kurikulum lengkap, atau skema cicilan langsung ke admin kami.",
+        "button": "Tanya Admin"
+    },
+    "testimonial": {
+        "title": "Testimoni",
+        "types": [
+            "alumni"
+        ]
+    }
+}

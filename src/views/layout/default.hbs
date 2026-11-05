@@ -1,38 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="utf-8">
-    <title>{{ page_title }} – Empowering Your Digital Experience</title>
-    <meta name="description"
-        content="Discover Tekoala – your trusted partner for innovative solutions, digital tools, and resources to help you grow online." />
-    <meta name="keywords"
-        content="Tekoala, jasa pembauatan website, digital solutions, online growth, business tools, innovation" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- Judul: meta.title (lengkap) jika ada, selain itu "page_title | Tekoala" --}}
+    <title>{{#if meta.title}}{{ meta.title }}{{else}}{{ page_title }} | {{ brand.name }}{{/if}}</title>
+    <meta name="description" content="{{#if meta.description}}{{ meta.description }}{{else}}{{ brand.description }}{{/if}}" />
+    <meta name="keywords" content="{{ brand.keywords }}" />
+    {{#if base}}<base href="{{ base }}">{{/if}}
+    <meta name="robots" content="{{#if meta.robots}}{{ meta.robots }}{{else}}index, follow, max-image-preview:large, max-snippet:-1{{/if}}" />
+    <meta name="author" content="{{ brand.name }} {{ brand.tagline }}" />
+    <meta name="theme-color" content="#0e0f11" />
+    <link rel="canonical" href="{{ siteUrl }}/{{ meta.path }}" />
+    <link rel="alternate" type="text/markdown" title="Ringkasan untuk AI (llms.txt)" href="{{ siteUrl }}/llms.txt" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:locale" content="{{ meta.property.locale }}" />
-    <meta property="og:type" content="{{ meta.property.type }}" />
-    <meta property="og:title" content="{{ page_title }} – Empowering Your Digital Experience" />
-    <meta property="og:description"
-        content="Discover Tekoala – your trusted partner for innovative solutions, digital tools, and resources to help you grow online." />
-    <meta property="og:url" content="{{ meta.property.url }}" />
-    <meta property="og:site_name" content="{{ meta.property.site_name }}" />
-    <meta property="og:image" content="{{ meta.property.image }}" />
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{#if meta.title}}{{ meta.title }}{{else}}{{ page_title }} | {{ brand.name }}{{/if}}" />
+    <meta property="og:description" content="{{#if meta.description}}{{ meta.description }}{{else}}{{ brand.description }}{{/if}}" />
+    <meta property="og:url" content="{{ siteUrl }}/{{ meta.path }}" />
+    <meta property="og:site_name" content="{{ brand.name }} {{ brand.tagline }}" />
+    <meta property="og:image" content="{{ siteUrl }}/{{ ogImage }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="{{ brand.name }} {{ brand.tagline }}: pelatihan Web Development, Digital Marketing, AI, dan Data Analytics" />
 
-    <!-- Twitter -->
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ page_title }} – Empowering Your Digital Experience" />
-    <meta name="twitter:description"
-        content="Discover Tekoala – your trusted partner for innovative solutions, digital tools, and resources to help you grow online." />
-    <meta name="twitter:image" content="{{ meta.property.image }}" />
+    <meta name="twitter:title" content="{{#if meta.title}}{{ meta.title }}{{else}}{{ page_title }} | {{ brand.name }}{{/if}}" />
+    <meta name="twitter:description" content="{{#if meta.description}}{{ meta.description }}{{else}}{{ brand.description }}{{/if}}" />
+    <meta name="twitter:image" content="{{ siteUrl }}/{{ ogImage }}" />
+
+    <!-- Structured data (schema.org) untuk Google & mesin AI -->
+    <script type="application/ld+json">{{{ jsonLd }}}</script>
 
     <!-- Disable phone number auto-detection on iOS Safari -->
     <!-- Ref: https://stackoverflow.com/questions/226131 -->
     <meta name="format-detection" content="telephone=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../../assets/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../assets/img/favicon-tekoala.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 
     <!-- Plugins CSS -->
     <link href="../../scss/styles.scss" rel="stylesheet" />
@@ -50,11 +60,43 @@
 
 <body class="bg-dark">
 
+    {{#if isTheme}}
+    <div class="radio-btn">
+        <div class="radio-inner"></div>
+    </div>
+    {{/if}}
+
+    <!-- Start Preloader
+    ============================================= -->
+    <div id="preloader">
+        <div class="dixor-loader-inner">
+            <div class="dixor-loader">
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+                <span class="dixor-loader-item"></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    {{> header }}
+
     <!-- Start Main -->
     <main>
-        {{> @partial-block }}
+        <div class="smooth-scroll-container">
+            {{> @partial-block }}
+
+            {{> footer }}
+        </div>
     </main>
     <!-- End Main -->
+
+    {{> components/floating-cht-bot }}
 
     <!-- Theme Scripts -->
     <script src="../../js/scripts.js"></script>

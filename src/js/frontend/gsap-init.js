@@ -10,6 +10,18 @@
 
 	$(document).ready(function() {
 
+		/* ==================================================
+		    Scroll Smooth Init
+		    Tekoala: dibuat sekali saat halaman siap (sebelumnya dipanggil
+		    ulang di setiap event scroll dan baru aktif setelah scroll pertama)
+		================================================== */
+		if ($(window).width() > 1023 && document.querySelector(".smooth-scroll-container") && !ScrollSmoother.get()) {
+			ScrollSmoother.create({
+				content: ".smooth-scroll-container",
+				smooth: 2
+			});
+		}
+
 
 		/* ==================================================
             # Hover Active Init
@@ -518,20 +530,6 @@
 			$("#js-hero").css({
 				width: (100 + scroll / 18) + "%"
 			})
-		}
-
-		/* ==================================================
-		    Scroll Smooth Init
-		================================================== */
-		var width = $(window).width();
-		if (width > 1023) {
-			let smooth_scroll_animation = document.querySelector(".smooth-scroll-container");
-			if (smooth_scroll_animation) {
-				ScrollSmoother.create({
-					content: ".smooth-scroll-container",
-					smooth: 2
-				});
-			}
 		}
 
 	});

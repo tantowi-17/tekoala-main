@@ -1,0 +1,100 @@
+<!-- Start Program Pelatihan
+============================================= -->
+<div class="program-area default-padding bottom-less{{#if this.bg}} {{this.bg}}{{/if}}"{{#if this.id}} id="{{this.id}}"{{/if}}>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">{{this.subTitle}}</h4>
+                    <h2 class="title split-text">{{this.title}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container"{{#if this.filters}} data-program-filter{{/if}}>
+        {{#if this.filters}}
+        <!-- Filter Kelas -->
+        <div class="program-filter" role="search" aria-label="Filter kelas">
+            <div class="program-filter-top">
+                <div class="program-search">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input type="search" data-filter-search placeholder="Cari kelas, mis. SEO, React, AI..." aria-label="Cari kelas">
+                </div>
+                <select data-filter-format aria-label="Filter format kelas">
+                    <option value="">Semua Format</option>
+                    {{#each this.filters.formats}}
+                    <option value="{{slug this}}">{{this}}</option>
+                    {{/each}}
+                </select>
+                <select data-filter-level aria-label="Filter level">
+                    <option value="">Semua Level</option>
+                    {{#each this.filters.levels}}
+                    <option value="{{slug this}}">{{this}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="program-filter-chips" role="group" aria-label="Filter bidang">
+                <button type="button" class="active" data-filter-category="" aria-pressed="true">Semua Bidang</button>
+                {{#each this.filters.categories}}
+                <button type="button" data-filter-category="{{slug this}}" aria-pressed="false">{{this}}</button>
+                {{/each}}
+            </div>
+            <div class="program-filter-info">
+                <span data-filter-count aria-live="polite">Menampilkan {{arraySize (programList this)}} kelas</span>
+                <button type="button" class="program-filter-reset" data-filter-reset hidden><i class="fas fa-times"></i> Reset filter</button>
+            </div>
+        </div>
+        {{/if}}
+        <div class="row justify-content-center">
+            {{#each (programList this)}}
+            <!-- Single Item -->
+            <div class="{{#if this.featured}}col-lg-6{{else}}col-lg-4 col-md-6{{/if}} mb-30 program-item"
+                data-category="{{slug this.category}}" data-format="{{slug this.format}}" data-level="{{slug this.level}}">
+                <div class="program-card{{#if this.featured}} featured{{/if}}">
+                    {{#if this.highlight}}<span class="program-highlight"><i class="fas fa-star"></i> {{this.highlight}}</span>{{/if}}
+                    <div class="program-card-head">
+                        <div class="program-icon"><i class="{{this.icon}}"></i></div>
+                        <span class="program-badge">{{this.format}}</span>
+                    </div>
+                    <div class="content">
+                        <div class="program-meta">
+                            <ul>
+                                <li><i class="far fa-clock"></i> {{this.duration}}</li>
+                                <li><i class="fas fa-signal"></i> {{this.level}}</li>
+                            </ul>
+                        </div>
+                        <h3>{{this.title}}</h3>
+                        <p>{{this.description}}</p>
+                        <div class="program-price">
+                            {{#if this.priceNormal}}<del>{{this.priceNormal}}</del>{{/if}}
+                            <strong>{{this.price}}</strong>
+                        </div>
+                        <a href="https://wa.me/{{@root.phone}}?text={{urlencode (concat 'Halo Tekoala, saya mau daftar / tanya program: ' this.title)}}"
+                            target="_blank" rel="noopener" class="btn btn-sm circle btn-gradient effect program-btn"
+                            onclick="gtag('event', 'program_register_click', { 'program': '{{this.title}}' });">
+                            {{#if this.cta}}{{this.cta}}{{else}}Daftar Sekarang{{/if}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Item -->
+            {{/each}}
+        </div>
+        {{#if this.filters}}
+        <div class="program-empty" data-filter-empty hidden>
+            <i class="far fa-folder-open"></i>
+            <h4>Belum ada kelas yang cocok</h4>
+            <p>Coba ubah filter, atau tanyakan kelas yang Anda cari ke admin kami.</p>
+            <a class="btn btn-sm circle btn-gradient effect" href="https://wa.me/{{@root.phone}}?text={{urlencode 'Halo Tekoala, saya mencari kelas tentang: '}}" target="_blank" rel="noopener">Tanya Admin</a>
+        </div>
+        {{/if}}
+        {{#if this.moreUrl}}
+        <div class="row">
+            <div class="col-lg-12 text-center mt-20 mb-30">
+                <a class="btn-animation" href="{{this.moreUrl}}"><i class="fas fa-arrow-right"></i> <span>{{this.moreLabel}}</span></a>
+            </div>
+        </div>
+        {{/if}}
+    </div>
+</div>
+<!-- End Program Pelatihan -->

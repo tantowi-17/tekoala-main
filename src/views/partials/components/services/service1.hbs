@@ -1,13 +1,13 @@
 <!-- Start Services
 ============================================= -->
-<div class="services-style-one-area default-padding bg-gray">
+<div class="services-style-one-area default-padding bg-gray"{{#if this.id}} id="{{this.id}}"{{/if}}>
     <div class="service-style-one-heading">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 text-center">
                     <div class="site-heading">
-                        <h4 class="sub-title">Services we offer</h4>
-                        <h2 class="title split-text">Turn Information Into Actionable Insights</h2>
+                        <h4 class="sub-title">{{this.subTitle}}</h4>
+                        <h2 class="title split-text">{{this.title}}</h2>
                     </div>
                 </div>
             </div>
@@ -17,16 +17,18 @@
         <div class="services-style-one-items">
             <div class="row">
                 <!-- Single Item -->
-                {{# each this}}
+                {{#each this.items}}
                 <div class="col-xl-3 col-lg-6 col-md-6 single-item">
                     <div class="services-style-one-item">
                         <div class="icon">
-                            <img class="regular-img" src="{{this.imgRegular}}" alt="Image Not Found">
-                            <img class="light-img" src="{{this.imgLight}}" alt="Image Not Found">
+                            <img class="regular-img" src="{{this.imgRegular}}" alt="{{this.title}}">
+                            <img class="light-img" src="{{this.imgLight}}" alt="{{this.title}}">
                         </div>
-                        <h4><a href="#">{{this.title}}</a></h4>
+                        <h4>{{#if this.url}}<a href="{{this.url}}">{{this.title}}</a>{{else}}{{this.title}}{{/if}}</h4>
                         <p>{{{this.description}}}</p>
-                        <a class="btn-full" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                        {{#if this.url}}
+                        <a class="btn-full" href="{{this.url}}">{{#if this.readMore}}{{this.readMore}}{{else}}Selengkapnya{{/if}} <i class="fas fa-arrow-right"></i></a>
+                        {{/if}}
                     </div>
                 </div>
                 {{/each}}

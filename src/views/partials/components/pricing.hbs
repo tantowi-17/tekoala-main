@@ -1,0 +1,49 @@
+<!-- Start Pricing
+============================================= -->
+<div class="pricing-style-one-area default-padding{{#if this.bg}} {{this.bg}}{{/if}}"{{#if this.id}} id="{{this.id}}"{{/if}}>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">{{this.subTitle}}</h4>
+                    <h2 class="title split-text">{{this.title}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="pricing-items">
+            <div class="row">
+                {{#each this.items}}
+                <div class="col-xl-6">
+                    <div class="pricing-style-one{{#if this.active}} active{{/if}}">
+                        <div class="left">
+                            <div class="info">
+                                <h4>{{this.name}}</h4>
+                                <span>{{this.note}}</span>
+                            </div>
+                            <h2><sup>{{this.prefix}}</sup>{{this.price}}</h2>
+                            <a class="btn btn-sm circle {{#if this.active}}btn-gradient{{else}}btn-light{{/if}} effect"
+                                href="https://wa.me/{{@root.phone}}?text={{urlencode (concat 'Halo Tekoala, saya tertarik dengan paket: ' this.name)}}"
+                                target="_blank" rel="noopener"
+                                onclick="gtag('event', 'pricing_click', { 'plan': '{{this.name}}' });">{{#if this.cta}}{{this.cta}}{{else}}Daftar Sekarang{{/if}}</a>
+                        </div>
+                        <div class="right">
+                            <h5>{{this.suitable}}</h5>
+                            <ul>
+                                {{#each this.features}}
+                                <li>{{this}}</li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            {{#if this.footnote}}
+            <p class="text-center mt-30 pricing-footnote">{{{this.footnote}}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
+<!-- End Pricing -->

@@ -1,0 +1,180 @@
+{
+    "page_title": "Jasa Website, Digital Marketing & Corporate Training",
+    "pageKey": "layanan",
+    "meta": {
+        "description": "Jasa pembuatan website company profile mulai Rp 2 juta, toko online, aplikasi custom, digital marketing (Meta & Google Ads, SEO), dan corporate training.",
+        "path": "layanan.html"
+    },
+    "breadcrumb": {
+        "title": "Layanan Bisnis",
+        "description": "Website, digital marketing, dan pelatihan tim. Satu partner untuk membawa bisnis dan instansi Anda tumbuh di dunia digital.",
+        "current": "Layanan Bisnis"
+    },
+    "services": {
+        "id": "layanan",
+        "items": [
+            {
+                "url": "#harga",
+                "icon": "../../assets/img/icon/17.png",
+                "label": "Web Development",
+                "title": "Pembuatan Website & Aplikasi",
+                "description": "Website yang cepat, responsif, aman, dan siap SEO, dibangun sesuai proses bisnis Anda.",
+                "list": [
+                    "Company Profile & Landing Page",
+                    "Toko Online / E-Commerce",
+                    "Sistem Informasi & Aplikasi Custom",
+                    "Website Desa & Instansi"
+                ],
+                "image": "../../assets/img/illustration/2.png"
+            },
+            {
+                "url": "kontak.html",
+                "icon": "../../assets/img/icon/18.png",
+                "label": "Digital Marketing",
+                "title": "Iklan, Konten & SEO",
+                "description": "Strategi pemasaran digital berbasis data untuk menjangkau calon pelanggan dan meningkatkan penjualan.",
+                "list": [
+                    "Meta, TikTok & Google Ads",
+                    "Social Media Management",
+                    "SEO & Google Business Profile",
+                    "Laporan Performa Bulanan"
+                ],
+                "image": "../../assets/img/illustration/3.png"
+            },
+            {
+                "url": "#corporate",
+                "icon": "../../assets/img/icon/19.png",
+                "label": "Corporate Training",
+                "title": "Pelatihan untuk Tim Anda",
+                "description": "Tingkatkan kemampuan digital tim, perangkat desa, atau pegawai lewat pelatihan in-house yang praktis.",
+                "list": [
+                    "Kurikulum Sesuai Kebutuhan",
+                    "Online atau Datang ke Lokasi",
+                    "Evaluasi & Laporan Peserta"
+                ],
+                "image": "../../assets/img/illustration/4.png"
+            }
+        ]
+    },
+    "pricing": {
+        "id": "harga",
+        "bg": "bg-gray",
+        "subTitle": "Paket Website",
+        "title": "Harga Transparan, Hasil Profesional",
+        "items": [
+            {
+                "active": true,
+                "name": "Website Company Profile",
+                "note": "Mulai dari",
+                "prefix": "Rp",
+                "price": "2jt",
+                "suitable": "Untuk UMKM, startup & instansi",
+                "features": [
+                    "Desain responsif (mobile friendly)",
+                    "Hingga 5 halaman + form kontak",
+                    "Gratis domain & hosting tahun pertama",
+                    "Basic SEO & integrasi WhatsApp",
+                    "Pelatihan kelola konten"
+                ],
+                "cta": "Konsultasi Gratis"
+            },
+            {
+                "name": "Toko Online / E-Commerce",
+                "note": "Mulai dari",
+                "prefix": "Rp",
+                "price": "5jt",
+                "suitable": "Untuk bisnis yang ingin jualan online",
+                "features": [
+                    "Katalog produk & keranjang belanja",
+                    "Integrasi pembayaran & ongkir",
+                    "Dashboard pesanan & stok",
+                    "Basic SEO & Google Analytics",
+                    "Pelatihan pengelolaan toko"
+                ],
+                "cta": "Konsultasi Gratis"
+            }
+        ],
+        "footnote": "Sistem custom (portal, aplikasi, sistem desa) mulai Rp 10jt. Paket digital marketing disusun sesuai target, <a href=\"kontak.html\">minta penawaran</a>."
+    },
+    "corporate": {
+        "id": "corporate",
+        "image": "../../assets/img/team/team14.jpg",
+        "url": "kontak.html",
+        "title": "Corporate & Instansi Training",
+        "description": "Kami merancang pelatihan in-house untuk perangkat desa, dinas, sekolah, dan perusahaan. Materi disusun dari kebutuhan nyata di lapangan, dibawakan praktisi, dan ditutup dengan evaluasi peserta agar hasilnya terukur.",
+        "list": [
+            "Administrasi & Pelayanan Digital Desa",
+            "Digital Marketing untuk UMKM Binaan",
+            "Website & Media Sosial Instansi",
+            "AI untuk Produktivitas Kerja"
+        ]
+    },
+    "process": {
+        "subTitle": "Proses Kerja",
+        "title": "Dari Ide Sampai Online",
+        "items": [
+            {
+                "imgRegular": "../../assets/img/icon/5.png",
+                "imgLight": "../../assets/img/icon/27.png",
+                "title": "Konsultasi",
+                "description": "Diskusi kebutuhan, tujuan, dan anggaran. Gratis, tanpa komitmen."
+            },
+            {
+                "imgRegular": "../../assets/img/icon/6.png",
+                "imgLight": "../../assets/img/icon/28.png",
+                "title": "Perencanaan",
+                "description": "Penyusunan konsep, ruang lingkup, timeline, dan kesepakatan kerja."
+            },
+            {
+                "imgRegular": "../../assets/img/icon/7.png",
+                "imgLight": "../../assets/img/icon/29.png",
+                "title": "Desain & Development",
+                "description": "Desain UI/UX, pengembangan, lalu pengujian dan revisi bersama Anda."
+            },
+            {
+                "imgRegular": "../../assets/img/icon/8.png",
+                "imgLight": "../../assets/img/icon/30.png",
+                "title": "Launching & Pendampingan",
+                "description": "Website online, serah terima, dan pelatihan agar tim Anda bisa mengelola sendiri."
+            }
+        ]
+    },
+    "portfolio": {
+        "bg": "bg-gray",
+        "subTitle": "Portofolio",
+        "title": "Proyek yang Pernah Kami Kerjakan",
+        "items": [
+            {
+                "image": "../../assets/img/portfolio/work01.jpg",
+                "category": "Website & Sistem Desa",
+                "title": "Smart",
+                "titleBold": "Desa",
+                "url": "digital-desa.html"
+            },
+            {
+                "image": "../../assets/img/portfolio/work02.jpg",
+                "category": "Website Booking",
+                "title": "Book",
+                "titleBold": "Villas"
+            },
+            {
+                "image": "../../assets/img/portfolio/work03.jpg",
+                "category": "Toko Online",
+                "title": "Website",
+                "titleBold": "eCommerce"
+            }
+        ]
+    },
+    "testimonial": {
+        "title": "Testimoni",
+        "types": [
+            "klien"
+        ]
+    },
+    "cta": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Ceritakan Proyek Anda",
+        "description": "Kirim kebutuhan Anda, kami balas dengan rekomendasi solusi dan estimasi biaya.",
+        "button": "Minta Penawaran"
+    }
+}

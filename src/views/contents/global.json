@@ -1,0 +1,298 @@
+{
+    "brand": {
+        "name": "Tekoala",
+        "tagline": "Academy & Digital Agency",
+        "description": "Tekoala adalah tempat belajar skill digital sekaligus partner pengembangan website dan digital marketing untuk bisnis, UMKM, dan instansi di Indonesia.",
+        "keywords": "Tekoala, Tekoala Academy, kursus web development, bootcamp digital marketing, kursus AI, pelatihan data analytics, trainer BNSP, jasa pembuatan website, digital marketing agency, pelatihan Makassar, pelatihan Mamuju, pelatihan perangkat desa",
+        "knowsAbout": [
+            "Web Development",
+            "Digital Marketing",
+            "Artificial Intelligence",
+            "Data Analytics",
+            "Search Engine Optimization",
+            "Meta Ads",
+            "Google Ads",
+            "Digitalisasi Desa",
+            "UI/UX Design"
+        ]
+    },
+    "siteUrl": "https://tekoala.id",
+    "isTheme": false,
+    "logoLight": "../../assets/img/logo-tekoala-light.png",
+    "logoDark": "../../assets/img/logo-tekoala-dark.png",
+    "email": "tekoaladigital@gmail.com",
+    "phone": "6282366667326",
+    "phoneDisplay": "+62 823 6666 7326",
+    "waText": "Halo Tekoala, saya mau tanya tentang program pelatihan.",
+    "instagram": "https://www.instagram.com/tekoala_",
+    "nav": [
+        {
+            "label": "Beranda",
+            "url": "index.html",
+            "key": "index"
+        },
+        {
+            "label": "Program Pelatihan",
+            "url": "pelatihan.html",
+            "key": "pelatihan"
+        },
+        {
+            "label": "Layanan Bisnis",
+            "url": "layanan.html",
+            "key": "layanan"
+        },
+        {
+            "label": "Portofolio",
+            "url": "digital-desa.html",
+            "key": "digital-desa"
+        },
+        {
+            "label": "Kontak",
+            "url": "kontak.html",
+            "key": "kontak"
+        }
+    ],
+    "footer": {
+        "about": "Belajar skill digital bareng mentor praktisi, lalu terapkan langsung di proyek nyata. Kami juga membantu bisnis tumbuh lewat website dan digital marketing.",
+        "address": [
+            {
+                "label": "<h4>Makassar</h4><p>Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan, Indonesia</p>"
+            },
+            {
+                "label": "<h4>Mamuju Tengah</h4><p>Kec. Tobadak, Kabupaten Mamuju Tengah, Sulawesi Barat, Indonesia</p>"
+            }
+        ],
+        "programs": [
+            {
+                "label": "Bootcamp Web Development",
+                "url": "pelatihan.html?bidang=web-development#program"
+            },
+            {
+                "label": "Bootcamp Digital Marketing",
+                "url": "pelatihan.html?bidang=digital-marketing#program"
+            },
+            {
+                "label": "Bootcamp AI Specialist",
+                "url": "pelatihan.html?bidang=ai#program"
+            },
+            {
+                "label": "Bootcamp Data Analytics",
+                "url": "pelatihan.html?bidang=data#program"
+            },
+            {
+                "label": "Kelas Singkat & Workshop",
+                "url": "pelatihan.html?format=kelas-singkat#program"
+            },
+            {
+                "label": "Corporate & Instansi Training",
+                "url": "layanan.html#corporate"
+            }
+        ],
+        "links": [
+            {
+                "label": "Jasa Pembuatan Website",
+                "url": "layanan.html"
+            },
+            {
+                "label": "Jasa Digital Marketing",
+                "url": "layanan.html"
+            },
+            {
+                "label": "Portofolio",
+                "url": "digital-desa.html"
+            },
+            {
+                "label": "FAQ",
+                "url": "kontak.html#faq"
+            },
+            {
+                "label": "Hubungi Kami",
+                "url": "kontak.html"
+            }
+        ]
+    },
+    "testimonials": {
+        "_catatan": "Satu sumber testimoni untuk semua halaman. 'type': klien | alumni (menentukan halaman mana yang menampilkan). Hanya item dengan 'text' & 'name' terisi dan 'approved' bukan false yang tampil di build production. Rating di header dihitung otomatis. 'avatar' boleh kosong (otomatis inisial).",
+        "items": [
+            {
+                "approved": true,
+                "type": "klien",
+                "category": "Klien Website",
+                "name": "Denny Ale Alfarizy",
+                "role": "Kepala Urusan Perencanaan",
+                "rating": "5.0",
+                "text": "Website Desa Tobadak memudahkan masyarakat dalam mengakses informasi dan layanan desa. Informasi berita, kegiatan, serta pembangunan desa kini dapat disampaikan secara lebih transparan, cepat, dan mudah diakses oleh warga.",
+                "avatar": "../../assets/img/thumb/avatar01.png"
+            },
+            {
+                "approved": true,
+                "type": "klien",
+                "category": "Klien Website",
+                "name": "Andreas Putra",
+                "role": "General Manager Villa Resort",
+                "rating": "4.7",
+                "text": "Website booking villa yang dikembangkan Tekoala membantu meningkatkan kemudahan proses reservasi. Calon tamu dapat melihat informasi villa, fasilitas, mengecek ketersediaan, hingga melakukan pemesanan secara online melalui tampilan yang praktis dan mudah digunakan.",
+                "avatar": "../../assets/img/thumb/avatar-profile.png"
+            },
+            {
+                "approved": true,
+                "type": "klien",
+                "category": "Klien Website",
+                "name": "Muhammad Rizky",
+                "role": "Pemerintah Desa Palongaan",
+                "rating": "5.0",
+                "text": "Website Desa Palongaan kini menjadi pusat informasi digital bagi masyarakat. Berita, informasi layanan, dan profil desa dapat diakses kapan saja. Tim Tekoala juga memberikan pendampingan sehingga perangkat desa dapat mengelola konten website secara mandiri.",
+                "avatar": "../../assets/img/thumb/avatar-profile.png"
+            },
+            {
+                "approved": true,
+                "type": "klien",
+                "category": "Klien Website",
+                "name": "Andi Fadliansyah",
+                "role": "Pengurus IKA Canga",
+                "rating": "4.9",
+                "text": "Landing page yang dikembangkan Tekoala membantu kami menyampaikan informasi organisasi, kegiatan, dan aktivitas alumni dengan lebih terstruktur. Proses pengerjaan berjalan cepat dengan komunikasi yang responsif dan profesional.",
+                "avatar": "../../assets/img/thumb/avatar-profile.png"
+            },
+            {
+                "approved": true,
+                "type": "klien",
+                "category": "Klien UMKM",
+                "name": "Nurul Aisyah",
+                "role": "Pelaku Usaha Bawang Merah",
+                "rating": "5.0",
+                "text": "Landing page dari Tekoala membantu memperkenalkan produk bawang merah kami secara lebih luas. Calon pelanggan dapat melihat informasi produk dan menghubungi kami langsung melalui WhatsApp dengan lebih mudah.",
+                "avatar": "../../assets/img/thumb/avatar-profile.png"
+            },
+            {
+                "approved": true,
+                "type": "klien",
+                "category": "Klien Website",
+                "name": "Fajar Ramadhan",
+                "role": "Pemilik Kafe",
+                "rating": "4.8",
+                "text": "Sistem reservasi online membantu pengelolaan pemesanan meja menjadi lebih praktis dan terorganisir. Pesanan pelanggan tidak lagi tercecer di percakapan WhatsApp sehingga proses pelayanan menjadi lebih efisien.",
+                "avatar": "../../assets/img/thumb/avatar-profile.png"
+            },
+            {
+                "approved": true,
+                "type": "alumni",
+                "category": "Alumni Pelatihan",
+                "name": "Muh Ical",
+                "role": "Perangkat Desa Palongaan",
+                "rating": "",
+                "text": "Pelatihannya praktis dan mudah diikuti, bahkan untuk kami yang jarang memakai komputer. Sekarang kami bisa mengelola website desa dan administrasi secara mandiri.",
+                "avatar": ""
+            }
+        ]
+    },
+    "locations": [
+        {
+            "name": "Tekoala Makassar",
+            "locality": "Kota Makassar",
+            "area": "Kec. Tamalanrea",
+            "region": "Sulawesi Selatan",
+            "country": "ID"
+        },
+        {
+            "name": "Tekoala Mamuju Tengah",
+            "locality": "Kabupaten Mamuju Tengah",
+            "area": "Kec. Tobadak",
+            "region": "Sulawesi Barat",
+            "country": "ID"
+        }
+    ],
+    "ogImage": "assets/img/og-tekoala.jpg",
+    "programCatalog": {
+        "_catatan": "Satu sumber data semua program. Halaman Pelatihan menampilkan semua; beranda memilih lewat 'show' di index.json. Field: icon, format, category, duration, level, title, description, priceNormal (opsional), price, cta (opsional).",
+        "items": [
+            {
+                "icon": "fas fa-laptop-code",
+                "format": "Bootcamp",
+                "category": "Web Development",
+                "duration": "10 Minggu",
+                "level": "Pemula",
+                "title": "Bootcamp Web Development",
+                "description": "HTML, CSS, JavaScript, React, backend & database, hingga deploy. Lulus dengan 3 proyek portofolio.",
+                "priceNormal": "Rp 4.999.000",
+                "price": "Rp 2.499.000"
+            },
+            {
+                "icon": "fas fa-bullhorn",
+                "format": "Bootcamp",
+                "category": "Digital Marketing",
+                "duration": "8 Minggu",
+                "level": "Pemula - Menengah",
+                "title": "Bootcamp Digital Marketing",
+                "description": "Strategi konten, copywriting, Meta & TikTok Ads, Google Ads, SEO, dan analitik dengan praktik budget iklan nyata.",
+                "priceNormal": "Rp 3.999.000",
+                "price": "Rp 1.999.000"
+            },
+            {
+                "icon": "fas fa-robot",
+                "format": "Bootcamp",
+                "category": "AI",
+                "duration": "6 Minggu",
+                "level": "Pemula - Menengah",
+                "title": "Bootcamp AI Specialist",
+                "description": "Prompt engineering, AI untuk konten & riset, otomasi workflow (n8n/Zapier), hingga membangun chatbot dan AI agent sederhana.",
+                "priceNormal": "Rp 3.499.000",
+                "price": "Rp 1.799.000"
+            },
+            {
+                "icon": "fas fa-chart-bar",
+                "format": "Bootcamp",
+                "category": "Data",
+                "duration": "8 Minggu",
+                "level": "Pemula",
+                "title": "Bootcamp Data Analytics",
+                "description": "Spreadsheet, SQL, Python dasar, dan dashboard Looker Studio/Power BI. Lulus dengan portofolio analisis data studi kasus nyata.",
+                "priceNormal": "Rp 3.999.000",
+                "price": "Rp 1.999.000"
+            },
+            {
+                "icon": "fas fa-store",
+                "format": "Kelas Singkat",
+                "category": "Web Development",
+                "duration": "2 Minggu",
+                "level": "Pemula",
+                "title": "Website Bisnis Tanpa Coding",
+                "description": "Bangun website company profile atau toko online sendiri dengan WordPress, siap online di akhir kelas.",
+                "priceNormal": "Rp 999.000",
+                "price": "Rp 499.000"
+            },
+            {
+                "icon": "fas fa-chart-line",
+                "format": "Kelas Singkat",
+                "category": "Digital Marketing",
+                "duration": "2 Minggu",
+                "level": "Pemula",
+                "title": "Meta & TikTok Ads untuk UMKM",
+                "description": "Setup akun iklan, targeting, materi iklan yang menjual, dan membaca hasil kampanye untuk usaha kecil.",
+                "priceNormal": "Rp 899.000",
+                "price": "Rp 449.000"
+            },
+            {
+                "icon": "fas fa-lightbulb",
+                "format": "Workshop",
+                "category": "AI",
+                "duration": "1 Hari",
+                "level": "Semua Level",
+                "title": "Workshop AI untuk Konten & Produktivitas",
+                "description": "Pakai AI untuk riset, menulis konten, desain, dan otomasi pekerjaan harian, langsung dipraktikkan.",
+                "price": "Rp 249.000"
+            },
+            {
+                "icon": "fas fa-landmark",
+                "format": "In-House",
+                "category": "Instansi & Desa",
+                "duration": "1 - 5 Hari",
+                "level": "Custom",
+                "title": "Pelatihan Instansi & Desa",
+                "description": "Pelatihan untuk perangkat desa, dinas, sekolah, dan perusahaan. Materi, jadwal, dan lokasi menyesuaikan.",
+                "price": "Sesuai Kebutuhan",
+                "cta": "Konsultasi Gratis"
+            }
+        ]
+    }
+}

@@ -1,32 +1,32 @@
 <!-- Start Testimonial
  ============================================= -->
-<div class="testimonial-style-three-area default-padding">
+{{#with (filled (ofType @root.testimonials.items this.types)) as |reviews|}}
+{{#if reviews.length}}
+<div class="testimonial-style-three-area default-padding{{#if ../bg}} {{../bg}}{{/if}}">
     <div class="shape-style-one">
-        <img class="upDownScrol" src="../../assets/img/shape/14.png" alt="Image Not Found">
+        <img class="upDownScrol" src="../../assets/img/shape/14.png" alt="">
     </div>
     <div class="container">
         <div class="testimonial-heading">
             <div class="row">
                 <div class="col-lg-8">
                     <h2 class="text-large-gradient">
-                        Testimonials
+                        {{../title}}
                     </h2>
                 </div>
+                {{#if (avgRating reviews)}}
                 <div class="col-lg-4 text-end">
                     <div class="testimonial-three-quote">
-                        <h2>4.9</h2>
+                        <h2>{{avgRating reviews}}</h2>
                         <div class="info">
                             <div class="ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                {{{stars (avgRating reviews)}}}
                             </div>
-                            <span>145 (Review)</span>
+                            <span>Rata-rata dari {{approvedCount reviews}} ulasan</span>
                         </div>
                     </div>
                 </div>
+                {{/if}}
             </div>
         </div>
     </div>
@@ -36,63 +36,37 @@
 
                 <div class="testimonial-style-three-carousel swiper">
                     <div class="swiper-wrapper">
+                        {{#each reviews}}
                         <!-- Single Item -->
                         <div class="swiper-slide">
                             <div class="testimonial-style-three-item">
                                 <div class="tes-rating">
-                                    <span>5.0</span>
+                                    {{#if this.rating}}<span>{{this.rating}}</span>{{/if}}
                                     <div class="icon">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                        {{{stars this.rating}}}
                                     </div>
+                                    {{#if this.category}}<span class="tes-category">{{this.category}}</span>{{/if}}
                                 </div>
                                 <p>
-                                    Dengan adanya website Desa Tobadak, informasi desa kini lebih mudah diakses oleh masyarakat. Proses administrasi jadi lebih transparan, cepat, dan efisien. Warga bisa mendapatkan update berita desa, layanan publik, dan informasi pembangunan secara real-time.
+                                    {{this.text}}
                                 </p>
                                 <div class="tm-provider">
                                     <div class="thumb">
-                                        <img src="../../assets/img/thumb/avatar01.png" alt="Image Not Found">
+                                        {{#if this.avatar}}
+                                        <img src="{{this.avatar}}" alt="{{this.name}}">
+                                        {{else}}
+                                        <span class="tes-initials" aria-hidden="true">{{#if this.name}}{{initials this.name}}{{else}}{{initials this.role}}{{/if}}</span>
+                                        {{/if}}
                                     </div>
                                     <div class="content">
-                                        <h4>Denny Ale Alfarizy</h4>
-                                        <span>Kepala Urusan Perencanaan</span>
+                                        <h4>{{#if this.name}}{{this.name}}{{else}}[Nama]{{/if}}</h4>
+                                        <span>{{this.role}}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- End Single Item -->
-
-                        <!-- Single Item -->
-                        <div class="swiper-slide">
-                            <div class="testimonial-style-three-item">
-                                <div class="tes-rating">
-                                    <span>4.7</span>
-                                    <div class="icon">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <p>
-                                    Website booking villas yang dikembangkan sangat membantu meningkatkan jumlah reservasi. Proses pemesanan jadi lebih praktis, aman, dan user-friendly. Tamu dapat melihat detail villa, mengecek ketersediaan, hingga melakukan pembayaran secara online tanpa hambatan.”
-                                </p>
-                                <div class="tm-provider">
-                                    <div class="thumb">
-                                        <img src="../../assets/img/thumb/avatar-profile.png" alt="Image Not Found">
-                                    </div>
-                                    <div class="content">
-                                        <h4>Andreas Putra</h4>
-                                        <span>General Manager Villa Resort</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
+                        {{/each}}
                     </div>
 
                     <!-- Navigation -->
@@ -109,4 +83,6 @@
         </div>
     </div>
 </div>
+{{/if}}
+{{/with}}
 <!-- End Testimonial -->

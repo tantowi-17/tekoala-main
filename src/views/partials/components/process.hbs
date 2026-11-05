@@ -1,0 +1,35 @@
+<!-- Start Process
+============================================= -->
+<div class="process-area overflow-hidden text-center default-padding{{#if this.bg}} {{this.bg}}{{/if}}"{{#if this.id}} id="{{this.id}}"{{/if}}>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">{{this.subTitle}}</h4>
+                    <h2 class="title split-text">{{this.title}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="process-style-one-items">
+            <div class="row">
+                {{#each this.items}}
+                <!-- Single Item -->
+                <div class="col-lg-3 col-md-6 process-style-one-item">
+                    <div class="item">
+                        <div class="icon">
+                            <img class="regular-img" src="{{this.imgRegular}}" alt="{{this.title}}">
+                            <img class="light-img" src="{{this.imgLight}}" alt="{{this.title}}">
+                        </div>
+                        <h4>{{this.title}}</h4>
+                        <p>{{this.description}}</p>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Process -->

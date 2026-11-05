@@ -1,41 +1,92 @@
-<!-- Start Team Area 
+<!-- Start Mentor & Tim
 ============================================= -->
-<div class="team-style-three-area default-padding bg-gray bottom-less">
+<div class="mentor-area default-padding bg-gray"{{#if this.id}} id="{{this.id}}"{{/if}}>
     <div class="container">
         <div class="site-heading">
             <div class="row align-center">
                 <div class="col-lg-6">
-                    <h4 class="sub-title">Team member</h4>
-                    <h2 class="title split-text">Meet our experts</h2>
+                    <h4 class="sub-title">{{this.subTitle}}</h4>
+                    <h2 class="title split-text">{{this.title}}</h2>
                 </div>
-                <div class="col-lg-6 text-end">
-                    <a href="#" class="btn-circle">
-                        <div class="button-content">
-                            <span><img src="../../assets/img/icon/arrow-long-right.png" alt="Image Not Found"></span> <strong>All Members</strong>
-                        </div>
-                    </a>
+                <div class="col-lg-6">
+                    <p class="mentor-desc">{{this.description}}</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-full">
+
         <div class="row">
+            {{#each this.items}}
             <!-- Single Item -->
-            {{#each team}}
-            <div class="col-xl-3 col-md-6 mb-30">
-                <div class="team-style-three-item">
-                    <div class="thumb">
-                        <img src="{{this.image}}" width="667px" alt="Image Not Found">
+            <div class="col-xl-3 col-6 mb-30">
+                <div class="mentor-card">
+                    <div class="mentor-thumb">
+                        <img src="{{this.image}}" alt="{{this.name}}, {{this.title}}" loading="lazy">
+                        {{#if this.bio}}
+                        <div class="mentor-bio">
+                            <p>{{this.bio}}</p>
+                        </div>
+                        {{/if}}
                     </div>
-                    <div class="info">
-                        <h4><a href="#">{{this.name}}</a></h4>
-                        <span>{{this.title}}</span>
+                    <div class="mentor-body">
+                        <h4>{{this.name}}</h4>
+                        <span class="mentor-role">{{this.title}}</span>
+                        {{#if this.experience}}
+                        <p class="mentor-exp"><i class="fas fa-briefcase"></i> {{this.experience}}</p>
+                        {{/if}}
+                        {{#if this.tags.length}}
+                        <ul class="mentor-tags">
+                            {{#each this.tags}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                        {{#if (or this.social.linkedin this.social.instagram this.program.url)}}
+                        <div class="mentor-footer">
+                            <ul class="mentor-social">
+                                {{#if this.social.linkedin}}
+                                <li><a href="{{this.social.linkedin}}" target="_blank" rel="noopener" aria-label="LinkedIn {{this.name}}"><i class="fab fa-linkedin-in"></i></a></li>
+                                {{/if}}
+                                {{#if this.social.instagram}}
+                                <li><a href="{{this.social.instagram}}" target="_blank" rel="noopener" aria-label="Instagram {{this.name}}"><i class="fab fa-instagram"></i></a></li>
+                                {{/if}}
+                            </ul>
+                            {{#if this.program.url}}
+                            <a class="mentor-program" href="{{this.program.url}}" title="{{this.program.label}}">
+                                Lihat Kelas <i class="fas fa-arrow-right"></i>
+                            </a>
+                            {{/if}}
+                        </div>
+                        {{/if}}
                     </div>
                 </div>
             </div>
+            <!-- End Single Item -->
             {{/each}}
-            <!-- Single Item -->
+        </div>
+
+        <div class="mentor-credentials">
+            {{#if this.stats.length}}
+            <ul class="mentor-stats">
+                {{#each this.stats}}
+                <li><strong>{{this.value}}</strong> <span>{{this.label}}</span></li>
+                {{/each}}
+            </ul>
+            {{/if}}
+
+            {{#if this.certifications.length}}
+            <ul class="mentor-certs">
+                {{#each this.certifications}}
+                <li>
+                    <div class="cert-icon"><i class="{{this.icon}}"></i></div>
+                    <div class="cert-text">
+                        <span>{{this.label}}</span>
+                        <strong>{{this.title}}</strong>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+            {{/if}}
         </div>
     </div>
 </div>
-<!-- End Team Area -->
+<!-- End Mentor & Tim -->

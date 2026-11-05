@@ -6,7 +6,8 @@
         <div class="row">
             <div class="col-xl-8">
                 <div class="banner-style-eight-heading">
-                    <div class="banner-title">
+                    {{#if this.h1}}<h1 class="visually-hidden">{{this.h1}}</h1>{{/if}}
+                    <div class="banner-title" aria-hidden="true">
                         <h2 class="title-left split-text">{{this.heading.left}}</h2>
                         <h2 class="title-right split-text">{{this.heading.right}}</h2>
                     </div>
@@ -14,17 +15,21 @@
             </div>
             <div class="col-xl-4">
                 <div class="thumb">
-                    <img src="{{this.illustration}}" alt="Image Not Found">
+                    <img src="{{this.illustration}}" alt="{{this.heading.left}} {{this.heading.right}}">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-xl-7">
                 <div class="d-grid">
-                    <h4>About Us</h4>
+                    <h4>{{this.label}}</h4>
                     <div class="right">
                         {{{this.description}}}
-<!--                        <a class="btn-animation mt-10" href="#"><i class="fas fa-arrow-right"></i> <span>Know More</span></a>-->
+                        <div class="banner-actions">
+                            {{#each this.buttons}}
+                            <a class="btn-animation mt-10" href="{{this.url}}"{{#if this.event}} onclick="gtag('event', '{{this.event}}', { 'location': 'banner' });"{{/if}}><i class="fas fa-arrow-right"></i> <span>{{this.label}}</span></a>
+                            {{/each}}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -33,10 +38,10 @@
                     <div class="bottom">
                         <div class="fun-fact">
                             <div class="counter">
-                                <div class="timer">31</div>
-                                <div class="operator">K</div>
+                                <div class="timer">{{this.stat.value}}</div>
+                                <div class="operator">{{this.stat.operator}}</div>
                             </div>
-                            <span class="medium">Completed Projects</span>
+                            <span class="medium">{{this.stat.label}}</span>
                         </div>
                     </div>
                 </div>

@@ -1,13 +1,12 @@
-
 <!-- Start Portfolio
 ============================================= -->
-<div class="portfolio-style-three-area default-padding">
+<div class="portfolio-style-three-area default-padding{{#if this.bg}} {{this.bg}}{{/if}}"{{#if this.id}} id="{{this.id}}"{{/if}}>
     <div class="container">
         <div class="row">
             <div class="col-lg-7 offset-lg-3">
                 <div class="site-heading text-center">
-                    <h4 class="sub-title">Popular Projects</h4>
-                    <h2 class="title split-text">Featured Works</h2>
+                    <h4 class="sub-title">{{this.subTitle}}</h4>
+                    <h2 class="title split-text">{{this.title}}</h2>
                 </div>
             </div>
         </div>
@@ -15,48 +14,24 @@
 
     <div class="container">
         <div class="portfolio-style-three-items">
+            {{#each this.items}}
             <!-- Single Item -->
             <div class="portfolio-style-three-item">
                 <div class="row align-center">
                     <div class="col-lg-7">
-                        <img src="../../assets/img/portfolio/work02.jpg" alt="Image Not Found">
+                        <img src="{{this.image}}" alt="{{this.title}} {{this.titleBold}}">
                     </div>
                     <div class="col-lg-5">
-                        <div class="date">January 15, 2024</div>
-                        <h2><a href="#">Book <strong>Villas</strong></a></h2>
-                        <a class="btn-animation mt-10" href="#"><i class="fas fa-arrow-right"></i> <span>See Details</span></a>
+                        <div class="date">{{this.category}}</div>
+                        <h2>{{#if this.url}}<a href="{{this.url}}">{{/if}}{{this.title}} <strong>{{this.titleBold}}</strong>{{#if this.url}}</a>{{/if}}</h2>
+                        {{#if this.url}}
+                        <a class="btn-animation mt-10" href="{{this.url}}"><i class="fas fa-arrow-right"></i> <span>Lihat Detail</span></a>
+                        {{/if}}
                     </div>
                 </div>
             </div>
             <!-- Single Item -->
-            <!-- Single Item -->
-            <div class="portfolio-style-three-item">
-                <div class="row align-center">
-                    <div class="col-lg-7">
-                        <img src="../../assets/img/portfolio/work03.jpg" alt="Image Not Found">
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="date">August 24, 2024</div>
-                        <h2><a href="#">Website <strong>eCommerce </strong></a></h2>
-                        <a class="btn-animation mt-10" href="#"><i class="fas fa-arrow-right"></i> <span>See Details</span></a>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Item -->
-            <!-- Single Item -->
-            <div class="portfolio-style-three-item">
-                <div class="row align-center">
-                    <div class="col-lg-7">
-                        <img src="../../assets/img/portfolio/work01.jpg" alt="Image Not Found">
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="date">February 18, 2023</div>
-                        <h2><a href="#">Smart<strong> Desa</strong></a></h2>
-                        <a class="btn-animation mt-10" href="https://tekoala.id/digital-desa.html"><i class="fas fa-arrow-right"></i> <span>See Details</span></a>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Item -->
+            {{/each}}
         </div>
     </div>
 </div>

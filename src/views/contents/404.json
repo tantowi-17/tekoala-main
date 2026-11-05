@@ -1,0 +1,19 @@
+{
+    "page_title": "Halaman Tidak Ditemukan",
+    "pageKey": "404",
+    "base": "/",
+    "meta": {
+        "description": "Halaman yang Anda cari tidak ditemukan. Lihat program pelatihan atau layanan Tekoala.",
+        "path": "404.html",
+        "robots": "noindex, follow"
+    },
+    "error": {
+        "title": "Halaman Tidak Ditemukan",
+        "description": "Maaf, halaman yang Anda cari mungkin sudah dipindah atau tidak tersedia. Silakan kembali ke beranda atau lihat program pelatihan kami.",
+        "links": [
+            { "label": "Ke Beranda", "url": "index.html" },
+            { "label": "Lihat Program", "url": "pelatihan.html" },
+            { "label": "Hubungi Kami", "url": "kontak.html" }
+        ]
+    }
+}

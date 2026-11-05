@@ -1,0 +1,18 @@
+<!-- Start CTA
+============================================= -->
+<div class="cta-tekoala-area default-padding bg-gradient text-light">
+    <div class="container">
+        <div class="row align-center">
+            <div class="col-lg-8">
+                <h4 class="sub-title">{{this.subTitle}}</h4>
+                <h2 class="title split-text">{{this.title}}</h2>
+                <p>{{this.description}}</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a class="btn btn-md circle btn-light effect" href="https://wa.me/{{@root.phone}}?text={{urlencode @root.waText}}" target="_blank" rel="noopener"
+                    onclick="gtag('event', 'contact_whatsapp', { 'location': 'cta' });"><i class="fab fa-whatsapp"></i> {{this.button}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End CTA -->

@@ -1,0 +1,36 @@
+<!-- Start Faq
+============================================= -->
+<div class="faq-area default-padding{{#if this.bg}} {{this.bg}}{{/if}}" id="{{#if this.id}}{{this.id}}{{else}}faq{{/if}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">{{this.subTitle}}</h4>
+                    <h2 class="title split-text">{{this.title}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="faq-style-one accordion" id="faqAccordion">
+                    {{#each this.items}}
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeading{{@index}}">
+                            <button class="accordion-button{{#unless @first}} collapsed{{/unless}}" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapse{{@index}}" aria-expanded="{{#if @first}}true{{else}}false{{/if}}" aria-controls="faqCollapse{{@index}}">
+                                {{this.q}}
+                            </button>
+                        </h2>
+                        <div id="faqCollapse{{@index}}" class="accordion-collapse collapse{{#if @first}} show{{/if}}" aria-labelledby="faqHeading{{@index}}" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>{{{this.a}}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Faq -->

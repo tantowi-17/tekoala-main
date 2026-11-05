@@ -1,0 +1,104 @@
+<!-- Start Contact
+============================================= -->
+<div class="contact-area relative default-padding">
+    <div class="container">
+        <div class="contact-style-one-items">
+            <div class="row">
+                <div class="col-tact-stye-one col-lg-4">
+                    <div class="contact-style-one-info">
+                        <ul class="contact-address">
+                            <li>
+                                <a class="phone-link" href="https://wa.me/{{@root.phone}}?text={{urlencode @root.waText}}" target="_blank" rel="noopener"
+                                    onclick="gtag('event', 'contact_whatsapp', { 'location': 'contact_page' });"><i class="fab fa-whatsapp"></i> {{@root.phoneDisplay}}</a>
+                            </li>
+                            {{#each @root.footer.address}}
+                            <li>
+                                <div class="info">
+                                    {{{this.label}}}
+                                </div>
+                            </li>
+                            {{/each}}
+                            <li>
+                                <div class="info">
+                                    <h4>Email Resmi</h4>
+                                    <a href="mailto:{{@root.email}}">{{@root.email}}</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <ul class="social-link">
+                                        <li>
+                                            <a class="instagram" href="{{@root.instagram}}" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="whatsapp" href="https://wa.me/{{@root.phone}}" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-tact-stye-one col-lg-7 offset-lg-1">
+                    <div class="contact-form-style-one">
+                        <h4 class="sub-title">{{this.subTitle}}</h4>
+                        <h2 class="title">{{this.title}}</h2>
+                        <p>{{this.description}}</p>
+                        <form class="contact-form wa-form" data-phone="{{@root.phone}}" novalidate>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control" name="nama" placeholder="Nama lengkap *" type="text" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control" name="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control" name="instansi" placeholder="Instansi / Usaha (opsional)" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <select class="form-control" name="kebutuhan" required>
+                                            <option value="">Saya tertarik dengan... *</option>
+                                            {{#each this.options}}
+                                            <option value="{{this}}">{{this}}</option>
+                                            {{/each}}
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group comments">
+                                        <textarea class="form-control" name="pesan" placeholder="Ceritakan kebutuhan Anda (jadwal, jumlah peserta, target, dll.)"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit">
+                                        <i class="fab fa-whatsapp"></i> Kirim via WhatsApp
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 alert-notification">
+                                <div class="alert-msg wa-form-msg" role="alert"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Contact -->

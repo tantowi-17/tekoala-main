@@ -585,7 +585,7 @@
 		/* ==================================================
 		    Contact Form Validations
 		================================================== */
-		$('.contact-form').each(function() {
+		$('.contact-form').not('.wa-form').each(function() {
 			var formInstance = $(this);
 			formInstance.submit(function() {
 

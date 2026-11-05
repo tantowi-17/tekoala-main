@@ -1,0 +1,52 @@
+{
+    "page_title": "Kontak & Konsultasi",
+    "pageKey": "kontak",
+    "meta": {
+        "description": "Hubungi Tekoala via WhatsApp untuk daftar kelas, konsultasi jasa website & digital marketing, atau pelatihan instansi. Makassar & Mamuju Tengah.",
+        "path": "kontak.html"
+    },
+    "breadcrumb": {
+        "title": "Hubungi Kami",
+        "description": "Mau daftar kelas, butuh website, atau ingin mengadakan pelatihan? Kirim pesan, kami balas secepatnya.",
+        "current": "Kontak"
+    },
+    "contact": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Kirim Pesan ke Kami",
+        "description": "Isi form di bawah, pesan Anda akan langsung terkirim ke WhatsApp admin kami.",
+        "options": [
+            "Bootcamp Web Development",
+            "Bootcamp Digital Marketing",
+            "Bootcamp AI Specialist",
+            "Bootcamp Data Analytics",
+            "Kelas Singkat / Workshop",
+            "Pelatihan Instansi & Desa",
+            "Jasa Pembuatan Website",
+            "Jasa Digital Marketing",
+            "Lainnya"
+        ]
+    },
+    "faq": {
+        "bg": "bg-gray",
+        "subTitle": "FAQ",
+        "title": "Pertanyaan yang Sering Diajukan",
+        "items": [
+            {
+                "q": "Berapa lama admin membalas pesan?",
+                "a": "Admin kami aktif Senin-Sabtu pukul 08.00-20.00 WITA dan biasanya membalas dalam hitungan jam."
+            },
+            {
+                "q": "Apakah konsultasinya berbayar?",
+                "a": "Tidak. Konsultasi untuk pelatihan maupun proyek website dan digital marketing gratis dan tanpa komitmen."
+            },
+            {
+                "q": "Bisakah bertemu langsung?",
+                "a": "Bisa, terutama untuk area Makassar dan Mamuju Tengah. Silakan atur jadwal pertemuan lewat WhatsApp."
+            },
+            {
+                "q": "Berapa lama pembuatan website?",
+                "a": "Website company profile sekitar 1-2 minggu, toko online 3-4 minggu, dan sistem custom tergantung ruang lingkup proyek."
+            }
+        ]
+    }
+}

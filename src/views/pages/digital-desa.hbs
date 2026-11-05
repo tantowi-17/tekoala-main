@@ -1,77 +1,29 @@
 {{#> default }}
 
-    {{#if isTheme}}
-        <div class="radio-btn">
-            <div class="radio-inner"></div>
-        </div>
-    {{/if}}
 
-    <!-- Start Preloader
-    ============================================= -->
-    <div id="preloader">
-        <div class="dixor-loader-inner">
-            <div class="dixor-loader">
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-            </div>
-        </div>
-    </div>
-    <!-- preloader end -->
-
-    {{> header }}
-
-
-    <div class="smooth-scroll-container">
-
-        <!-- Start Breadcrumb
-        ============================================= -->
-        <div class="breadcrumb-area text-center" style="background-image: url(../../assets/img/shape/10.jpg);">
-            <div class="light-banner-active bg-gray bg-cover" style="background-image: url(../../assets/img/shape/6.jpg);"></div>
-            <div class="container">
-                <div class="breadcrumb-item">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <h1>Project Details</h1>
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
-                                    <li class="active">Project</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Breadcrumb -->
+        {{> components/breadcrumb breadcrumb }}
 
         <div class="project-details-items default-padding-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="project-details-thumb">
-                            <img src="../../assets/img/portfolio/banner1.png" alt="Image Not Found">
+                            <img src="../../assets/img/portfolio/banner1.jpg" alt="Tampilan website Sistem Informasi Desa Tobadak">
                         </div>
                     </div>
                     <div class="col-lg-10 offset-lg-1">
                         <div class="project-details-main-info">
                             <div class="project-single-tags">
-                                <a href="#">UX Design</a>
-                                <a href="#">Web Desa</a>
-                                <a href="#">Digitalisasi Desa</a>
+                                <a href="layanan.html#layanan">UX Design</a>
+                                <a href="layanan.html#layanan">Web Desa</a>
+                                <a href="pelatihan.html?bidang=instansi-desa#program">Digitalisasi Desa</a>
                             </div>
                             <h2 class="title">Transformasi Digitalisasi Desa</h2>
                             <div class="project-author-details mt-35">
                                 <ul>
                                     <li>
                                         <div class="left-info">
-                                            <h3>Client</h3>
+                                            <h3>Klien</h3>
                                         </div>
                                         <div class="right-info">
                                             <h3>Pemdes Tobadak</h3>
@@ -79,7 +31,7 @@
                                     </li>
                                     <li>
                                         <div class="left-info">
-                                            <h3>Desciplines Used</h3>
+                                            <h3>Disiplin</h3>
                                         </div>
                                         <div class="right-info">
                                             <p class="project-inner-tag">
@@ -89,7 +41,7 @@
                                     </li>
                                     <li>
                                         <div class="left-info">
-                                            <h3>Project Overview</h3>
+                                            <h3>Ringkasan Proyek</h3>
                                         </div>
                                         <div class="right-info">
                                             <p>
@@ -103,7 +55,7 @@
                                     </li>
                                     <li>
                                         <div class="left-info">
-                                            <h3>Project Details</h3>
+                                            <h3>Detail Proyek</h3>
                                         </div>
                                         <div class="right-info">
                                             <p>
@@ -137,8 +89,8 @@
 
                     <div class="col-lg-7">
                         <div class="thumb-grid">
-                            <img src="../../assets/img/portfolio/1.png" alt="Thumb">
-                            <img src="../../assets/img/portfolio/2.png" alt="Thumb">
+                            <img src="../../assets/img/portfolio/desa-thumb-1.jpg" alt="Halaman website Desa Tobadak">
+                            <img src="../../assets/img/portfolio/desa-thumb-2.jpg" alt="Halaman layanan website Desa Tobadak">
                         </div>
                     </div>
 
@@ -181,7 +133,7 @@
                             <div class="single-grid">
                                 <div class="item-grid-colum">
                                     <div class="left-info">
-                                        <h3><strong>01</strong> Background</h3>
+                                        <h3><strong>01</strong> Latar Belakang</h3>
                                     </div>
                                     <div class="right-info">
                                         <p>
@@ -193,13 +145,13 @@
                                         </p>
                                     </div>
                                 </div>
-                                <img src="../../assets/img/portfolio/banner2.png" alt="Image Not Found">
+                                <img src="../../assets/img/portfolio/banner2.png" alt="Proses administrasi Desa Tobadak sebelum digitalisasi">
                             </div>
 
                             <div class="single-grid">
                                 <div class="item-grid-colum">
                                     <div class="left-info">
-                                        <h3><strong>02</strong> The Challenges</h3>
+                                        <h3><strong>02</strong> Tantangan</h3>
                                     </div>
                                     <div class="right-info">
                                         <p>
@@ -218,7 +170,7 @@
                                             <li>Keterbatasan kemampuan teknologi sebagian perangkat desa dalam menggunakan sistem digital.</li>
                                             <li>Kebutuhan akan sistem yang sederhana, mudah digunakan, namun tetap sesuai dengan standar administrasi desa.</li>
                                         </ul>
-                                        <img src="../../assets/img/portfolio/port1.png" alt="Image Not Found">
+                                        <img src="../../assets/img/portfolio/port1.png" alt="Tantangan digitalisasi administrasi desa">
                                     </div>
                                 </div>
                             </div>
@@ -226,7 +178,7 @@
                             <div class="single-grid">
                                 <div class="item-grid-colum">
                                     <div class="left-info">
-                                        <h3><strong>03</strong> The Solution</h3>
+                                        <h3><strong>03</strong> Solusi</h3>
                                     </div>
 
                                     <div class="right-info">
@@ -247,7 +199,7 @@
                                             <li>Sistem dirancang sederhana dan mudah digunakan oleh perangkat desa.</li>
                                             <li>Peningkatan transparansi dan efisiensi pelayanan administrasi kepada masyarakat.</li>
                                         </ul>
-                                        <img src="../../assets/img/portfolio/port2.png" alt="Image Not Found">
+                                        <img src="../../assets/img/portfolio/port2.png" alt="Solusi sistem persuratan digital Desa Tobadak">
 
                                     </div>
                                 </div>
@@ -258,8 +210,6 @@
             </div>
         </div>
 
-        {{> footer footer}}
-    </div>
+    {{> components/cta cta }}
 
-    {{> components/floating-cht-bot}}
 {{/default }}

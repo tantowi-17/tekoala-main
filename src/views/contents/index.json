@@ -1,134 +1,410 @@
 {
-    "page_title": "Tekoala Developers",
+    "page_title": "Belajar Skill Digital & Jasa Website",
+    "pageKey": "index",
     "meta": {
-        "description": "Tekoala Homepage",
-        "keywords": "Tekoala",
-        "property": {
-            "locale": "en_US",
-            "type": "Pages",
-            "title": "Tekoala",
-            "url": "#",
-            "site_name": "Tekoala"
-        }
+        "description": "Kursus & bootcamp Web Development, Digital Marketing, AI & Data Analytics bersama trainer bersertifikasi BNSP. Online & in-house, plus jasa website bisnis.",
+        "path": "",
+        "title": "Tekoala Academy | Kursus Web, Digital Marketing, AI & Data"
     },
-    "isTheme": false,
-    "logoLight": "../../assets/img/logo-tekoala.png",
-    "logoDark": "../../assets/img/logo-dark-tekoala.png",
-    "email": "tekoaladigital@gmail.com",
-    "phone": "6282366667326",
-    "instagram": "https://www.instagram.com/tekoala_",
     "banner": {
         "bgShape1": "../../assets/img/shape/3.jpg",
         "bgShape2": "../../assets/img/shape/4.jpg",
         "heading": {
-            "left": "Tekoala",
-            "right": "Developers"
+            "left": "Belajar",
+            "right": "Digital"
         },
         "illustration": "../../assets/img/illustration/1.png",
-        "description": "<p>Delivering innovative solutions in web development, advertising, design, and data analysis. We collaborate with brands to create unique campaigns, impactful visual identities, and data-driven digital strategies that connect with the right audience. Our services include website development, creative design, digital advertising, content creation, social media optimization, and data analysis to empower smarter business decisions.</p>"
+        "label": "Tekoala Academy",
+        "description": "<p>Kuasai web development, digital marketing, AI, dan data analytics bareng mentor praktisi dan trainer bersertifikasi BNSP, lewat kurikulum berbasis proyek nyata. Untuk bisnis, kami juga siap membangun website dan menjalankan strategi digital marketing yang terukur.</p>",
+        "buttons": [
+            {
+                "label": "Lihat Program",
+                "url": "pelatihan.html#program",
+                "event": "cta_program"
+            },
+            {
+                "label": "Layanan Bisnis",
+                "url": "layanan.html",
+                "event": "cta_layanan"
+            }
+        ],
+        "stat": {
+            "value": "500",
+            "operator": "+",
+            "label": "Peserta Terlatih"
+        },
+        "h1": "Tekoala Academy: kursus dan bootcamp Web Development, Digital Marketing, AI, dan Data Analytics, serta jasa pembuatan website"
     },
     "runningSection": [
         {
-            "title": "Marketing"
+            "title": "AISpecialist"
         },
         {
-            "title": "Branding"
-        },
-        {
-            "title": "Design"
-        },
-        {
-            "title": "Development"
-        },
-        {
-            "title": "DataAnalyst"
+            "title": "DataAnalytics"
         },
         {
             "title": "WebDevelopment"
         },
         {
-            "title": "UI"
+            "title": "DigitalMarketing"
         },
         {
-            "title": "WebApp"
+            "title": "Bootcamp"
         },
         {
-            "title": "Mobile"
+            "title": "SEO"
+        },
+        {
+            "title": "MetaAds"
+        },
+        {
+            "title": "Automation"
+        },
+        {
+            "title": "CorporateTraining"
         }
     ],
-    "service": [
-        {
-            "imgRegular": "../../assets/img/icon/1.png",
-            "imgLight": "../../assets/img/icon/23.png",
-            "title": "Marketing & SEO Optimization",
-            "description": "Boost your online presence with smart marketing and SEO strategies that help your business reach the right audience.",
-            "readMore": "Read More"
-        },
-        {
-            "imgRegular": "../../assets/img/icon/2.png",
-            "imgLight": "../../assets/img/icon/24.png",
-            "title": "Mobile App & Web Development",
-            "description": "We build fast, scalable, and user-friendly mobile apps and websites tailored to your business needs, designed to deliver great.",
-            "readMore": "Read More"
-        },
-        {
-            "imgRegular": "../../assets/img/icon/3.png",
-            "imgLight": "../../assets/img/icon/25.png",
-            "title": "UI/UX Design from Professionals",
-            "description": "Clean, engaging, and user-friendly designs crafted to enhance experience and align with your brand.",
-            "readMore": "Read More"
-        },
-        {
-            "imgRegular": "../../assets/img/icon/4.png",
-            "imgLight": "../../assets/img/icon/26.png",
-            "title": "Access to the Latest Technology",
-            "description": "Stay ahead with the latest tools and technologies that drive growth and keep your business competitive.",
-            "readMore": "Read More"
-        }
-    ],
-    "about": {
-        "title": "Boost the growth development agency your branding!",
-        "description": "At Tekoala Developers, we craft digital experiences that help brands grow and stay ahead in the fast-changing digital world.\nOur team specializes in web development, design, advertising, and data analysis, combining creativity with technology to deliver solutions that truly make an impact."
-    },
-    "team": [
-        {
-            "name": "Tanto Wibowo",
-            "title": "Software Engineer",
-            "image": "../../assets/img/team/team01.jpeg"
-
-        },
-        {
-            "name": "Muhammad Awaluddin",
-            "title": "Project Manager",
-            "image": "../../assets/img/team/team04.jpeg"
-
-        },
-        {
-            "name": "Gede Wardaya",
-            "title": "Digital Marketing",
-            "image": "../../assets/img/team/team03.jpeg"
-
-        },
-        {
-            "name": "Elfrid Hasman",
-            "title": "Data Analytics",
-            "image": "../../assets/img/team/team02.jpeg"
-        }
-
-    ],
-    "footer": {
-        "address": [
+    "features": {
+        "subTitle": "Kenapa Belajar di Tekoala",
+        "title": "Belajar yang Langsung Bisa Dipakai",
+        "items": [
             {
-                "label": "<h4>Makassar</h4><p>Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan, Indonesia</p>"
+                "imgRegular": "../../assets/img/icon/1.png",
+                "imgLight": "../../assets/img/icon/23.png",
+                "title": "Mentor Praktisi",
+                "description": "Diajar trainer bersertifikasi BNSP dan praktisi yang sehari-hari mengerjakan proyek klien, bukan sekadar teori."
             },
             {
-                "label": "<h4>Mamuju</h4><p>Kec. Tobadaka, Kabupaten Mamuju Tengah, Sulawesi Barat, Indonesia</p>"
+                "imgRegular": "../../assets/img/icon/2.png",
+                "imgLight": "../../assets/img/icon/24.png",
+                "title": "Proyek Nyata",
+                "description": "Setiap kelas diakhiri studi kasus nyata: website UMKM, kampanye iklan, hingga sistem digital desa."
+            },
+            {
+                "imgRegular": "../../assets/img/icon/3.png",
+                "imgLight": "../../assets/img/icon/25.png",
+                "title": "Sertifikat & Portofolio",
+                "description": "Dapatkan sertifikat penyelesaian dan portofolio yang siap ditunjukkan ke calon klien atau perusahaan."
+            },
+            {
+                "imgRegular": "../../assets/img/icon/4.png",
+                "imgLight": "../../assets/img/icon/26.png",
+                "title": "Komunitas & Mentoring",
+                "description": "Grup diskusi alumni, sesi tanya jawab, dan pendampingan setelah kelas selesai agar tetap berkembang."
+            }
+        ]
+    },
+    "programs": {
+        "id": "program",
+        "subTitle": "Program Unggulan",
+        "title": "Pilih Jalur Belajarmu",
+        "moreUrl": "pelatihan.html",
+        "moreLabel": "Lihat Semua Program",
+        "show": [
+            {
+                "title": "Bootcamp AI Specialist",
+                "featured": true,
+                "highlight": "Program Unggulan"
+            },
+            {
+                "title": "Bootcamp Data Analytics",
+                "featured": true,
+                "highlight": "Program Unggulan"
+            },
+            {
+                "title": "Bootcamp Web Development"
+            },
+            {
+                "title": "Bootcamp Digital Marketing"
+            },
+            {
+                "title": "Pelatihan Instansi & Desa"
+            }
+        ]
+    },
+    "about": {
+        "label": "Tentang Kami",
+        "title": "Tempat belajar sekaligus partner digital Anda",
+        "description": "Tekoala lahir dari tim developer dan digital marketer yang sudah mengerjakan beragam proyek, mulai dari website bisnis, sistem booking, hingga digitalisasi desa. Pengalaman lapangan itulah yang kami bawa ke dalam kelas, supaya peserta belajar hal yang benar-benar dipakai di dunia kerja.",
+        "button": {
+            "label": "Lihat Portofolio",
+            "url": "digital-desa.html"
+        }
+    },
+    "funFact": {
+        "items": [
+            {
+                "value": "500",
+                "operator": "+",
+                "label": "Peserta Terlatih"
+            },
+            {
+                "value": "30",
+                "operator": "+",
+                "label": "Proyek Selesai"
+            },
+            {
+                "value": "15",
+                "operator": "+",
+                "label": "Instansi & Desa Mitra"
+            },
+            {
+                "value": "98",
+                "operator": "%",
+                "label": "Peserta Puas"
+            }
+        ]
+    },
+    "services": {
+        "subTitle": "Layanan untuk Bisnis",
+        "title": "Butuh Hasil, Bukan Hanya Ilmu?",
+        "items": [
+            {
+                "url": "layanan.html#layanan",
+                "icon": "../../assets/img/icon/17.png",
+                "label": "Web Development",
+                "title": "Pembuatan Website & Aplikasi",
+                "description": "Company profile, toko online, hingga sistem custom yang cepat, responsif, dan SEO-friendly.",
+                "list": [
+                    "Company Profile & Landing Page",
+                    "Toko Online / E-Commerce",
+                    "Sistem & Aplikasi Custom"
+                ],
+                "image": "../../assets/img/illustration/2.png"
+            },
+            {
+                "url": "layanan.html#layanan",
+                "icon": "../../assets/img/icon/18.png",
+                "label": "Digital Marketing",
+                "title": "Iklan, Konten & SEO",
+                "description": "Strategi digital marketing terukur untuk menjangkau pelanggan yang tepat dan meningkatkan penjualan.",
+                "list": [
+                    "Meta & Google Ads",
+                    "Social Media Management",
+                    "SEO & Optimasi Konversi"
+                ],
+                "image": "../../assets/img/illustration/3.png"
+            },
+            {
+                "url": "layanan.html#corporate",
+                "icon": "../../assets/img/icon/19.png",
+                "label": "Corporate Training",
+                "title": "Pelatihan untuk Tim Anda",
+                "description": "Program pelatihan in-house yang disusun sesuai kebutuhan instansi, desa, atau perusahaan Anda.",
+                "list": [
+                    "Kurikulum Custom",
+                    "Praktik Langsung",
+                    "Laporan Evaluasi Peserta"
+                ],
+                "image": "../../assets/img/illustration/4.png"
+            }
+        ]
+    },
+    "process": {
+        "bg": "bg-gray",
+        "subTitle": "Alur Belajar",
+        "title": "Mulai Belajar dalam 4 Langkah",
+        "items": [
+            {
+                "imgRegular": "../../assets/img/icon/5.png",
+                "imgLight": "../../assets/img/icon/27.png",
+                "title": "Konsultasi",
+                "description": "Ceritakan tujuanmu via WhatsApp, kami bantu pilih program yang paling sesuai."
+            },
+            {
+                "imgRegular": "../../assets/img/icon/6.png",
+                "imgLight": "../../assets/img/icon/28.png",
+                "title": "Daftar Kelas",
+                "description": "Amankan kursi di batch terdekat. Tersedia harga early bird dan opsi cicilan."
+            },
+            {
+                "imgRegular": "../../assets/img/icon/7.png",
+                "imgLight": "../../assets/img/icon/29.png",
+                "title": "Belajar & Praktik",
+                "description": "Ikuti sesi live bersama mentor, kerjakan tugas, dan dapatkan review personal."
+            },
+            {
+                "imgRegular": "../../assets/img/icon/8.png",
+                "imgLight": "../../assets/img/icon/30.png",
+                "title": "Proyek Akhir",
+                "description": "Selesaikan proyek nyata, presentasikan, lalu dapatkan sertifikat dan portofolio."
+            }
+        ]
+    },
+    "testimonial": {
+        "title": "Testimoni",
+        "types": [
+            "klien",
+            "alumni"
+        ]
+    },
+    "team": {
+        "subTitle": "Mentor & Tim",
+        "title": "Mentor & Tim Inti",
+        "description": "Praktisi aktif di bidang software engineering, digital marketing, data analytics, dan AI yang sehari-hari mengerjakan proyek klien.",
+        "_catatan": "Isi experience (mis. '8+ tahun · Software Engineer'), bio (1-2 kalimat), tags (2-3 keahlian), program (label + url kelas yang diajar), dan social (URL lengkap). Kolom kosong otomatis disembunyikan. stats: isi hanya dengan angka yang benar, contoh { \"value\": \"30+\", \"label\": \"Tahun pengalaman gabungan\" }.",
+        "stats": [
+            {
+                "value": "5+",
+                "label": "Tahun pengalaman mentor"
+            },
+            {
+                "value": "6+",
+                "label": "Program pelatihan"
+            },
+            {
+                "value": "7+",
+                "label": "Proyek klien"
             }
         ],
-        "logoLight": "../../assets/img/logo-tekoala.png",
-        "logoDark": "../../assets/img/logo-dark-tekoala.png",
-        "email": "tekoaladigital@gmail.com",
-        "phone": "6282366667326",
-        "instagram": "https://www.instagram.com/tekoala_"
+        "certifications": [
+            {
+                "icon": "fas fa-chalkboard-teacher",
+                "title": "Trainer Bersertifikasi BNSP",
+                "label": "Sertifikasi BNSP"
+            },
+            {
+                "icon": "fas fa-clipboard-check",
+                "title": "Asesor Kompetensi BNSP",
+                "label": "Sertifikasi BNSP"
+            },
+            {
+                "icon": "fas fa-drafting-compass",
+                "title": "Profesi Insinyur",
+                "label": "Gelar Profesi"
+            },
+            {
+                "icon": "fas fa-award",
+                "title": "Sertifikasi Praktisi",
+                "label": "Sertifikasi Industri"
+            }
+        ],
+        "items": [
+            {
+                "name": "Tanto Wibowo",
+                "title": "Software Engineer",
+                "image": "../../assets/img/team/team01.jpeg",
+                "experience": "",
+                "bio": "",
+                "tags": [],
+                "program": {
+                    "label": "Bootcamp Web Development",
+                    "url": "pelatihan.html?bidang=web-development#program"
+                },
+                "social": {
+                    "linkedin": "",
+                    "instagram": ""
+                }
+            },
+            {
+                "name": "Gede Wardaya",
+                "title": "Digital Marketing",
+                "image": "../../assets/img/team/team03.jpeg",
+                "experience": "",
+                "bio": "",
+                "tags": [],
+                "program": {
+                    "label": "Bootcamp Digital Marketing",
+                    "url": "pelatihan.html?bidang=digital-marketing#program"
+                },
+                "social": {
+                    "linkedin": "",
+                    "instagram": ""
+                }
+            },
+            {
+                "name": "Elfrid Hasman",
+                "title": "Data Analytics",
+                "image": "../../assets/img/team/team02.jpeg",
+                "experience": "",
+                "bio": "",
+                "tags": [],
+                "program": {
+                    "label": "Bootcamp Data Analytics",
+                    "url": "pelatihan.html?bidang=data#program"
+                },
+                "social": {
+                    "linkedin": "",
+                    "instagram": ""
+                }
+            },
+            {
+                "name": "Muhammad Awaluddin",
+                "title": "AI Specialist",
+                "image": "../../assets/img/team/team04.jpeg",
+                "experience": "",
+                "bio": "",
+                "tags": [],
+                "program": {
+                    "label": "Bootcamp AI Specialist",
+                    "url": "pelatihan.html?bidang=ai#program"
+                },
+                "social": {
+                    "linkedin": "",
+                    "instagram": ""
+                }
+            }
+        ]
+    },
+    "gallery": {
+        "items": [
+            {
+                "image": "../../assets/img/team/team12.jpg",
+                "title": "Pelatihan Bersama",
+                "titleBold": "Perangkat Desa",
+                "category": "Pelatihan"
+            },
+            {
+                "image": "../../assets/img/team/team13.jpg",
+                "title": "Sesi Tanya Jawab",
+                "titleBold": "Smart Desa",
+                "category": "Workshop",
+                "out": true
+            },
+            {
+                "image": "../../assets/img/team/team14.jpg",
+                "title": "Presentasi",
+                "titleBold": "Smart Desa",
+                "category": "Pelatihan"
+            },
+            {
+                "image": "../../assets/img/team/team15.jpg",
+                "title": "Sambutan",
+                "titleBold": "Kepala Desa",
+                "category": "Kegiatan"
+            }
+        ]
+    },
+    "faq": {
+        "subTitle": "FAQ",
+        "title": "Pertanyaan yang Sering Diajukan",
+        "items": [
+            {
+                "q": "Saya benar-benar pemula, apakah bisa ikut?",
+                "a": "Bisa. Bootcamp Web Development dan Digital Marketing dirancang mulai dari dasar. Yang dibutuhkan hanya laptop, koneksi internet, dan komitmen mengikuti kelas."
+            },
+            {
+                "q": "Kelasnya online atau offline?",
+                "a": "Bootcamp berjalan online lewat sesi live (Zoom/Google Meet) dan rekaman. Untuk pelatihan instansi dan desa, kami bisa datang langsung ke lokasi (in-house)."
+            },
+            {
+                "q": "Apakah ada sertifikat?",
+                "a": "Ya. Peserta yang menyelesaikan tugas dan proyek akhir akan mendapatkan sertifikat penyelesaian dari Tekoala."
+            },
+            {
+                "q": "Bisakah pembayaran dicicil?",
+                "a": "Bisa. Tersedia opsi pembayaran bertahap untuk bootcamp. Hubungi admin via WhatsApp untuk detail skema cicilan."
+            },
+            {
+                "q": "Selain pelatihan, apakah Tekoala menerima jasa pembuatan website?",
+                "a": "Ya. Kami melayani pembuatan website, aplikasi, dan jasa digital marketing untuk bisnis, UMKM, dan instansi. Lihat detailnya di halaman <a href=\"layanan.html\">Layanan Bisnis</a>."
+            }
+        ]
+    },
+    "cta": {
+        "subTitle": "Siap Mulai?",
+        "title": "Konsultasi Gratis Sekarang",
+        "description": "Bingung mulai dari mana? Ceritakan tujuan Anda, tim kami bantu rekomendasikan program atau solusi yang paling pas.",
+        "button": "Chat via WhatsApp"
     }
 }

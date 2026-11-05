@@ -1,0 +1,65 @@
+# Tekoala Academy & Digital Agency
+
+> Tekoala adalah tempat belajar skill digital sekaligus partner pengembangan website dan digital marketing untuk bisnis, UMKM, dan instansi di Indonesia.
+
+Tekoala menyediakan dua hal: (1) pelatihan dan bootcamp skill digital (web development, digital marketing, AI, data analytics) untuk individu, UMKM, perangkat desa, dan instansi; (2) jasa pembuatan website, aplikasi, dan digital marketing untuk bisnis dan instansi. Berbasis di Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan dan Kec. Tobadak, Kabupaten Mamuju Tengah, Sulawesi Barat, melayani seluruh Indonesia (online).
+
+## Program Pelatihan
+
+- **Bootcamp Web Development** (Bootcamp, 10 Minggu, level Pemula, bidang Web Development): HTML, CSS, JavaScript, React, backend & database, hingga deploy. Lulus dengan 3 proyek portofolio. Biaya: Rp 2.499.000 (normal Rp 4.999.000).
+- **Bootcamp Digital Marketing** (Bootcamp, 8 Minggu, level Pemula - Menengah, bidang Digital Marketing): Strategi konten, copywriting, Meta & TikTok Ads, Google Ads, SEO, dan analitik dengan praktik budget iklan nyata. Biaya: Rp 1.999.000 (normal Rp 3.999.000).
+- **Bootcamp AI Specialist** (Bootcamp, 6 Minggu, level Pemula - Menengah, bidang AI): Prompt engineering, AI untuk konten & riset, otomasi workflow (n8n/Zapier), hingga membangun chatbot dan AI agent sederhana. Biaya: Rp 1.799.000 (normal Rp 3.499.000).
+- **Bootcamp Data Analytics** (Bootcamp, 8 Minggu, level Pemula, bidang Data): Spreadsheet, SQL, Python dasar, dan dashboard Looker Studio/Power BI. Lulus dengan portofolio analisis data studi kasus nyata. Biaya: Rp 1.999.000 (normal Rp 3.999.000).
+- **Website Bisnis Tanpa Coding** (Kelas Singkat, 2 Minggu, level Pemula, bidang Web Development): Bangun website company profile atau toko online sendiri dengan WordPress, siap online di akhir kelas. Biaya: Rp 499.000 (normal Rp 999.000).
+- **Meta & TikTok Ads untuk UMKM** (Kelas Singkat, 2 Minggu, level Pemula, bidang Digital Marketing): Setup akun iklan, targeting, materi iklan yang menjual, dan membaca hasil kampanye untuk usaha kecil. Biaya: Rp 449.000 (normal Rp 899.000).
+- **Workshop AI untuk Konten & Produktivitas** (Workshop, 1 Hari, level Semua Level, bidang AI): Pakai AI untuk riset, menulis konten, desain, dan otomasi pekerjaan harian, langsung dipraktikkan. Biaya: Rp 249.000.
+- **Pelatihan Instansi & Desa** (In-House, 1 - 5 Hari, level Custom, bidang Instansi & Desa): Pelatihan untuk perangkat desa, dinas, sekolah, dan perusahaan. Materi, jadwal, dan lokasi menyesuaikan. Biaya: Sesuai Kebutuhan.
+
+Daftar lengkap dan filter kelas: https://tekoala.id/pelatihan.html
+
+## Layanan Bisnis
+
+- **Pembuatan Website & Aplikasi** (Web Development): Website yang cepat, responsif, aman, dan siap SEO, dibangun sesuai proses bisnis Anda. Meliputi: Company Profile & Landing Page, Toko Online / E-Commerce, Sistem Informasi & Aplikasi Custom, Website Desa & Instansi.
+- **Iklan, Konten & SEO** (Digital Marketing): Strategi pemasaran digital berbasis data untuk menjangkau calon pelanggan dan meningkatkan penjualan. Meliputi: Meta, TikTok & Google Ads, Social Media Management, SEO & Google Business Profile, Laporan Performa Bulanan.
+- **Pelatihan untuk Tim Anda** (Corporate Training): Tingkatkan kemampuan digital tim, perangkat desa, atau pegawai lewat pelatihan in-house yang praktis. Meliputi: Kurikulum Sesuai Kebutuhan, Online atau Datang ke Lokasi, Evaluasi & Laporan Peserta.
+- Paket Website Company Profile: mulai dari Rp 2jt.
+- Paket Toko Online / E-Commerce: mulai dari Rp 5jt.
+- Sistem custom (portal, aplikasi, sistem desa) mulai Rp 10jt. Paket digital marketing disusun sesuai target, minta penawaran.
+
+Detail layanan: https://tekoala.id/layanan.html
+
+## Tim
+
+- Tanto Wibowo: Software Engineer.
+- Gede Wardaya: Digital Marketing.
+- Elfrid Hasman: Data Analytics.
+- Muhammad Awaluddin: AI Specialist.
+- Kredensial tim: Trainer Bersertifikasi BNSP, Asesor Kompetensi BNSP, Profesi Insinyur, Sertifikasi Praktisi.
+
+## FAQ
+
+- **Saya benar-benar pemula, apakah bisa ikut?** Bisa. Bootcamp Web Development dan Digital Marketing dirancang mulai dari dasar. Yang dibutuhkan hanya laptop, koneksi internet, dan komitmen mengikuti kelas.
+- **Kelasnya online atau offline?** Bootcamp berjalan online lewat sesi live (Zoom/Google Meet) dan rekaman. Untuk pelatihan instansi dan desa, kami bisa datang langsung ke lokasi (in-house).
+- **Apakah ada sertifikat?** Ya. Peserta yang menyelesaikan tugas dan proyek akhir akan mendapatkan sertifikat penyelesaian dari Tekoala.
+- **Bisakah pembayaran dicicil?** Bisa. Tersedia opsi pembayaran bertahap untuk bootcamp. Hubungi admin via WhatsApp untuk detail skema cicilan.
+- **Selain pelatihan, apakah Tekoala menerima jasa pembuatan website?** Ya. Kami melayani pembuatan website, aplikasi, dan jasa digital marketing untuk bisnis, UMKM, dan instansi. Lihat detailnya di halaman Layanan Bisnis.
+- **Apa saja yang perlu disiapkan sebelum ikut kelas?** Laptop (Windows/Mac/Linux), koneksi internet yang stabil, dan waktu belajar sekitar 6-8 jam per minggu untuk bootcamp.
+- **Kapan jadwal batch berikutnya dimulai?** Jadwal batch diumumkan di Instagram dan WhatsApp kami. Hubungi admin untuk info batch terdekat dan kuota yang tersisa.
+- **Kalau saya ketinggalan sesi live bagaimana?** Semua sesi direkam dan bisa ditonton ulang. Pertanyaan tetap bisa diajukan di grup diskusi kelas.
+- **Apakah ada opsi cicilan?** Ada. Bootcamp bisa dibayar bertahap. Detail skema cicilan bisa ditanyakan ke admin via WhatsApp.
+- **Bisakah membuat pelatihan khusus untuk kantor atau desa kami?** Bisa. Kami menyusun kurikulum, durasi, dan lokasi sesuai kebutuhan instansi. Lihat Corporate & Instansi Training.
+
+## Kontak
+
+- WhatsApp: +62 823 6666 7326 (https://wa.me/6282366667326)
+- Email: tekoaladigital@gmail.com
+- Instagram: https://www.instagram.com/tekoala_
+- Form konsultasi: https://tekoala.id/kontak.html
+
+## Halaman
+
+- [Tekoala Academy | Kursus Web, Digital Marketing, AI & Data](https://tekoala.id/): Kursus & bootcamp Web Development, Digital Marketing, AI & Data Analytics bersama trainer bersertifikasi BNSP. Online & in-house, plus jasa website bisnis.
+- [Program Pelatihan Web, Digital Marketing, AI & Data](https://tekoala.id/pelatihan.html): 8 program pelatihan: bootcamp Web Development, Digital Marketing, AI Specialist, Data Analytics, kelas singkat, workshop AI, dan pelatihan instansi & desa.
+- [Jasa Website, Digital Marketing & Corporate Training](https://tekoala.id/layanan.html): Jasa pembuatan website company profile mulai Rp 2 juta, toko online, aplikasi custom, digital marketing (Meta & Google Ads, SEO), dan corporate training.
+- [Kontak & Konsultasi](https://tekoala.id/kontak.html): Hubungi Tekoala via WhatsApp untuk daftar kelas, konsultasi jasa website & digital marketing, atau pelatihan instansi. Makassar & Mamuju Tengah.
+- [Studi Kasus: Transformasi Digital Desa Tobadak](https://tekoala.id/digital-desa.html): Studi kasus Tekoala: digitalisasi administrasi dan website Desa Tobadak, Mamuju Tengah, dari persuratan digital hingga pelatihan perangkat desa.

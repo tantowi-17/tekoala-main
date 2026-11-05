@@ -37,17 +37,42 @@
         </ul>
         <p>Semua sudah termasuk desain responsif & basic SEO.</p>
     `,
+        "pelatihan": `
+        🎓 Program pelatihan Tekoala:
+        <ul>
+            <li>- <strong>Bootcamp Web Development</strong> (10 minggu)</li>
+            <li>- <strong>Bootcamp Digital Marketing</strong> (8 minggu)</li>
+            <li>- <strong>Bootcamp AI Specialist</strong> (6 minggu)</li>
+            <li>- <strong>Bootcamp Data Analytics</strong> (8 minggu)</li>
+            <li>- Kelas Singkat: Website Tanpa Coding, Meta & TikTok Ads untuk UMKM</li>
+            <li>- Workshop AI untuk Konten & Produktivitas</li>
+            <li>- Pelatihan In-House untuk Instansi & Desa</li>
+        </ul>
+        <p>Lihat detailnya di <a href="pelatihan.html">halaman Program Pelatihan</a>.</p>
+    `,
+        "bootcamp": `
+        💡 Biaya bootcamp (harga early bird):
+        <ul>
+            <li>- Bootcamp Web Development: <strong>Rp 2.499.000</strong></li>
+            <li>- Bootcamp Digital Marketing: <strong>Rp 1.999.000</strong></li>
+            <li>- Bootcamp AI Specialist: <strong>Rp 1.799.000</strong></li>
+            <li>- Bootcamp Data Analytics: <strong>Rp 1.999.000</strong></li>
+            <li>- Kelas singkat mulai <strong>Rp 249.000</strong></li>
+        </ul>
+        <p>Tersedia opsi cicilan. Tanya admin: <a href="https://wa.me/6282366667326" target="_blank"><i class="far fa-phone"></i> +62 823 6666 7326</a></p>
+    `,
+        "jadwal": `
+        📅 Jadwal batch terbaru selalu kami umumkan di Instagram <a href="https://www.instagram.com/tekoala_" target="_blank">@tekoala_</a> dan WhatsApp.<br>
+        Hubungi admin untuk info batch terdekat & sisa kuota: <a href="https://wa.me/6282366667326" target="_blank"><i class="far fa-phone"></i> +62 823 6666 7326</a>
+    `,
         "layanan": `
         📌 Layanan kami meliputi:
         <ul>
-            <li>- Web Development</li>
-            <li>- Mobile Development</li>
-            <li>- Digital Marketing</li>
-            <li>- Social Media Marketing</li>
-            <li>- Data Analyst</li>
-            <li>- Design Graphic</li>
-            <li>- UI/UX Design</li>
-            <li>- Branding</li>
+            <li>- Pelatihan & Bootcamp Digital</li>
+            <li>- Corporate & Instansi Training</li>
+            <li>- Pembuatan Website & Aplikasi</li>
+            <li>- Digital Marketing (Ads, Social Media, SEO)</li>
+            <li>- UI/UX Design & Branding</li>
             <li>Silahkan Hubungi admin kami jika ingin berkolaborasi.</li>
             <li><a href="https://wa.me/6282366667326" target="_blank"> <i class="far fa-phone"></i> +62 823 6666 7326</a>.</li>
         </ul>

@@ -23,3 +23,5 @@ require('../js/frontend/gsap-init');
 
 //Ai Assistance
 require('./ai-boot');
+// Tekoala site (form WhatsApp, anchor scroll)
+require('./site');

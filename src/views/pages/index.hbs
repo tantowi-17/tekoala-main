@@ -1,52 +1,29 @@
 {{#> default }}
 
-    {{#if isTheme}}
-    <div class="radio-btn">
-        <div class="radio-inner"></div>
-    </div>
-    {{/if}}
+    {{> components/banner banner }}
 
-    <!-- Start Preloader
-    ============================================= -->
-    <div id="preloader">
-        <div class="dixor-loader-inner">
-            <div class="dixor-loader">
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-                <span class="dixor-loader-item"></span>
-            </div>
-        </div>
-    </div>
-    <!-- preloader end -->
+    {{> components/running-section runningSection }}
 
-    {{> header }}
+    {{> components/services/service1 features }}
 
+    {{> components/programs programs }}
 
-    <div class="smooth-scroll-container">
+    {{> components/abouts/about1 about }}
 
-        {{> components/banner banner}}
+    {{> components/fun-fact funFact }}
 
-        {{> components/running-section runningSection}}
+    {{> components/services/service-hover services }}
 
-        {{> components/abouts/about1 about}}
+    {{> components/process process }}
 
-        {{> components/services/service1 service}}
+    {{> components/testimonial testimonial }}
 
-        {{> components/portfolio/portfolio1}}
+    {{> components/team team }}
 
-        {{> components/testimonial}}
+    {{> components/gallery gallery }}
 
-        {{> components/team}}
+    {{> components/faq faq }}
 
-        {{> components/gallery}}
+    {{> components/cta cta }}
 
-        {{> footer footer}}
-    </div>
-
-    {{> components/floating-cht-bot}}
 {{/default }}
