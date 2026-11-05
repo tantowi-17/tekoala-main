@@ -1,0 +1,119 @@
+{
+    "page_title": "Kebijakan Privasi",
+    "pageKey": "kebijakan-privasi",
+    "meta": {
+        "path": "kebijakan-privasi.html",
+        "description": "Kebijakan Privasi Tekoala: data apa yang kami kumpulkan, untuk apa digunakan, pihak ketiga yang terlibat, dan hak Anda sesuai UU Pelindungan Data Pribadi."
+    },
+    "breadcrumb": {
+        "title": "Kebijakan Privasi",
+        "description": "Cara kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda.",
+        "current": "Kebijakan Privasi"
+    },
+    "legal": {
+        "updated": "5 November 2026",
+        "intro": [
+            "Tekoala Academy &amp; Digital Agency (\"Tekoala\", \"kami\") menghormati privasi Anda. Kebijakan ini menjelaskan bagaimana kami memproses data pribadi saat Anda mengunjungi website <strong>tekoala.id</strong>, menghubungi kami, mendaftar kelas, atau menggunakan jasa kami, sesuai Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP).",
+            "Dengan menggunakan website dan layanan kami, Anda menyatakan telah membaca dan memahami Kebijakan Privasi ini."
+        ],
+        "sections": [
+            {
+                "heading": "Data yang Kami Kumpulkan",
+                "paragraphs": [
+                    "<strong>a. Data yang Anda berikan secara langsung</strong>, misalnya saat mengisi form kontak, mengirim pesan WhatsApp atau email, mendaftar kelas, atau memesan jasa:"
+                ],
+                "list": [
+                    "Nama lengkap, nomor WhatsApp, dan alamat email.",
+                    "Nama instansi atau usaha (opsional).",
+                    "Program atau layanan yang diminati serta isi pesan Anda.",
+                    "Data pendaftaran dan pembayaran kelas, seperti bukti transfer.",
+                    "Nama, jabatan, foto, dan ulasan untuk testimoni, hanya dengan persetujuan Anda."
+                ],
+                "after": [
+                    "<strong>b. Data yang terkumpul otomatis</strong> melalui Google Analytics: halaman yang dikunjungi, jenis perangkat dan browser, perkiraan lokasi (tingkat kota), sumber kunjungan, serta interaksi seperti klik tombol daftar, penggunaan filter kelas, dan topik pertanyaan di chatbot.",
+                    "<strong>c. Chatbot.</strong> Chatbot di website kami menjawab secara otomatis di browser Anda. Isi pesan yang Anda ketik <strong>tidak disimpan</strong> di server kami; yang kami catat hanya topik umum pertanyaan (misalnya \"harga\" atau \"jadwal\") tanpa identitas Anda."
+                ]
+            },
+            {
+                "heading": "Tujuan Penggunaan Data",
+                "list": [
+                    "Menanggapi pertanyaan dan memberikan konsultasi.",
+                    "Memproses pendaftaran kelas, pembayaran, dan penerbitan sertifikat.",
+                    "Menjalankan proyek jasa website dan digital marketing sesuai perjanjian.",
+                    "Mengirim informasi jadwal kelas atau penawaran, hanya jika Anda menyetujuinya.",
+                    "Menampilkan testimoni, hanya dengan persetujuan Anda.",
+                    "Memahami penggunaan website untuk meningkatkan konten dan layanan.",
+                    "Memenuhi kewajiban hukum, misalnya pencatatan transaksi."
+                ]
+            },
+            {
+                "heading": "Dasar Pemrosesan",
+                "paragraphs": [
+                    "Kami memproses data berdasarkan: (1) persetujuan Anda; (2) pelaksanaan perjanjian, misalnya pendaftaran kelas atau kontrak jasa; (3) kepentingan yang sah, seperti analitik website dan keamanan; serta (4) pemenuhan kewajiban hukum."
+                ]
+            },
+            {
+                "heading": "Berbagi Data dengan Pihak Ketiga",
+                "paragraphs": [
+                    "Kami <strong>tidak menjual</strong> data pribadi Anda. Data hanya dibagikan kepada pihak yang membantu operasional kami, sebatas yang diperlukan:"
+                ],
+                "list": [
+                    "<strong>WhatsApp (Meta)</strong>: form kontak dan tombol daftar membuka percakapan WhatsApp dengan pesan yang Anda setujui sebelum dikirim.",
+                    "<strong>Google Analytics (Google)</strong>: statistik kunjungan website.",
+                    "Penyedia hosting website, layanan email, dan bank atau penyedia pembayaran.",
+                    "Instansi berwenang, jika diwajibkan oleh hukum."
+                ],
+                "after": [
+                    "Pihak ketiga tersebut memproses data sesuai kebijakan privasi masing-masing."
+                ]
+            },
+            {
+                "heading": "Cookie",
+                "paragraphs": [
+                    "Google Analytics menggunakan cookie untuk membedakan pengunjung dan mengukur kunjungan. Anda dapat menolak atau menghapus cookie melalui pengaturan browser, atau memasang <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">Google Analytics Opt-out Browser Add-on</a>. Website tetap dapat digunakan tanpa cookie analitik."
+                ]
+            },
+            {
+                "heading": "Penyimpanan dan Keamanan",
+                "paragraphs": [
+                    "Data disimpan selama diperlukan untuk tujuan di atas atau selama diwajibkan oleh hukum. Data yang tidak lagi diperlukan akan kami hapus atau anonimkan. Kami menerapkan langkah pengamanan yang wajar, seperti pembatasan akses dan koneksi terenkripsi (HTTPS). Namun, tidak ada metode transmisi atau penyimpanan yang sepenuhnya bebas risiko."
+                ]
+            },
+            {
+                "heading": "Hak Anda",
+                "paragraphs": [
+                    "Sesuai UU PDP, Anda berhak untuk:"
+                ],
+                "list": [
+                    "Mendapatkan informasi tentang pemrosesan data Anda.",
+                    "Mengakses dan memperoleh salinan data pribadi Anda.",
+                    "Memperbaiki data yang tidak akurat.",
+                    "Meminta penghapusan atau pemusnahan data.",
+                    "Menarik kembali persetujuan yang telah diberikan.",
+                    "Mengajukan keberatan atas pemrosesan tertentu, termasuk pesan promosi."
+                ],
+                "after": [
+                    "Ajukan permintaan melalui email <a href=\"mailto:tekoaladigital@gmail.com\">tekoaladigital@gmail.com</a> atau WhatsApp <a href=\"https://wa.me/6282366667326\" target=\"_blank\" rel=\"noopener\">+62 823 6666 7326</a>. Kami akan menanggapi dalam jangka waktu sesuai ketentuan UU PDP."
+                ]
+            },
+            {
+                "heading": "Peserta di Bawah Umur",
+                "paragraphs": [
+                    "Calon peserta yang berusia di bawah 18 tahun harus mendaftar dengan persetujuan dan pendampingan orang tua atau wali."
+                ]
+            },
+            {
+                "heading": "Perubahan Kebijakan",
+                "paragraphs": [
+                    "Kebijakan ini dapat diperbarui sewaktu-waktu. Versi terbaru selalu tersedia di halaman ini, dengan tanggal berlaku di bagian atas."
+                ]
+            },
+            {
+                "heading": "Hubungi Kami",
+                "paragraphs": [
+                    "Pertanyaan tentang privasi dapat dikirim ke <a href=\"mailto:tekoaladigital@gmail.com\">tekoaladigital@gmail.com</a> atau WhatsApp <a href=\"https://wa.me/6282366667326\" target=\"_blank\" rel=\"noopener\">+62 823 6666 7326</a>. Alamat: Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan, dan Kec. Tobadak, Kabupaten Mamuju Tengah, Sulawesi Barat."
+                ]
+            }
+        ]
+    }
+}

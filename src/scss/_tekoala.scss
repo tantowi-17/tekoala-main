@@ -844,3 +844,89 @@ ul.useful-link.list-single li {
     justify-content: center;
     gap: 0 12px;
 }
+
+// Halaman legal (Kebijakan Privasi, Syarat & Ketentuan)
+.legal-toc {
+    position: sticky;
+    top: 120px;
+
+    h4 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    ol {
+        padding-left: 18px;
+        margin: 0;
+
+        li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        a:hover {
+            color: var(--color-primary);
+        }
+    }
+}
+
+.legal-content {
+    .legal-updated {
+        display: inline-block;
+        padding: 6px 16px;
+        border-radius: 30px;
+        background: var(--bg-gray);
+        font-size: 14px;
+        margin-bottom: 30px;
+
+        i {
+            margin-right: 6px;
+        }
+    }
+
+    section {
+        padding-top: 30px;
+        scroll-margin-top: 110px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    p,
+    li {
+        line-height: 1.8;
+    }
+
+    ul {
+        padding-left: 22px;
+        margin-bottom: 15px;
+        list-style: disc;
+
+        li {
+            margin-bottom: 6px;
+            list-style: disc outside;
+            display: list-item;
+        }
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.bg-dark .legal-content .legal-updated {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.form-consent {
+    margin: 15px 0 0;
+    font-size: 13px;
+    opacity: 0.75;
+
+    a {
+        text-decoration: underline;
+    }
+}

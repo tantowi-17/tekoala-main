@@ -1,0 +1,46 @@
+<!-- Start Legal Content
+============================================= -->
+<div class="legal-area default-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 d-none d-lg-block">
+                <nav class="legal-toc" aria-label="Daftar isi">
+                    <h4>Daftar Isi</h4>
+                    <ol>
+                        {{#each this.sections}}
+                        <li><a href="#{{slug this.heading}}">{{this.heading}}</a></li>
+                        {{/each}}
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-lg-8 offset-lg-1">
+                <article class="legal-content">
+                    <p class="legal-updated"><i class="far fa-calendar-alt"></i> Berlaku sejak {{this.updated}}</p>
+                    {{#each this.intro}}
+                    <p>{{{this}}}</p>
+                    {{/each}}
+
+                    {{#each this.sections}}
+                    <section id="{{slug this.heading}}">
+                        <h2>{{inc @index}}. {{this.heading}}</h2>
+                        {{#each this.paragraphs}}
+                        <p>{{{this}}}</p>
+                        {{/each}}
+                        {{#if this.list}}
+                        <ul>
+                            {{#each this.list}}
+                            <li>{{{this}}}</li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                        {{#each this.after}}
+                        <p>{{{this}}}</p>
+                        {{/each}}
+                    </section>
+                    {{/each}}
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Legal Content -->

@@ -108,6 +108,14 @@
             {
                 "label": "Hubungi Kami",
                 "url": "kontak.html"
+            },
+            {
+                "label": "Kebijakan Privasi",
+                "url": "kebijakan-privasi.html"
+            },
+            {
+                "label": "Syarat & Ketentuan",
+                "url": "syarat-ketentuan.html"
             }
         ]
     },

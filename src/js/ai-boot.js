@@ -155,19 +155,20 @@
 
         addMessage(message, "user");
 
-        // Track Chatbot Message Sent
-        if (typeof gtag === 'function') {
-            gtag('event', 'chatbot_message_sent', {
-                'message_text': message
-            });
-        }
-
         let reply = "default";
         for (const key in staticReplies) {
             if (message.toLowerCase().includes(key)) {
                 reply = key;
                 break;
             }
+        }
+
+        // Track Chatbot Message Sent: hanya topik, bukan isi pesan
+        // (isi pesan bisa memuat data pribadi; dilarang dikirim ke Google Analytics)
+        if (typeof gtag === 'function') {
+            gtag('event', 'chatbot_message_sent', {
+                'topic': reply
+            });
         }
 
         setTimeout(() => {
