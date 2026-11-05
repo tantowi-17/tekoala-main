@@ -1578,3 +1578,131 @@ ul.useful-link.list-single li {
         animation: none !important;
     }
 }
+
+// Galeri kegiatan: di HP jadi slider horizontal (swipe), bukan accordion bertumpuk
+@media (max-width: 991px) {
+    .accrdion-portfolio-area {
+        .accordion-portfolio-lists {
+            display: flex;
+            gap: 14px;
+            width: 100%;
+            height: auto;
+            min-height: 0;
+            margin: 0;
+            padding: 60px 20px 40px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-padding: 0 20px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            li,
+            li.out {
+                flex: 0 0 82%;
+                float: none;
+                width: auto;
+                height: 420px;
+                margin: 0;
+                padding: 24px;
+                border: none;
+                border-radius: 16px;
+                cursor: default;
+                text-align: left;
+                scroll-snap-align: start;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            li h3 {
+                display: none;
+            }
+
+            li::before {
+                height: 75%;
+                visibility: visible;
+                opacity: 1;
+            }
+
+            li::after {
+                opacity: 0;
+            }
+        }
+
+        .accordion-overlay {
+            padding: 0;
+
+            h2,
+            span {
+                transform: none;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            h2 {
+                font-size: 28px;
+                line-height: 1.15;
+                margin-bottom: 10px;
+
+                strong {
+                    margin-left: 0;
+                }
+            }
+
+            span {
+                font-size: 13px;
+                margin-bottom: 0;
+                padding-left: 50px;
+
+                &::after {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+// Testimoni: 4 kartu per baris di desktop, jadi teks & padding dirampingkan
+.testimonial-style-three-carousel {
+    .swiper-slide {
+        height: auto;
+    }
+
+    .testimonial-style-three-item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 28px 24px;
+        border-radius: 20px;
+
+        p {
+            flex: 1;
+            font-size: 16px;
+            line-height: 1.65;
+        }
+
+        .tm-provider h4 {
+            font-size: 17px;
+        }
+    }
+}
+
+// Galeri kegiatan di tablet: 2 kartu per layar
+@media (min-width: 768px) and (max-width: 991px) {
+    .accrdion-portfolio-area .accordion-portfolio-lists {
+        padding-left: 30px;
+        padding-right: 30px;
+        scroll-padding: 0 30px;
+
+        li,
+        li.out {
+            flex-basis: 46%;
+            height: 440px;
+        }
+    }
+}

@@ -279,9 +279,9 @@
                 "name": "Tanto Wibowo",
                 "title": "Software Engineer",
                 "image": "../../assets/img/team/team01.jpeg",
-                "experience": "",
-                "bio": "",
-                "tags": [],
+                "experience": "7+ tahun · Software Engineer",
+                "bio": "Insinyur profesional (IPP) yang aktif bekerja sebagai software engineer di Singapura sejak 2019, menangani platform web enterprise untuk klien internasional. Pernah menjabat CTO PT Digital Samudera Karya.",
+                "tags": ["Next.js & React", "Laravel", "AI Engineer"],
                 "program": {
                     "label": "Bootcamp Web Development",
                     "url": "pelatihan.html?bidang=web-development#program"
@@ -295,9 +295,9 @@
                 "name": "Gede Wardaya",
                 "title": "Digital Marketing",
                 "image": "../../assets/img/team/team03.jpeg",
-                "experience": "",
-                "bio": "",
-                "tags": [],
+                "experience": "7+ tahun · Digital Marketer",
+                "bio": "Trainer & Asesor BNSP, CEO LPK Mentorbox Indonesia. Berpengalaman membangun website dan menjalankan kampanye iklan digital untuk berbagai bisnis.",
+                "tags": ["Digital Advertising", "Social Media", "WordPress"],
                 "program": {
                     "label": "Bootcamp Digital Marketing",
                     "url": "pelatihan.html?bidang=digital-marketing#program"
@@ -311,9 +311,9 @@
                 "name": "Elfrid Hasman",
                 "title": "Data Analytics",
                 "image": "../../assets/img/team/team02.jpeg",
-                "experience": "",
-                "bio": "",
-                "tags": [],
+                "experience": "6+ tahun · Data Analyst",
+                "bio": "Data analyst di Telkomsel dan instruktur Power BI bersertifikasi BNSP. Mengelola kanal YouTube DataCraft by El (~5K subscriber).",
+                "tags": ["Power BI", "Excel & SQL", "Looker Studio"],
                 "program": {
                     "label": "Bootcamp Data Analytics",
                     "url": "pelatihan.html?bidang=data#program"
