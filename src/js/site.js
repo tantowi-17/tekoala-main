@@ -46,6 +46,77 @@
     });
 
     /* ==================================================
+        Event: hitung mundur, status, dan sembunyikan otomatis setelah selesai
+    ================================================== */
+    const eventEls = $('[data-event-end]');
+    if (eventEls.length) {
+        const pad = (n) => String(n).padStart(2, '0');
+        const dismissed = (key) => { try { return sessionStorage.getItem('event-notice:' + key) === '1'; } catch (e) { return false; } };
+
+        function updateEvents() {
+            const now = Date.now();
+            eventEls.each(function () {
+                const el = $(this);
+                const start = Date.parse(el.data('event-start'));
+                const end = Date.parse(el.data('event-end'));
+                const live = now >= start && now <= end;
+
+                if (now > end) {
+                    el.remove();
+                    if (!$('.event-card').length) $('#event').remove();
+                    // hero: tampilkan kartu cadangan (mentor) jika event terdekat sudah lewat
+                    if (!$('.hero-event').length) $('[data-event-fallback]').prop('hidden', false);
+                    const smoother = window.ScrollSmoother && window.ScrollSmoother.get();
+                    if (smoother) smoother.refresh();
+                    return;
+                }
+                el.toggleClass('is-live', live);
+                const status = el.find('[data-event-status]');
+                status.text(live ? 'Sedang berlangsung' : status.data('label'));
+
+                const cd = el.find('[data-countdown]');
+                if (cd.length) {
+                    let diff = Math.max(0, Math.floor((start - now) / 1000));
+                    const values = {
+                        d: pad(Math.floor(diff / 86400)),
+                        h: pad(Math.floor((diff % 86400) / 3600)),
+                        m: pad(Math.floor((diff % 3600) / 60)),
+                        s: pad(diff % 60),
+                    };
+                    $.each(values, function (unit, value) {
+                        const box = cd.find('[data-cd="' + unit + '"]');
+                        if (box.text() === value) return;
+                        box.text(value);
+                        // animasi angka berganti
+                        box.removeClass('tick');
+                        void box[0].offsetWidth;
+                        box.addClass('tick');
+                    });
+                    cd.toggle(!live);
+                }
+            });
+        }
+
+        // simpan label asli (mis. "Event Minggu ini", "Segera") sebelum status diubah
+        $('[data-event-status]').each(function () { $(this).data('label', $(this).text()); });
+
+        $('.event-notice').each(function () {
+            const el = $(this);
+            if (!dismissed(el.data('event-notice')) && Date.now() <= Date.parse(el.data('event-end'))) {
+                setTimeout(() => el.prop('hidden', false).addClass('show'), 1500);
+            }
+        });
+        $(document).on('click', '[data-event-notice-close]', function () {
+            const el = $(this).closest('.event-notice');
+            el.removeClass('show').prop('hidden', true);
+            try { sessionStorage.setItem('event-notice:' + el.data('event-notice'), '1'); } catch (e) {}
+        });
+
+        updateEvents();
+        setInterval(updateEvents, 1000);
+    }
+
+    /* ==================================================
         Filter daftar kelas (halaman Program Pelatihan)
     ================================================== */
     $('[data-program-filter]').each(function () {

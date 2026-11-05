@@ -152,6 +152,39 @@ function people(root, orgId) {
     });
 }
 
+function events(root, orgId) {
+    // hanya di beranda (tempat section event ditampilkan), event yang belum selesai
+    if (root.pageKey !== 'index') return [];
+    const items = ((root.events && root.events.items) || []).filter((e) => e.end && new Date(e.end) >= new Date());
+    return items.map((e) => {
+        const online = /online|zoom|meet/i.test(e.format || '');
+        return {
+            '@type': 'Event',
+            name: e.title,
+            description: e.description,
+            startDate: e.start,
+            endDate: e.end,
+            eventStatus: 'https://schema.org/EventScheduled',
+            eventAttendanceMode: online ? 'https://schema.org/OnlineEventAttendanceMode' : 'https://schema.org/OfflineEventAttendanceMode',
+            location: online
+                ? { '@type': 'VirtualLocation', url: `${root.siteUrl}/#event` }
+                : { '@type': 'Place', name: e.location || root.brand.name },
+            image: `${root.siteUrl}/${root.ogImage}`,
+            organizer: { '@id': orgId },
+            ...(e.speaker ? { performer: { '@type': 'Person', name: e.speaker, jobTitle: e.speakerRole } } : {}),
+            isAccessibleForFree: /gratis|free/i.test(e.price || ''),
+            offers: {
+                '@type': 'Offer',
+                price: /gratis|free/i.test(e.price || '') ? 0 : parsePrice(e.price),
+                priceCurrency: 'IDR',
+                availability: 'https://schema.org/InStock',
+                url: `${root.siteUrl}/#event`,
+            },
+            inLanguage: 'id',
+        };
+    });
+}
+
 function faqPage(root, url) {
     const items = (root.faq && root.faq.items) || [];
     if (!items.length) return null;
@@ -208,6 +241,7 @@ function buildSchema(root) {
         },
         breadcrumb(root, url),
         faqPage(root, url),
+        ...events(root, orgId),
         ...courses(root, orgId),
         ...services(root, orgId),
         ...people(root, orgId),

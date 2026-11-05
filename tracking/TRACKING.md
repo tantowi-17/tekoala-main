@@ -53,9 +53,9 @@ Isi container:
 ## 4. Atur GA4 setelah data masuk (±24 jam)
 
 1. **Key events (konversi).** Buka **Admin → Events** dan tandai sebagai *key event*:
-   - `contact_whatsapp`, `contact_form_submit`, `program_register_click`
+   - `contact_whatsapp`, `contact_form_submit`, `program_register_click`, `event_register_click`
 2. **Custom dimensions.** Supaya parameter terlihat di laporan, buka **Admin → Custom definitions → Create custom dimension** (scope: *Event*) untuk:
-   - `location`, `program`, `category`, `plan`, `interest`, `filter`, `value`, `topic`
+   - `location`, `program`, `category`, `plan`, `interest`, `filter`, `value`, `topic`, `event_name`
 
 ## 5. Google Search Console
 
@@ -100,11 +100,13 @@ Isi container:
 | `program_filter` | Memakai filter kelas | `filter` (bidang/format/level), `value` |
 | `social_click` | Klik ikon sosial di footer | `platform` |
 | `cta_program`, `cta_layanan` | Klik tombol di hero beranda | `location`: banner |
+| `event_register_click` | Klik daftar di kartu event | `event_name` |
+| `event_notice_click` | Klik "Lihat" di notifikasi event | `event_name` |
 | `chatbot_toggle` | Buka/tutup chatbot | `action`: open/close |
 | `chatbot_message_sent` | Mengirim pertanyaan di chatbot | `topic` (topik saja, **bukan** isi pesan) |
 | `chatbot_suggestion_click` | Klik saran pertanyaan chatbot | `suggestion_text` |
 
-**Konversi (lead):** `contact_whatsapp`, `contact_form_submit`, `program_register_click`, `pricing_click`.
+**Konversi (lead):** `contact_whatsapp`, `contact_form_submit`, `program_register_click`, `pricing_click`, `event_register_click`.
 
 ## Untuk developer
 

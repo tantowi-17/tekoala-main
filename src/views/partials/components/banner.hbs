@@ -34,15 +34,46 @@
                 </div>
             </div>
             <div class="col-xl-4 offset-xl-1">
-                <div class="card-style-one">
-                    <div class="bottom">
-                        <div class="fun-fact">
-                            <div class="counter">
-                                <div class="timer">{{this.stat.value}}</div>
-                                <div class="operator">{{this.stat.operator}}</div>
+                <div class="card-style-one hero-card{{#if (hasUpcomingEvents @root.events)}} has-speaker{{/if}}">
+                    {{#with (upcomingEvents @root.events) as |list|}}
+                    {{#each list}}
+                    {{#if @first}}
+                    <!-- Event terdekat (otomatis hilang setelah selesai, diganti kartu mentor) -->
+                    <div class="hero-event" data-event-start="{{this.start}}" data-event-end="{{this.end}}">
+                        <div class="hero-speaker">
+                            {{#if this.speakerImage}}<img class="hero-speaker-photo" src="{{this.speakerImage}}" alt="{{this.speaker}}, {{this.speakerRole}}">{{/if}}
+                            <div class="hero-speaker-name">
+                                <span>Pembicara</span>
+                                <strong>{{this.speaker}}</strong>
+                                <small>{{this.speakerRole}}</small>
                             </div>
-                            <span class="medium">{{this.stat.label}}</span>
                         </div>
+                        <span class="hero-event-label"><span class="dot" aria-hidden="true"></span><span data-event-status>Event {{this.dayLabel}} ini</span></span>
+                        <h3>{{this.title}}</h3>
+                        <p class="hero-event-when"><i class="far fa-calendar-alt"></i> {{this.dayLabel}}, {{isoDay this.start}} {{isoMonth this.start}} · {{this.timeLabel}}</p>
+                        <div class="hero-countdown" data-countdown="{{this.start}}">
+                            <div><strong data-cd="d">--</strong><span>hari</span></div>
+                            <div><strong data-cd="h">--</strong><span>jam</span></div>
+                            <div><strong data-cd="m">--</strong><span>menit</span></div>
+                            <div><strong data-cd="s">--</strong><span>detik</span></div>
+                        </div>
+                        <a class="hero-event-cta" href="#event" data-track="event_notice_click" data-track-event-name="{{this.title}}" data-track-location="hero">
+                            Daftar {{this.price}} <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                    {{/with}}
+
+                    <!-- Cadangan saat tidak ada event: mentor & BNSP -->
+                    <div class="hero-fallback" data-event-fallback{{#if (hasUpcomingEvents @root.events)}} hidden{{/if}}>
+                        <div class="hero-avatars">
+                            {{#each @root.team.items}}
+                            <img src="{{this.image}}" alt="{{this.name}}" style="--i: {{@index}}">
+                            {{/each}}
+                        </div>
+                        <h3>Diajar Trainer Bersertifikasi BNSP &amp; Praktisi Aktif</h3>
+                        <a class="hero-event-cta" href="#mentor">Kenali Mentor <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

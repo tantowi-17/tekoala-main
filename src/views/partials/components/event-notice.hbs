@@ -1,0 +1,20 @@
+{{!-- Di beranda event sudah tampil di kartu hero, jadi notifikasi tidak ditampilkan --}}
+{{#unless (eq @root.pageKey "index")}}
+{{#with (upcomingEvents @root.events) as |list|}}
+{{#each list}}
+{{#if @first}}
+<!-- Notifikasi event (semua halaman), ditampilkan via JS jika belum lewat & belum ditutup -->
+<div class="event-notice" data-event-notice="{{this.start}}" data-event-start="{{this.start}}" data-event-end="{{this.end}}" role="status" hidden>
+    <span class="event-notice-dot" aria-hidden="true"></span>
+    <div class="event-notice-text">
+        <span data-event-status>Event {{this.dayLabel}} ini</span>
+        <strong>{{this.title}}</strong>
+        <small>{{this.dateLabel}} · {{this.timeLabel}} · {{this.price}}</small>
+    </div>
+    <a href="index.html#event" class="event-notice-link" data-track="event_notice_click" data-track-event-name="{{this.title}}">Lihat</a>
+    <button type="button" class="event-notice-close" aria-label="Tutup notifikasi event" data-event-notice-close><i class="fas fa-times"></i></button>
+</div>
+{{/if}}
+{{/each}}
+{{/with}}
+{{/unless}}

@@ -307,5 +307,27 @@
         "_catatan": "Isi setelah membuat akun. gtmId: dari tagmanager.google.com (format GTM-XXXXXXX). GA4, Google Ads, dan Meta Pixel diatur DI DALAM GTM (lihat TRACKING.md), bukan di sini. googleSiteVerification: isi kode 'content' dari meta tag verifikasi Google Search Console (opsional jika verifikasi via DNS/GTM). Kosongkan untuk menonaktifkan.",
         "gtmId": "",
         "googleSiteVerification": ""
+    },
+    "events": {
+        "_catatan": "Event tampil otomatis di beranda + notifikasi semua halaman selama belum selesai (dicek di browser pengunjung, jadi hilang sendiri setelah 'end' walau tidak build ulang). start/end format ISO dengan zona waktu: +08:00 = WITA, +07:00 = WIB. Hapus/biarkan event lama, tidak masalah.",
+        "items": [
+            {
+                "title": "Sharing Session: Data Analyst",
+                "description": "Ngobrol santai seputar dunia data analyst: tools yang dipakai sehari-hari, contoh studi kasus nyata, dan cara memulai karier di bidang data.",
+                "speaker": "Elfrid Hasman",
+                "speakerRole": "Data Analytics",
+                "speakerImage": "../../assets/img/team/team02.jpeg",
+                "start": "2026-11-08T19:00:00+08:00",
+                "end": "2026-11-08T21:00:00+08:00",
+                "dayLabel": "Minggu",
+                "dateLabel": "8 November 2026",
+                "timeLabel": "19.00 – 21.00 WITA",
+                "format": "Online (Zoom / Google Meet)",
+                "price": "Gratis",
+                "audience": "Internal komunitas Tekoala",
+                "category": "data",
+                "cta": "Daftar via WhatsApp"
+            }
+        ]
     }
 }

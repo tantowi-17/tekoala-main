@@ -74,6 +74,13 @@ class SeoFilesPlugin {
         out.push(`> ${g.brand.description}`, '');
         out.push(`Tekoala menyediakan dua hal: (1) pelatihan dan bootcamp skill digital (web development, digital marketing, AI, data analytics) untuk individu, UMKM, perangkat desa, dan instansi; (2) jasa pembuatan website, aplikasi, dan digital marketing untuk bisnis dan instansi. Berbasis di ${(g.locations || []).map((l) => `${l.area}, ${l.locality}, ${l.region}`).join(' dan ')}, melayani seluruh Indonesia (online).`, '');
 
+        const upcoming = ((g.events && g.events.items) || []).filter((e) => e.end && new Date(e.end) >= new Date());
+        if (upcoming.length) {
+            out.push('## Event Mendatang', '');
+            upcoming.forEach((e) => out.push(`- **${e.title}** bersama ${e.speaker} (${e.speakerRole}): ${e.dayLabel}, ${e.dateLabel}, ${e.timeLabel}. ${e.format}. ${e.price}${e.audience ? ` (${e.audience})` : ''}. ${e.description} Daftar via WhatsApp https://wa.me/${g.phone}.`));
+            out.push('');
+        }
+
         out.push('## Program Pelatihan', '');
         resolvePrograms(pel.programs, g.programCatalog).forEach((p) => {
             const price = p.priceNormal ? `${p.price} (normal ${p.priceNormal})` : p.price;

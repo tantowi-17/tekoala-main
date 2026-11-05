@@ -28,11 +28,6 @@
                 "event": "cta_layanan"
             }
         ],
-        "stat": {
-            "value": "500",
-            "operator": "+",
-            "label": "Peserta Terlatih"
-        },
         "h1": "Tekoala Academy: kursus dan bootcamp Web Development, Digital Marketing, AI, dan Data Analytics, serta jasa pembuatan website"
     },
     "runningSection": [
@@ -344,7 +339,8 @@
                     "instagram": ""
                 }
             }
-        ]
+        ],
+        "id": "mentor"
     },
     "gallery": {
         "items": [

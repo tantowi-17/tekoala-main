@@ -4,6 +4,10 @@
 
 Tekoala menyediakan dua hal: (1) pelatihan dan bootcamp skill digital (web development, digital marketing, AI, data analytics) untuk individu, UMKM, perangkat desa, dan instansi; (2) jasa pembuatan website, aplikasi, dan digital marketing untuk bisnis dan instansi. Berbasis di Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan dan Kec. Tobadak, Kabupaten Mamuju Tengah, Sulawesi Barat, melayani seluruh Indonesia (online).
 
+## Event Mendatang
+
+- **Sharing Session: Data Analyst** bersama Elfrid Hasman (Data Analytics): Minggu, 8 November 2026, 19.00 – 21.00 WITA. Online (Zoom / Google Meet). Gratis (Internal komunitas Tekoala). Ngobrol santai seputar dunia data analyst: tools yang dipakai sehari-hari, contoh studi kasus nyata, dan cara memulai karier di bidang data. Daftar via WhatsApp https://wa.me/6282366667326.
+
 ## Program Pelatihan
 
 - **Bootcamp Web Development** (Bootcamp, 10 Minggu, level Pemula, bidang Web Development): HTML, CSS, JavaScript, React, backend & database, hingga deploy. Lulus dengan 3 proyek portofolio. Biaya: Rp 2.499.000 (normal Rp 4.999.000).

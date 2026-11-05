@@ -1,0 +1,59 @@
+<!-- Start Event Mendatang
+============================================= -->
+{{#with (upcomingEvents @root.events) as |list|}}
+{{#if list.length}}
+<div class="event-area default-padding-top" id="event">
+    <div class="container">
+        <div class="site-heading text-center">
+            <h4 class="sub-title">Event Mendatang</h4>
+            <h2 class="title split-text">Jangan Sampai Ketinggalan</h2>
+        </div>
+        {{#each list}}
+        <!-- Single Event -->
+        <article class="event-card" data-event-start="{{this.start}}" data-event-end="{{this.end}}">
+            <div class="event-date" aria-hidden="true">
+                <span class="day">{{isoDay this.start}}</span>
+                <span class="month">{{isoMonth this.start}}</span>
+                <span class="weekday">{{this.dayLabel}}</span>
+            </div>
+            <div class="event-info">
+                <span class="event-status" data-event-status>Segera</span>
+                <h3>{{this.title}}</h3>
+                <p>{{this.description}}</p>
+                <ul class="event-meta">
+                    <li><i class="far fa-calendar-alt"></i> {{this.dayLabel}}, {{this.dateLabel}}</li>
+                    <li><i class="far fa-clock"></i> {{this.timeLabel}}</li>
+                    <li><i class="fas fa-video"></i> {{this.format}}</li>
+                    <li><i class="fas fa-ticket-alt"></i> {{this.price}}{{#if this.audience}} · {{this.audience}}{{/if}}</li>
+                </ul>
+            </div>
+            <div class="event-side">
+                <div class="event-speaker">
+                    {{#if this.speakerImage}}<img src="{{this.speakerImage}}" alt="{{this.speaker}}" loading="lazy">{{/if}}
+                    <div>
+                        <span>Pembicara</span>
+                        <strong>{{this.speaker}}</strong>
+                        <small>{{this.speakerRole}}</small>
+                    </div>
+                </div>
+                <div class="event-countdown" data-countdown="{{this.start}}" aria-live="off">
+                    <div><strong data-cd="d">--</strong><span>Hari</span></div>
+                    <div><strong data-cd="h">--</strong><span>Jam</span></div>
+                    <div><strong data-cd="m">--</strong><span>Menit</span></div>
+                    <div><strong data-cd="s">--</strong><span>Detik</span></div>
+                </div>
+                <a class="btn btn-sm circle btn-gradient effect event-btn"
+                    href="https://wa.me/{{@root.phone}}?text={{urlencode (concat 'Halo Tekoala, saya mau ikut ' this.title ' (' this.dayLabel ', ' this.dateLabel ' ' this.timeLabel ').')}}"
+                    target="_blank" rel="noopener"
+                    data-track="event_register_click" data-track-event-name="{{this.title}}">
+                    <i class="fab fa-whatsapp"></i> {{#if this.cta}}{{this.cta}}{{else}}Daftar Sekarang{{/if}}
+                </a>
+            </div>
+        </article>
+        <!-- End Single Event -->
+        {{/each}}
+    </div>
+</div>
+{{/if}}
+{{/with}}
+<!-- End Event Mendatang -->

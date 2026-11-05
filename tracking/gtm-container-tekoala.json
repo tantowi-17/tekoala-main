@@ -225,6 +225,21 @@
                     "value": "{{DLV - suggestion_text}}"
                   }
                 ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "event_name"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - event_name}}"
+                  }
+                ]
               }
             ]
           }
@@ -254,7 +269,7 @@
               {
                 "type": "TEMPLATE",
                 "key": "arg1",
-                "value": "^(contact_whatsapp|contact_form_submit|program_register_click|pricing_click|program_filter|social_click|cta_program|cta_layanan|chatbot_toggle|chatbot_message_sent|chatbot_suggestion_click)$"
+                "value": "^(contact_whatsapp|contact_form_submit|program_register_click|pricing_click|program_filter|social_click|cta_program|cta_layanan|chatbot_toggle|chatbot_message_sent|chatbot_suggestion_click|event_register_click|event_notice_click)$"
               }
             ]
           }
@@ -278,7 +293,7 @@
               {
                 "type": "TEMPLATE",
                 "key": "arg1",
-                "value": "^(contact_whatsapp|contact_form_submit|program_register_click|pricing_click)$"
+                "value": "^(contact_whatsapp|contact_form_submit|program_register_click|pricing_click|event_register_click)$"
               }
             ]
           }
@@ -561,6 +576,30 @@
             "type": "TEMPLATE",
             "key": "name",
             "value": "suggestion_text"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "variableId": "100",
+        "name": "DLV - event_name",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "event_name"
           }
         ]
       }

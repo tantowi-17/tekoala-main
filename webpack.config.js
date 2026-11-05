@@ -161,6 +161,14 @@ module.exports = {
                     },
                     json: (context) => JSON.stringify(context),
                     eq: (a, b) => a === b,
+                    // event yang belum selesai saat build (browser juga menyembunyikan event lewat)
+                    upcomingEvents: (events) => ((events && events.items) || [])
+                        .filter((e) => e && e.end && new Date(e.end) >= new Date())
+                        .sort((a, b) => new Date(a.start) - new Date(b.start)),
+                    hasUpcomingEvents: (events) => ((events && events.items) || []).some((e) => e && e.end && new Date(e.end) >= new Date()),
+                    // ambil tanggal/bulan langsung dari string ISO agar tidak bergeser zona waktu
+                    isoDay: (iso) => String(iso || '').slice(8, 10),
+                    isoMonth: (iso) => ['JAN', 'FEB', 'MAR', 'APR', 'MEI', 'JUN', 'JUL', 'AGU', 'SEP', 'OKT', 'NOV', 'DES'][parseInt(String(iso || '').slice(5, 7), 10) - 1] || '',
                     // structured data schema.org untuk halaman aktif
                     jsonLd: (options) => buildSchema(options.data.root),
                     programList: (section, options) => resolvePrograms(section, options.data.root.programCatalog),
