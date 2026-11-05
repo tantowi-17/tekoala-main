@@ -47,18 +47,36 @@
     <!-- Plugins CSS -->
     <link href="../../scss/styles.scss" rel="stylesheet" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R91WNCMHE4"></script>
+    {{#if tracking.googleSiteVerification}}
+    <meta name="google-site-verification" content="{{ tracking.googleSiteVerification }}" />
+    {{/if}}
+
+    <!-- dataLayer + trackEvent(): semua event website dikirim ke sini, lalu diteruskan GTM -->
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-R91WNCMHE4');
+        window.trackEvent = function (name, params) {
+            window.dataLayer.push(Object.assign({ event: name }, params || {}));
+            if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) console.debug('[track]', name, params || {});
+        };
     </script>
+    {{#if tracking.gtmId}}
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{ tracking.gtmId }}');</script>
+    <!-- End Google Tag Manager -->
+    {{/if}}
 </head>
 
 <body class="bg-dark">
+    {{#if tracking.gtmId}}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ tracking.gtmId }}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {{/if}}
 
     {{#if isTheme}}
     <div class="radio-btn">

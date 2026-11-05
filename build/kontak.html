@@ -46,14 +46,14 @@
     <!-- Plugins CSS -->
     <link href="assets/css/styles.css" rel="stylesheet" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R91WNCMHE4"></script>
+
+    <!-- dataLayer + trackEvent(): semua event website dikirim ke sini, lalu diteruskan GTM -->
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-R91WNCMHE4');
+        window.trackEvent = function (name, params) {
+            window.dataLayer.push(Object.assign({ event: name }, params || {}));
+            if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) console.debug('[track]', name, params || {});
+        };
     </script>
 </head>
 
@@ -101,7 +101,7 @@
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <div class="left-info">
                             <p><strong>Konsultasi</strong> <a href="https://wa.me/6282366667326?text=Halo%20Tekoala%2C%20saya%20mau%20tanya%20tentang%20program%20pelatihan." target="_blank" rel="noopener"
-                                onclick="gtag('event', 'contact_whatsapp', { 'location': 'header' });">+62 823 6666 7326</a></p>
+                                data-track="contact_whatsapp" data-track-location="header">+62 823 6666 7326</a></p>
                         </div>
                         <div class="right-info">
                             <ul>
@@ -247,7 +247,7 @@
                                         <ul class="contact-address">
                                             <li>
                                                 <a class="phone-link" href="https://wa.me/6282366667326?text=Halo%20Tekoala%2C%20saya%20mau%20tanya%20tentang%20program%20pelatihan." target="_blank" rel="noopener"
-                                                    onclick="gtag('event', 'contact_whatsapp', { 'location': 'contact_page' });"><i class="fab fa-whatsapp"></i> +62 823 6666 7326</a>
+                                                    data-track="contact_whatsapp" data-track-location="contact_page"><i class="fab fa-whatsapp"></i> +62 823 6666 7326</a>
                                             </li>
                                             <li>
                                                 <div class="info">
@@ -477,7 +477,7 @@
                                         </li>
                                         <li>
                                             <a href="https://wa.me/6282366667326?text=Halo%20Tekoala%2C%20saya%20mau%20tanya%20tentang%20program%20pelatihan." target="_blank" rel="noopener"
-                                                onclick="gtag('event', 'contact_whatsapp', { 'location': 'footer' });">
+                                                data-track="contact_whatsapp" data-track-location="footer">
                                                 +62 823 6666 7326
                                             </a>
                                         </li>
@@ -497,13 +497,13 @@
                             <div class="col-lg-6">
                                 <ul class="footer-social">
                                     <li><a href="https://www.instagram.com/tekoala_" target="_blank" rel="noopener" aria-label="Instagram"
-                                            onclick="gtag('event', 'social_click', { 'platform': 'instagram' });"><i
+                                            data-track="social_click" data-track-platform="instagram"><i
                                                 class="fab fa-instagram"></i></a></li>
                                     <li><a href="https://wa.me/6282366667326" target="_blank" rel="noopener" aria-label="WhatsApp"
-                                            onclick="gtag('event', 'social_click', { 'platform': 'whatsapp' });"><i
+                                            data-track="social_click" data-track-platform="whatsapp"><i
                                                 class="fab fa-whatsapp"></i></a></li>
                                     <li><a href="mailto:tekoaladigital@gmail.com" aria-label="Email"
-                                            onclick="gtag('event', 'social_click', { 'platform': 'email' });"><i
+                                            data-track="social_click" data-track-platform="email"><i
                                                 class="far fa-envelope"></i></a></li>
                                 </ul>
                             </div>

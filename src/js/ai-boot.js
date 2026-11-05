@@ -15,11 +15,7 @@
             : '<i class="far fa-envelope"></i>';
 
         // Track Chatbot Toggle
-        if (typeof gtag === 'function') {
-            gtag('event', 'chatbot_toggle', {
-                'action': isHidden ? 'open' : 'close'
-            });
-        }
+        trackEvent('chatbot_toggle', { action: isHidden ? 'open' : 'close' });
     });
 
     const staticReplies = {
@@ -165,11 +161,7 @@
 
         // Track Chatbot Message Sent: hanya topik, bukan isi pesan
         // (isi pesan bisa memuat data pribadi; dilarang dikirim ke Google Analytics)
-        if (typeof gtag === 'function') {
-            gtag('event', 'chatbot_message_sent', {
-                'topic': reply
-            });
-        }
+        trackEvent('chatbot_message_sent', { topic: reply });
 
         setTimeout(() => {
             addMessage(staticReplies[reply], "ai");
@@ -198,11 +190,7 @@
             sendMessage(question);
 
             // Track Suggestion Click
-            if (typeof gtag === 'function') {
-                gtag('event', 'chatbot_suggestion_click', {
-                    'suggestion_text': question
-                });
-            }
+            trackEvent('chatbot_suggestion_click', { suggestion_text: question });
         });
     });
 })(jQuery);

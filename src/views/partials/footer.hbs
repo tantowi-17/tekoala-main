@@ -43,7 +43,7 @@
                             </li>
                             <li>
                                 <a href="https://wa.me/{{phone}}?text={{urlencode waText}}" target="_blank" rel="noopener"
-                                    onclick="gtag('event', 'contact_whatsapp', { 'location': 'footer' });">
+                                    data-track="contact_whatsapp" data-track-location="footer">
                                     {{phoneDisplay}}
                                 </a>
                             </li>
@@ -63,13 +63,13 @@
                 <div class="col-lg-6">
                     <ul class="footer-social">
                         <li><a href="{{instagram}}" target="_blank" rel="noopener" aria-label="Instagram"
-                                onclick="gtag('event', 'social_click', { 'platform': 'instagram' });"><i
+                                data-track="social_click" data-track-platform="instagram"><i
                                     class="fab fa-instagram"></i></a></li>
                         <li><a href="https://wa.me/{{phone}}" target="_blank" rel="noopener" aria-label="WhatsApp"
-                                onclick="gtag('event', 'social_click', { 'platform': 'whatsapp' });"><i
+                                data-track="social_click" data-track-platform="whatsapp"><i
                                     class="fab fa-whatsapp"></i></a></li>
                         <li><a href="mailto:{{email}}" aria-label="Email"
-                                onclick="gtag('event', 'social_click', { 'platform': 'email' });"><i
+                                data-track="social_click" data-track-platform="email"><i
                                     class="far fa-envelope"></i></a></li>
                     </ul>
                 </div>

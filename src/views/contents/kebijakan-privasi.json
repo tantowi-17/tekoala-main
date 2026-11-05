@@ -50,7 +50,8 @@
                 "heading": "Dasar Pemrosesan",
                 "paragraphs": [
                     "Kami memproses data berdasarkan: (1) persetujuan Anda; (2) pelaksanaan perjanjian, misalnya pendaftaran kelas atau kontrak jasa; (3) kepentingan yang sah, seperti analitik website dan keamanan; serta (4) pemenuhan kewajiban hukum."
-                ]
+                ],
+                "list": []
             },
             {
                 "heading": "Berbagi Data dengan Pihak Ketiga",
@@ -59,7 +60,7 @@
                 ],
                 "list": [
                     "<strong>WhatsApp (Meta)</strong>: form kontak dan tombol daftar membuka percakapan WhatsApp dengan pesan yang Anda setujui sebelum dikirim.",
-                    "<strong>Google Analytics (Google)</strong>: statistik kunjungan website.",
+                    "<strong>Google Tag Manager dan Google Analytics (Google)</strong>: pengelolaan tag dan statistik kunjungan website.",
                     "Penyedia hosting website, layanan email, dan bank atau penyedia pembayaran.",
                     "Instansi berwenang, jika diwajibkan oleh hukum."
                 ],
@@ -71,13 +72,15 @@
                 "heading": "Cookie",
                 "paragraphs": [
                     "Google Analytics menggunakan cookie untuk membedakan pengunjung dan mengukur kunjungan. Anda dapat menolak atau menghapus cookie melalui pengaturan browser, atau memasang <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">Google Analytics Opt-out Browser Add-on</a>. Website tetap dapat digunakan tanpa cookie analitik."
-                ]
+                ],
+                "list": []
             },
             {
                 "heading": "Penyimpanan dan Keamanan",
                 "paragraphs": [
                     "Data disimpan selama diperlukan untuk tujuan di atas atau selama diwajibkan oleh hukum. Data yang tidak lagi diperlukan akan kami hapus atau anonimkan. Kami menerapkan langkah pengamanan yang wajar, seperti pembatasan akses dan koneksi terenkripsi (HTTPS). Namun, tidak ada metode transmisi atau penyimpanan yang sepenuhnya bebas risiko."
-                ]
+                ],
+                "list": []
             },
             {
                 "heading": "Hak Anda",
@@ -100,19 +103,22 @@
                 "heading": "Peserta di Bawah Umur",
                 "paragraphs": [
                     "Calon peserta yang berusia di bawah 18 tahun harus mendaftar dengan persetujuan dan pendampingan orang tua atau wali."
-                ]
+                ],
+                "list": []
             },
             {
                 "heading": "Perubahan Kebijakan",
                 "paragraphs": [
                     "Kebijakan ini dapat diperbarui sewaktu-waktu. Versi terbaru selalu tersedia di halaman ini, dengan tanggal berlaku di bagian atas."
-                ]
+                ],
+                "list": []
             },
             {
                 "heading": "Hubungi Kami",
                 "paragraphs": [
                     "Pertanyaan tentang privasi dapat dikirim ke <a href=\"mailto:tekoaladigital@gmail.com\">tekoaladigital@gmail.com</a> atau WhatsApp <a href=\"https://wa.me/6282366667326\" target=\"_blank\" rel=\"noopener\">+62 823 6666 7326</a>. Alamat: Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan, dan Kec. Tobadak, Kabupaten Mamuju Tengah, Sulawesi Barat."
-                ]
+                ],
+                "list": []
             }
         ]
     }

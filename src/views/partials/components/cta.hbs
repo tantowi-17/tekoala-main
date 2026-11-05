@@ -10,7 +10,7 @@
             </div>
             <div class="col-lg-4 text-lg-end">
                 <a class="btn btn-md circle btn-light effect" href="https://wa.me/{{@root.phone}}?text={{urlencode @root.waText}}" target="_blank" rel="noopener"
-                    onclick="gtag('event', 'contact_whatsapp', { 'location': 'cta' });"><i class="fab fa-whatsapp"></i> {{this.button}}</a>
+                    data-track="contact_whatsapp" data-track-location="cta"><i class="fab fa-whatsapp"></i> {{this.button}}</a>
             </div>
         </div>
     </div>

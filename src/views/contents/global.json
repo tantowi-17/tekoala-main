@@ -302,5 +302,10 @@
                 "cta": "Konsultasi Gratis"
             }
         ]
+    },
+    "tracking": {
+        "_catatan": "Isi setelah membuat akun. gtmId: dari tagmanager.google.com (format GTM-XXXXXXX). GA4, Google Ads, dan Meta Pixel diatur DI DALAM GTM (lihat TRACKING.md), bukan di sini. googleSiteVerification: isi kode 'content' dari meta tag verifikasi Google Search Console (opsional jika verifikasi via DNS/GTM). Kosongkan untuk menonaktifkan.",
+        "gtmId": "",
+        "googleSiteVerification": ""
     }
 }

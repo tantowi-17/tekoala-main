@@ -2,6 +2,22 @@
     "use strict";
 
     /* ==================================================
+        Tracking: klik elemen ber-atribut data-track dikirim ke dataLayer (GTM).
+        Contoh: <a data-track="contact_whatsapp" data-track-location="header">
+        -> { event: "contact_whatsapp", location: "header" }
+    ================================================== */
+    $(document).on('click', '[data-track]', function () {
+        const params = {};
+        $.each(this.dataset, function (key, value) {
+            if (key === 'track' || key.indexOf('track') !== 0) return;
+            // trackSuggestionText -> suggestion_text
+            const name = key.slice(5).replace(/^[A-Z]/, (c) => c.toLowerCase()).replace(/[A-Z]/g, (c) => '_' + c.toLowerCase());
+            params[name] = value;
+        });
+        trackEvent(this.dataset.track, params);
+    });
+
+    /* ==================================================
         Form kontak -> WhatsApp
     ================================================== */
     $('.wa-form').on('submit', function (e) {
@@ -23,9 +39,7 @@
         if (val('pesan')) lines.push('', val('pesan'));
         if (val('email')) lines.push('', 'Email: ' + val('email'));
 
-        if (typeof gtag === 'function') {
-            gtag('event', 'contact_form_submit', { 'interest': val('kebutuhan') });
-        }
+        trackEvent('contact_form_submit', { interest: val('kebutuhan') });
 
         msg.addClass('success').text('Membuka WhatsApp...');
         window.open('https://wa.me/' + form.data('phone') + '?text=' + encodeURIComponent(lines.join('\n')), '_blank');
@@ -101,11 +115,11 @@
         chips.on('click', function () {
             setCategory($(this).data('filter-category'));
             apply();
-            if (typeof gtag === 'function' && category) gtag('event', 'program_filter', { 'filter': 'bidang', 'value': category });
+            if (category) trackEvent('program_filter', { filter: 'bidang', value: category });
         });
         format.add(level).on('change', function () {
             apply();
-            if (typeof gtag === 'function' && this.value) gtag('event', 'program_filter', { 'filter': this === format[0] ? 'format' : 'level', 'value': this.value });
+            if (this.value) trackEvent('program_filter', { filter: this === format[0] ? 'format' : 'level', value: this.value });
         });
         search.on('input', function () {
             clearTimeout(searchTimer);

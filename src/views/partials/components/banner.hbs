@@ -27,7 +27,7 @@
                         {{{this.description}}}
                         <div class="banner-actions">
                             {{#each this.buttons}}
-                            <a class="btn-animation mt-10" href="{{this.url}}"{{#if this.event}} onclick="gtag('event', '{{this.event}}', { 'location': 'banner' });"{{/if}}><i class="fas fa-arrow-right"></i> <span>{{this.label}}</span></a>
+                            <a class="btn-animation mt-10" href="{{this.url}}"{{#if this.event}} data-track="{{this.event}}" data-track-location="banner"{{/if}}><i class="fas fa-arrow-right"></i> <span>{{this.label}}</span></a>
                             {{/each}}
                         </div>
                     </div>

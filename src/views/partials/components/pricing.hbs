@@ -26,7 +26,7 @@
                             <a class="btn btn-sm circle {{#if this.active}}btn-gradient{{else}}btn-light{{/if}} effect"
                                 href="https://wa.me/{{@root.phone}}?text={{urlencode (concat 'Halo Tekoala, saya tertarik dengan paket: ' this.name)}}"
                                 target="_blank" rel="noopener"
-                                onclick="gtag('event', 'pricing_click', { 'plan': '{{this.name}}' });">{{#if this.cta}}{{this.cta}}{{else}}Daftar Sekarang{{/if}}</a>
+                                data-track="pricing_click" data-track-plan="{{this.name}}">{{#if this.cta}}{{this.cta}}{{else}}Daftar Sekarang{{/if}}</a>
                         </div>
                         <div class="right">
                             <h5>{{this.suitable}}</h5>

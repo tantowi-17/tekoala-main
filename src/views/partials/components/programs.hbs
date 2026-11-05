@@ -71,7 +71,7 @@
                         </div>
                         <a href="https://wa.me/{{@root.phone}}?text={{urlencode (concat 'Halo Tekoala, saya mau daftar / tanya program: ' this.title)}}"
                             target="_blank" rel="noopener" class="btn btn-sm circle btn-gradient effect program-btn"
-                            onclick="gtag('event', 'program_register_click', { 'program': '{{this.title}}' });">
+                            data-track="program_register_click" data-track-program="{{this.title}}" data-track-category="{{this.category}}">
                             {{#if this.cta}}{{this.cta}}{{else}}Daftar Sekarang{{/if}}
                         </a>
                     </div>
