@@ -131,6 +131,12 @@ module.exports = {
     },
 
     plugins: [
+        // konfigurasi server (cPanel/LiteSpeed): HTTPS, URL tanpa .html, 404
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: path.resolve(__dirname, 'src/server/.htaccess'), to: '.htaccess', toType: 'file' },
+            ],
+        }),
         new SeoFilesPlugin({
             contentsDir: path.resolve(__dirname, 'src/views/contents'),
             pagesDir: path.resolve(__dirname, 'src/views/pages'),
@@ -280,6 +286,12 @@ module.exports = {
     devServer: {
         static: buildDir,
         open: true,
+        // URL tanpa .html (sama seperti .htaccess di server): /pelatihan -> /pelatihan.html
+        historyApiFallback: {
+            rewrites: [
+                { from: /^\/([a-z0-9-]+)\/?$/, to: (ctx) => `/${ctx.match[1]}.html` },
+            ],
+        },
         watchFiles: {
             paths: ['src/**/*.*'],
             options: {

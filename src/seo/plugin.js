@@ -31,9 +31,9 @@ class SeoFilesPlugin {
             .filter(({ data }) => !String((data.meta && data.meta.robots) || '').includes('noindex'));
     }
 
-    // path sesuai canonical: meta.path ("" untuk beranda), fallback nama-file.html
+    // path sesuai canonical: meta.path ("" untuk beranda), fallback nama-file
     static pathOf({ name, data }) {
-        return data.meta && typeof data.meta.path === 'string' ? data.meta.path : `${name}.html`;
+        return data.meta && typeof data.meta.path === 'string' ? data.meta.path : name;
     }
 
     robots(g) {
@@ -86,7 +86,7 @@ class SeoFilesPlugin {
             const price = p.priceNormal ? `${p.price} (normal ${p.priceNormal})` : p.price;
             out.push(`- **${p.title}** (${p.format}, ${p.duration}, level ${p.level}, bidang ${p.category || '-'}): ${p.description} Biaya: ${price}.`);
         });
-        out.push('', `Daftar lengkap dan filter kelas: ${url('pelatihan.html')}`, '');
+        out.push('', `Daftar lengkap dan filter kelas: ${url('pelatihan')}`, '');
 
         out.push('## Layanan Bisnis', '');
         ((lay.services && lay.services.items) || []).forEach((s) => {
@@ -96,7 +96,7 @@ class SeoFilesPlugin {
             out.push(`- Paket ${p.name}: ${p.note.toLowerCase()} ${p.prefix} ${p.price}.`);
         });
         if (lay.pricing && lay.pricing.footnote) out.push(`- ${stripHtml(lay.pricing.footnote)}`);
-        out.push('', `Detail layanan: ${url('layanan.html')}`, '');
+        out.push('', `Detail layanan: ${url('layanan')}`, '');
 
         const team = home.team || {};
         if ((team.items || []).length) {
@@ -124,7 +124,7 @@ class SeoFilesPlugin {
         out.push(`- WhatsApp: ${g.phoneDisplay} (https://wa.me/${g.phone})`);
         out.push(`- Email: ${g.email}`);
         out.push(`- Instagram: ${g.instagram}`);
-        out.push(`- Form konsultasi: ${url('kontak.html')}`, '');
+        out.push(`- Form konsultasi: ${url('kontak')}`, '');
 
         out.push('## Halaman', '');
         pages.forEach(({ name, data }) => {

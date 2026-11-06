@@ -3,7 +3,7 @@
     "pageKey": "layanan",
     "meta": {
         "description": "Jasa pembuatan website company profile mulai Rp 2 juta, toko online, aplikasi custom, digital marketing (Meta & Google Ads, SEO), dan corporate training.",
-        "path": "layanan.html"
+        "path": "layanan"
     },
     "breadcrumb": {
         "title": "Layanan Bisnis",
@@ -28,7 +28,7 @@
                 "image": "../../assets/img/illustration/2.png"
             },
             {
-                "url": "kontak.html",
+                "url": "/kontak",
                 "icon": "../../assets/img/icon/18.png",
                 "label": "Digital Marketing",
                 "title": "Iklan, Konten & SEO",
@@ -94,12 +94,12 @@
                 "cta": "Konsultasi Gratis"
             }
         ],
-        "footnote": "Sistem custom (portal, aplikasi, sistem desa) mulai Rp 10jt. Paket digital marketing disusun sesuai target, <a href=\"kontak.html\">minta penawaran</a>."
+        "footnote": "Sistem custom (portal, aplikasi, sistem desa) mulai Rp 10jt. Paket digital marketing disusun sesuai target, <a href=\"/kontak\">minta penawaran</a>."
     },
     "corporate": {
         "id": "corporate",
         "image": "../../assets/img/team/team14.jpg",
-        "url": "kontak.html",
+        "url": "/kontak",
         "title": "Corporate & Instansi Training",
         "description": "Kami merancang pelatihan in-house untuk perangkat desa, dinas, sekolah, dan perusahaan. Materi disusun dari kebutuhan nyata di lapangan, dibawakan praktisi, dan ditutup dengan evaluasi peserta agar hasilnya terukur.",
         "list": [
@@ -149,7 +149,7 @@
                 "category": "Website & Sistem Desa",
                 "title": "Smart",
                 "titleBold": "Desa",
-                "url": "digital-desa.html"
+                "url": "/digital-desa"
             },
             {
                 "image": "../../assets/img/portfolio/work02.jpg",

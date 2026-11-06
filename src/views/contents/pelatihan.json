@@ -3,7 +3,7 @@
     "pageKey": "pelatihan",
     "meta": {
         "description": "8 program pelatihan: bootcamp Web Development, Digital Marketing, AI Specialist, Data Analytics, kelas singkat, workshop AI, dan pelatihan instansi & desa.",
-        "path": "pelatihan.html"
+        "path": "pelatihan"
     },
     "breadcrumb": {
         "title": "Program Pelatihan",
@@ -69,7 +69,7 @@
                 ]
             }
         ],
-        "footnote": "Harga early bird untuk batch terdekat. Tersedia opsi cicilan, <a href=\"kontak.html\">hubungi kami</a> untuk detailnya."
+        "footnote": "Harga early bird untuk batch terdekat. Tersedia opsi cicilan, <a href=\"/kontak\">hubungi kami</a> untuk detailnya."
     },
     "process": {
         "subTitle": "Alur Belajar",
@@ -149,7 +149,7 @@
             },
             {
                 "q": "Bisakah membuat pelatihan khusus untuk kantor atau desa kami?",
-                "a": "Bisa. Kami menyusun kurikulum, durasi, dan lokasi sesuai kebutuhan instansi. Lihat <a href=\"layanan.html#corporate\">Corporate & Instansi Training</a>."
+                "a": "Bisa. Kami menyusun kurikulum, durasi, dan lokasi sesuai kebutuhan instansi. Lihat <a href=\"/layanan#corporate\">Corporate & Instansi Training</a>."
             }
         ]
     },

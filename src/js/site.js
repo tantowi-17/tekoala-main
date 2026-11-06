@@ -204,7 +204,7 @@
             apply();
         });
 
-        // Filter awal dari URL, mis. pelatihan.html?bidang=ai
+        // Filter awal dari URL, mis. /pelatihan?bidang=ai
         const params = new URLSearchParams(window.location.search);
         const optionExists = (select, v) => v && select.find('option[value="' + v + '"]').length;
         if (params.get('bidang') && chips.filter('[data-filter-category="' + params.get('bidang') + '"]').length) setCategory(params.get('bidang'));

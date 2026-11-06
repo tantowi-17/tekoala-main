@@ -28,27 +28,27 @@
     "nav": [
         {
             "label": "Beranda",
-            "url": "index.html",
+            "url": "/",
             "key": "index"
         },
         {
             "label": "Program Pelatihan",
-            "url": "pelatihan.html",
+            "url": "/pelatihan",
             "key": "pelatihan"
         },
         {
             "label": "Layanan Bisnis",
-            "url": "layanan.html",
+            "url": "/layanan",
             "key": "layanan"
         },
         {
             "label": "Portofolio",
-            "url": "digital-desa.html",
+            "url": "/digital-desa",
             "key": "digital-desa"
         },
         {
             "label": "Kontak",
-            "url": "kontak.html",
+            "url": "/kontak",
             "key": "kontak"
         }
     ],
@@ -65,57 +65,57 @@
         "programs": [
             {
                 "label": "Bootcamp Web Development",
-                "url": "pelatihan.html?bidang=web-development#program"
+                "url": "/pelatihan?bidang=web-development#program"
             },
             {
                 "label": "Bootcamp Digital Marketing",
-                "url": "pelatihan.html?bidang=digital-marketing#program"
+                "url": "/pelatihan?bidang=digital-marketing#program"
             },
             {
                 "label": "Bootcamp AI Specialist",
-                "url": "pelatihan.html?bidang=ai#program"
+                "url": "/pelatihan?bidang=ai#program"
             },
             {
                 "label": "Bootcamp Data Analytics",
-                "url": "pelatihan.html?bidang=data#program"
+                "url": "/pelatihan?bidang=data#program"
             },
             {
                 "label": "Kelas Singkat & Workshop",
-                "url": "pelatihan.html?format=kelas-singkat#program"
+                "url": "/pelatihan?format=kelas-singkat#program"
             },
             {
                 "label": "Corporate & Instansi Training",
-                "url": "layanan.html#corporate"
+                "url": "/layanan#corporate"
             }
         ],
         "links": [
             {
                 "label": "Jasa Pembuatan Website",
-                "url": "layanan.html"
+                "url": "/layanan"
             },
             {
                 "label": "Jasa Digital Marketing",
-                "url": "layanan.html"
+                "url": "/layanan"
             },
             {
                 "label": "Portofolio",
-                "url": "digital-desa.html"
+                "url": "/digital-desa"
             },
             {
                 "label": "FAQ",
-                "url": "kontak.html#faq"
+                "url": "/kontak#faq"
             },
             {
                 "label": "Hubungi Kami",
-                "url": "kontak.html"
+                "url": "/kontak"
             },
             {
                 "label": "Kebijakan Privasi",
-                "url": "kebijakan-privasi.html"
+                "url": "/kebijakan-privasi"
             },
             {
                 "label": "Syarat & Ketentuan",
-                "url": "syarat-ketentuan.html"
+                "url": "/syarat-ketentuan"
             }
         ]
     },

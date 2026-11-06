@@ -2,7 +2,7 @@
     "page_title": "Syarat & Ketentuan",
     "pageKey": "syarat-ketentuan",
     "meta": {
-        "path": "syarat-ketentuan.html",
+        "path": "syarat-ketentuan",
         "description": "Syarat & Ketentuan Tekoala: pendaftaran dan pembayaran kelas, pembatalan dan pengembalian dana, sertifikat, hak cipta materi, serta ketentuan jasa website dan digital marketing."
     },
     "breadcrumb": {
@@ -101,7 +101,7 @@
             {
                 "heading": "Hubungi Kami",
                 "paragraphs": [
-                    "Pertanyaan tentang ketentuan ini dapat dikirim ke <a href=\"mailto:tekoaladigital@gmail.com\">tekoaladigital@gmail.com</a> atau WhatsApp <a href=\"https://wa.me/6282366667326\" target=\"_blank\" rel=\"noopener\">+62 823 6666 7326</a>. Lihat juga <a href=\"kebijakan-privasi.html\">Kebijakan Privasi</a> kami."
+                    "Pertanyaan tentang ketentuan ini dapat dikirim ke <a href=\"mailto:tekoaladigital@gmail.com\">tekoaladigital@gmail.com</a> atau WhatsApp <a href=\"https://wa.me/6282366667326\" target=\"_blank\" rel=\"noopener\">+62 823 6666 7326</a>. Lihat juga <a href=\"/kebijakan-privasi\">Kebijakan Privasi</a> kami."
                 ]
             }
         ]

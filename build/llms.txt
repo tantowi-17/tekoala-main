@@ -19,7 +19,7 @@ Tekoala menyediakan dua hal: (1) pelatihan dan bootcamp skill digital (web devel
 - **Workshop AI untuk Konten & Produktivitas** (Workshop, 1 Hari, level Semua Level, bidang AI): Pakai AI untuk riset, menulis konten, desain, dan otomasi pekerjaan harian, langsung dipraktikkan. Biaya: Rp 249.000.
 - **Pelatihan Instansi & Desa** (In-House, 1 - 5 Hari, level Custom, bidang Instansi & Desa): Pelatihan untuk perangkat desa, dinas, sekolah, dan perusahaan. Materi, jadwal, dan lokasi menyesuaikan. Biaya: Sesuai Kebutuhan.
 
-Daftar lengkap dan filter kelas: https://tekoala.id/pelatihan.html
+Daftar lengkap dan filter kelas: https://tekoala.id/pelatihan
 
 ## Layanan Bisnis
 
@@ -30,7 +30,7 @@ Daftar lengkap dan filter kelas: https://tekoala.id/pelatihan.html
 - Paket Toko Online / E-Commerce: mulai dari Rp 5jt.
 - Sistem custom (portal, aplikasi, sistem desa) mulai Rp 10jt. Paket digital marketing disusun sesuai target, minta penawaran.
 
-Detail layanan: https://tekoala.id/layanan.html
+Detail layanan: https://tekoala.id/layanan
 
 ## Tim
 
@@ -58,14 +58,14 @@ Detail layanan: https://tekoala.id/layanan.html
 - WhatsApp: +62 823 6666 7326 (https://wa.me/6282366667326)
 - Email: tekoaladigital@gmail.com
 - Instagram: https://www.instagram.com/tekoala_
-- Form konsultasi: https://tekoala.id/kontak.html
+- Form konsultasi: https://tekoala.id/kontak
 
 ## Halaman
 
 - [Tekoala Academy | Kursus Web, Digital Marketing, AI & Data](https://tekoala.id/): Kursus & bootcamp Web Development, Digital Marketing, AI & Data Analytics bersama trainer bersertifikasi BNSP. Online & in-house, plus jasa website bisnis.
-- [Program Pelatihan Web, Digital Marketing, AI & Data](https://tekoala.id/pelatihan.html): 8 program pelatihan: bootcamp Web Development, Digital Marketing, AI Specialist, Data Analytics, kelas singkat, workshop AI, dan pelatihan instansi & desa.
-- [Jasa Website, Digital Marketing & Corporate Training](https://tekoala.id/layanan.html): Jasa pembuatan website company profile mulai Rp 2 juta, toko online, aplikasi custom, digital marketing (Meta & Google Ads, SEO), dan corporate training.
-- [Kontak & Konsultasi](https://tekoala.id/kontak.html): Hubungi Tekoala via WhatsApp untuk daftar kelas, konsultasi jasa website & digital marketing, atau pelatihan instansi. Makassar & Mamuju Tengah.
-- [Studi Kasus: Transformasi Digital Desa Tobadak](https://tekoala.id/digital-desa.html): Studi kasus Tekoala: digitalisasi administrasi dan website Desa Tobadak, Mamuju Tengah, dari persuratan digital hingga pelatihan perangkat desa.
-- [Kebijakan Privasi](https://tekoala.id/kebijakan-privasi.html): Kebijakan Privasi Tekoala: data apa yang kami kumpulkan, untuk apa digunakan, pihak ketiga yang terlibat, dan hak Anda sesuai UU Pelindungan Data Pribadi.
-- [Syarat & Ketentuan](https://tekoala.id/syarat-ketentuan.html): Syarat & Ketentuan Tekoala: pendaftaran dan pembayaran kelas, pembatalan dan pengembalian dana, sertifikat, hak cipta materi, serta ketentuan jasa website dan digital marketing.
+- [Program Pelatihan Web, Digital Marketing, AI & Data](https://tekoala.id/pelatihan): 8 program pelatihan: bootcamp Web Development, Digital Marketing, AI Specialist, Data Analytics, kelas singkat, workshop AI, dan pelatihan instansi & desa.
+- [Jasa Website, Digital Marketing & Corporate Training](https://tekoala.id/layanan): Jasa pembuatan website company profile mulai Rp 2 juta, toko online, aplikasi custom, digital marketing (Meta & Google Ads, SEO), dan corporate training.
+- [Kontak & Konsultasi](https://tekoala.id/kontak): Hubungi Tekoala via WhatsApp untuk daftar kelas, konsultasi jasa website & digital marketing, atau pelatihan instansi. Makassar & Mamuju Tengah.
+- [Studi Kasus: Transformasi Digital Desa Tobadak](https://tekoala.id/digital-desa): Studi kasus Tekoala: digitalisasi administrasi dan website Desa Tobadak, Mamuju Tengah, dari persuratan digital hingga pelatihan perangkat desa.
+- [Kebijakan Privasi](https://tekoala.id/kebijakan-privasi): Kebijakan Privasi Tekoala: data apa yang kami kumpulkan, untuk apa digunakan, pihak ketiga yang terlibat, dan hak Anda sesuai UU Pelindungan Data Pribadi.
+- [Syarat & Ketentuan](https://tekoala.id/syarat-ketentuan): Syarat & Ketentuan Tekoala: pendaftaran dan pembayaran kelas, pembatalan dan pengembalian dana, sertifikat, hak cipta materi, serta ketentuan jasa website dan digital marketing.

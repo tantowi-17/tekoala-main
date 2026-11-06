@@ -19,12 +19,12 @@
         "buttons": [
             {
                 "label": "Lihat Program",
-                "url": "pelatihan.html#program",
+                "url": "/pelatihan#program",
                 "event": "cta_program"
             },
             {
                 "label": "Layanan Bisnis",
-                "url": "layanan.html",
+                "url": "/layanan",
                 "event": "cta_layanan"
             }
         ],
@@ -93,7 +93,7 @@
         "id": "program",
         "subTitle": "Program Unggulan",
         "title": "Pilih Jalur Belajarmu",
-        "moreUrl": "pelatihan.html",
+        "moreUrl": "/pelatihan",
         "moreLabel": "Lihat Semua Program",
         "show": [
             {
@@ -123,7 +123,7 @@
         "description": "Tekoala lahir dari tim developer dan digital marketer yang sudah mengerjakan beragam proyek, mulai dari website bisnis, sistem booking, hingga digitalisasi desa. Pengalaman lapangan itulah yang kami bawa ke dalam kelas, supaya peserta belajar hal yang benar-benar dipakai di dunia kerja.",
         "button": {
             "label": "Lihat Portofolio",
-            "url": "digital-desa.html"
+            "url": "/digital-desa"
         }
     },
     "funFact": {
@@ -155,7 +155,7 @@
         "title": "Butuh Hasil, Bukan Hanya Ilmu?",
         "items": [
             {
-                "url": "layanan.html#layanan",
+                "url": "/layanan#layanan",
                 "icon": "../../assets/img/icon/17.png",
                 "label": "Web Development",
                 "title": "Pembuatan Website & Aplikasi",
@@ -168,7 +168,7 @@
                 "image": "../../assets/img/illustration/2.png"
             },
             {
-                "url": "layanan.html#layanan",
+                "url": "/layanan#layanan",
                 "icon": "../../assets/img/icon/18.png",
                 "label": "Digital Marketing",
                 "title": "Iklan, Konten & SEO",
@@ -181,7 +181,7 @@
                 "image": "../../assets/img/illustration/3.png"
             },
             {
-                "url": "layanan.html#corporate",
+                "url": "/layanan#corporate",
                 "icon": "../../assets/img/icon/19.png",
                 "label": "Corporate Training",
                 "title": "Pelatihan untuk Tim Anda",
@@ -284,7 +284,7 @@
                 "tags": ["Next.js & React", "Laravel", "AI Engineer"],
                 "program": {
                     "label": "Bootcamp Web Development",
-                    "url": "pelatihan.html?bidang=web-development#program"
+                    "url": "/pelatihan?bidang=web-development#program"
                 },
                 "social": {
                     "linkedin": "",
@@ -300,7 +300,7 @@
                 "tags": ["Digital Advertising", "Social Media", "WordPress"],
                 "program": {
                     "label": "Bootcamp Digital Marketing",
-                    "url": "pelatihan.html?bidang=digital-marketing#program"
+                    "url": "/pelatihan?bidang=digital-marketing#program"
                 },
                 "social": {
                     "linkedin": "",
@@ -316,7 +316,7 @@
                 "tags": ["Power BI", "Excel & SQL", "Looker Studio"],
                 "program": {
                     "label": "Bootcamp Data Analytics",
-                    "url": "pelatihan.html?bidang=data#program"
+                    "url": "/pelatihan?bidang=data#program"
                 },
                 "social": {
                     "linkedin": "",
@@ -332,7 +332,7 @@
                 "tags": [],
                 "program": {
                     "label": "Bootcamp AI Specialist",
-                    "url": "pelatihan.html?bidang=ai#program"
+                    "url": "/pelatihan?bidang=ai#program"
                 },
                 "social": {
                     "linkedin": "",
@@ -393,7 +393,7 @@
             },
             {
                 "q": "Selain pelatihan, apakah Tekoala menerima jasa pembuatan website?",
-                "a": "Ya. Kami melayani pembuatan website, aplikasi, dan jasa digital marketing untuk bisnis, UMKM, dan instansi. Lihat detailnya di halaman <a href=\"layanan.html\">Layanan Bisnis</a>."
+                "a": "Ya. Kami melayani pembuatan website, aplikasi, dan jasa digital marketing untuk bisnis, UMKM, dan instansi. Lihat detailnya di halaman <a href=\"/layanan\">Layanan Bisnis</a>."
             }
         ]
     },

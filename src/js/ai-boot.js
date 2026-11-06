@@ -44,7 +44,7 @@
             <li>- Workshop AI untuk Konten & Produktivitas</li>
             <li>- Pelatihan In-House untuk Instansi & Desa</li>
         </ul>
-        <p>Lihat detailnya di <a href="pelatihan.html">halaman Program Pelatihan</a>.</p>
+        <p>Lihat detailnya di <a href="/pelatihan">halaman Program Pelatihan</a>.</p>
     `,
         "bootcamp": `
         💡 Biaya bootcamp (harga early bird):

@@ -85,7 +85,7 @@ function courses(root, orgId) {
             '@type': 'Course',
             name: p.title,
             description: p.description,
-            url: `${root.siteUrl}/pelatihan.html#program`,
+            url: `${root.siteUrl}/pelatihan#program`,
             provider: { '@id': orgId },
             inLanguage: 'id',
             educationalLevel: p.level,
@@ -104,7 +104,7 @@ function courses(root, orgId) {
                 price,
                 priceCurrency: 'IDR',
                 availability: 'https://schema.org/InStock',
-                url: `${root.siteUrl}/pelatihan.html#program`,
+                url: `${root.siteUrl}/pelatihan#program`,
             };
         }
         return JSON.parse(JSON.stringify(course)); // buang field undefined

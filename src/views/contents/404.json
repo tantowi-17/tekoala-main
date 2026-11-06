@@ -11,9 +11,9 @@
         "title": "Halaman Tidak Ditemukan",
         "description": "Maaf, halaman yang Anda cari mungkin sudah dipindah atau tidak tersedia. Silakan kembali ke beranda atau lihat program pelatihan kami.",
         "links": [
-            { "label": "Ke Beranda", "url": "index.html" },
-            { "label": "Lihat Program", "url": "pelatihan.html" },
-            { "label": "Hubungi Kami", "url": "kontak.html" }
+            { "label": "Ke Beranda", "url": "/" },
+            { "label": "Lihat Program", "url": "/pelatihan" },
+            { "label": "Hubungi Kami", "url": "/kontak" }
         ]
     }
 }
