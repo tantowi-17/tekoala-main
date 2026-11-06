@@ -34,7 +34,7 @@ File `tracking/gtm-container-tekoala.json` berisi tag GA4 dan semua event websit
 
 1. Di GTM: **Admin → Import Container**, lalu pilih file `gtm-container-tekoala.json`.
 2. Workspace: **Existing → Default Workspace**. Import option: **Merge → Rename conflicting tags, triggers, and variables**.
-3. Buka **Variables → GA4 Measurement ID**, lalu ganti `G-XXXXXXXXXX` dengan Measurement ID dari langkah 2.
+3. Buka **Variables → GA4 Measurement ID**. Nilainya sudah terisi `G-R91WNCMHE4` (property GA4 Tekoala); ganti hanya jika memakai property lain.
 4. Klik **Preview**, masukkan `https://tekoala.id`, lalu coba klik tombol WhatsApp, Daftar Sekarang, dan filter kelas. Pastikan tag **GA4 - Event Tekoala** ter-*fire*.
 5. Klik **Submit → Publish**.
 
