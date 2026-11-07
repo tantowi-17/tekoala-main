@@ -1,0 +1,83 @@
+<!-- Start Case Study Detail
+============================================= -->
+<div class="project-details-items default-padding-bottom">
+    <div class="container-full">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="project-details-thumb">
+                    <img src="{{this.heroImage}}" alt="{{this.heroAlt}}">
+                </div>
+            </div>
+            <div class="col-lg-10 offset-lg-1">
+                <div class="project-details-main-info">
+                    <div class="project-single-tags">
+                        {{#each this.tags}}<a href="{{this.url}}">{{this.label}}</a>{{/each}}
+                    </div>
+                    <h2 class="title">{{this.title}}</h2>
+                    <div class="project-author-details mt-35">
+                        <ul>
+                            <li>
+                                <div class="left-info"><h3>Klien</h3></div>
+                                <div class="right-info"><h3>{{this.client}}</h3></div>
+                            </li>
+                            <li>
+                                <div class="left-info"><h3>Lingkup Kerja</h3></div>
+                                <div class="right-info"><p class="project-inner-tag">{{#each this.scope}}{{this}}{{#unless @last}} <br> {{/unless}}{{/each}}</p></div>
+                            </li>
+                            <li>
+                                <div class="left-info"><h3>Masalah</h3></div>
+                                <div class="right-info">
+                                    <p>{{this.problem.summary}}</p>
+                                    {{#if this.problem.points}}<ul class="list-disc">{{#each this.problem.points}}<li>{{this}}</li>{{/each}}</ul>{{/if}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-info"><h3>Solusi</h3></div>
+                                <div class="right-info">
+                                    <p>{{this.solution.summary}}</p>
+                                    {{#if this.solution.points}}<ul class="list-disc">{{#each this.solution.points}}<li>{{this}}</li>{{/each}}</ul>{{/if}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-info"><h3>Hasil</h3></div>
+                                <div class="right-info">
+                                    <p>{{this.results.summary}}</p>
+                                    {{#if this.results.points}}<ul class="list-disc">{{#each this.results.points}}<li>{{this}}</li>{{/each}}</ul>{{/if}}
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{#if this.gallery}}
+<div class="project-details-items bg-gray default-padding">
+    <div class="container-full">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="thumb-grid">
+                    {{#each this.gallery}}<img src="{{this.image}}" alt="{{this.alt}}" loading="lazy">{{/each}}
+                </div>
+            </div>
+            <div class="col-lg-5 pl-50 pl-md-15 pl-xs-15">
+                <div class="check-list">
+                    {{#each this.lists}}
+                    <div class="single-list">
+                        <h4>{{this.title}}</h4>
+                        <ul class="list-disc">{{#each this.items}}<li>{{this}}</li>{{/each}}</ul>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<div class="default-padding-bottom text-center">
+    <a class="btn-animation" href="/portofolio"><i class="fas fa-arrow-left"></i> <span>Kembali ke Portofolio</span></a>
+</div>
+<!-- End Case Study Detail -->

@@ -43,8 +43,8 @@
         },
         {
             "label": "Portofolio",
-            "url": "/digital-desa",
-            "key": "digital-desa"
+            "url": "/portofolio",
+            "key": "portofolio"
         },
         {
             "label": "Kontak",
@@ -99,7 +99,7 @@
             },
             {
                 "label": "Portofolio",
-                "url": "/digital-desa"
+                "url": "/portofolio"
             },
             {
                 "label": "FAQ",

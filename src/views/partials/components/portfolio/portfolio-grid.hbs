@@ -1,0 +1,42 @@
+<!-- Start Portfolio Grid
+============================================= -->
+<div class="portfolio-grid-area default-padding bg-gray"{{#if this.id}} id="{{this.id}}"{{/if}} data-portfolio-filter>
+    <div class="container-full">
+        <div class="site-heading text-center">
+            <h4 class="sub-title">{{this.subTitle}}</h4>
+            <h2 class="title split-text">{{this.title}}</h2>
+        </div>
+        <div class="portfolio-filters" role="group" aria-label="Filter kategori">
+            <button type="button" class="active" data-filter="all">Semua</button>
+            {{#each this.filters}}
+            <button type="button" data-filter="{{this.key}}">{{this.label}}</button>
+            {{/each}}
+        </div>
+        <div class="portfolio-style-two-area overflow-hidden">
+            <div class="row gutter-xl portfolio-list">
+                {{#each this.items}}
+                <!-- Single Item -->
+                <div class="col-lg-6 item-center" data-category="{{this.filter}}">
+                    <div class="portfolio-style-two">
+                        {{#if this.url}}<a href="{{this.url}}">{{else}}<div>{{/if}}
+                            <div class="thumb-zoom">
+                                <img class="img-reveal" src="{{this.image}}" alt="{{this.title}}">
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content">
+                                    <div class="pf-tags">
+                                        <span>{{this.category}}</span>
+                                    </div>
+                                    <h2>{{this.title}}</h2>
+                                </div>
+                            </div>
+                        {{#if this.url}}</a>{{else}}</div>{{/if}}
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Portfolio Grid -->

@@ -1,0 +1,57 @@
+{
+    "page_title": "Portofolio Tekoala: Website, Sistem Desa & Toko Online",
+    "pageKey": "portofolio",
+    "meta": {
+        "description": "Portofolio Tekoala: website dan sistem informasi desa, website booking, toko online, dan proyek digital lain yang pernah kami kerjakan.",
+        "path": "portofolio"
+    },
+    "breadcrumb": {
+        "title": "Portofolio Tekoala",
+        "description": "Proyek nyata yang pernah kami bangun untuk desa, instansi, dan bisnis.",
+        "current": "Portofolio"
+    },
+    "portfolio": {
+        "id": "proyek",
+        "subTitle": "Karya Kami",
+        "title": "Proyek yang Pernah Kami Kerjakan",
+        "filters": [
+            { "key": "website", "label": "Website" },
+            { "key": "sistem-desa", "label": "Sistem Desa" },
+            { "key": "toko-online", "label": "Toko Online" }
+        ],
+        "items": [
+            {
+                "image": "../../assets/img/portfolio/work01.jpg",
+                "category": "Website & Sistem Desa",
+                "filter": "sistem-desa",
+                "title": "Smart Desa",
+                "description": "Digitalisasi administrasi dan website Desa Tobadak, dari persuratan digital hingga pelatihan perangkat desa.",
+                "url": "/digital-desa"
+            },
+            {
+                "image": "../../assets/img/portfolio/work02.jpg",
+                "category": "Website Booking",
+                "filter": "website",
+                "title": "Book Villas",
+                "description": "Website pemesanan villa dengan katalog, ketersediaan, dan booking langsung."
+            },
+            {
+                "image": "../../assets/img/portfolio/work03.jpg",
+                "category": "Toko Online",
+                "filter": "toko-online",
+                "title": "Website eCommerce",
+                "description": "Toko online lengkap dengan katalog produk, keranjang, dan pembayaran."
+            }
+        ]
+    },
+    "testimonial": {
+        "title": "Testimoni",
+        "types": ["klien"]
+    },
+    "cta": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Punya Proyek Serupa?",
+        "description": "Ceritakan kebutuhan Anda, kami balas dengan rekomendasi solusi dan estimasi biaya.",
+        "button": "Minta Penawaran"
+    }
+}

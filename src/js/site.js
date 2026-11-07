@@ -121,6 +121,18 @@
     /* ==================================================
         Filter daftar kelas (halaman Program Pelatihan)
     ================================================== */
+    $('[data-portfolio-filter]').each(function () {
+        const wrap = $(this);
+        wrap.find('[data-filter]').on('click', function () {
+            const key = $(this).data('filter');
+            wrap.find('[data-filter]').removeClass('active');
+            $(this).addClass('active');
+            wrap.find('.portfolio-list [data-category]').each(function () {
+                $(this).prop('hidden', key !== 'all' && $(this).data('category') !== key);
+            });
+        });
+    });
+
     $('[data-program-filter]').each(function () {
         const wrap = $(this);
         const items = wrap.find('.program-item');

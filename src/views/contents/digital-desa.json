@@ -14,5 +14,78 @@
         "title": "Ingin Desa Anda Go Digital?",
         "description": "Kami bantu dari pembuatan sistem, website, hingga pelatihan perangkat desa supaya bisa mengelolanya secara mandiri.",
         "button": "Konsultasi Gratis"
+    },
+    "caseStudy": {
+        "heroImage": "../../assets/img/portfolio/banner1.jpg",
+        "heroAlt": "Tampilan website Sistem Informasi Desa Tobadak",
+        "tags": [
+            {
+                "label": "Web Desa",
+                "url": "/layanan#layanan"
+            },
+            {
+                "label": "Digitalisasi Desa",
+                "url": "/pelatihan?bidang=instansi-desa#program"
+            }
+        ],
+        "title": "Transformasi Digitalisasi Desa",
+        "client": "Pemdes Tobadak",
+        "scope": [
+            "Branding & UX Design",
+            "Website profil desa",
+            "Sistem persuratan & data penduduk",
+            "Pelatihan perangkat desa"
+        ],
+        "problem": {
+            "summary": "Administrasi dan pelayanan desa masih bergantung pada proses manual sehingga lambat dan sulit dilacak.",
+            "points": [
+                "Pembuatan surat memakan waktu dan rawan salah data.",
+                "Dokumen sulit diarsipkan dan dicari kembali.",
+                "Data penduduk dan wilayah tidak terpusat.",
+                "Informasi desa belum mudah diakses masyarakat."
+            ]
+        },
+        "solution": {
+            "summary": "Kami membangun sistem digital terpadu yang sederhana dan mudah dipakai perangkat desa, sambil mempertahankan karakter lokal Desa Tobadak.",
+            "points": [
+                "Persuratan digital otomatis dengan template surat standar.",
+                "Manajemen data wilayah, keluarga, dan penduduk terpusat.",
+                "Arsip dokumen digital dan dashboard administrasi.",
+                "Website profil dan informasi desa.",
+                "Pelatihan agar perangkat desa bisa mengelola sistem secara mandiri."
+            ]
+        },
+        "results": {
+            "summary": "Layanan administrasi menjadi lebih cepat, rapi, dan transparan.",
+            "points": [
+                "Proses persuratan lebih cepat.",
+                "Kesalahan data administrasi berkurang.",
+                "Pengarsipan dan pencarian dokumen lebih mudah.",
+                "Kerja perangkat desa lebih efisien."
+            ]
+        },
+        "gallery": [
+            {
+                "image": "../../assets/img/portfolio/desa-thumb-1.jpg",
+                "alt": "Halaman website Desa Tobadak"
+            },
+            {
+                "image": "../../assets/img/portfolio/desa-thumb-2.jpg",
+                "alt": "Halaman layanan website Desa Tobadak"
+            }
+        ],
+        "lists": [
+            {
+                "title": "Fitur Sistem",
+                "items": [
+                    "Persuratan digital otomatis.",
+                    "Manajemen data penduduk terpusat.",
+                    "Template surat standar desa.",
+                    "Arsip dokumen digital.",
+                    "Dashboard administrasi desa.",
+                    "Website profil dan informasi desa."
+                ]
+            }
+        ]
     }
 }
