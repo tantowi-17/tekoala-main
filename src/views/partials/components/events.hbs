@@ -8,6 +8,7 @@
             <h4 class="sub-title">Event Mendatang</h4>
             <h2 class="title split-text">Jangan Sampai Ketinggalan</h2>
         </div>
+        <div class="event-grid">
         {{#each list}}
         <!-- Single Event -->
         <article class="event-card" data-event-start="{{this.start}}" data-event-end="{{this.end}}">
@@ -52,6 +53,7 @@
         </article>
         <!-- End Single Event -->
         {{/each}}
+        </div>
     </div>
 </div>
 {{/if}}

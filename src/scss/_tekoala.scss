@@ -932,23 +932,46 @@ ul.useful-link.list-single li {
 }
 
 // Event mendatang
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+
+    @media (max-width: 991px) {
+        grid-template-columns: 1fr;
+    }
+}
+
 .event-card {
     display: grid;
-    grid-template-columns: 130px 1fr 320px;
-    gap: 35px;
-    align-items: center;
-    padding: 35px;
+    grid-template-columns: 110px 1fr;
+    gap: 25px;
+    align-items: start;
+    padding: 30px;
     border-radius: 30px;
-    border: 2px solid var(--color-primary);
+    border: 2px solid rgba(0, 0, 0, 0.08);
     background: var(--bg-gray);
-    margin-bottom: 30px;
+    transition: border-color 0.3s, box-shadow 0.3s;
 
-    @media (max-width: 1199px) {
-        grid-template-columns: 110px 1fr;
+    &:not(.is-next) .event-date {
+        background: rgba(0, 0, 0, 0.06);
+    }
 
-        .event-side {
-            grid-column: 1 / -1;
-        }
+    &.is-next {
+        border-color: var(--color-primary);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .event-side {
+        grid-column: 1 / -1;
+    }
+
+    .event-info h3 {
+        font-size: 24px;
+    }
+
+    .event-meta {
+        grid-template-columns: 1fr;
     }
 
     @media (max-width: 575px) {
@@ -1075,8 +1098,8 @@ ul.useful-link.list-single li {
     gap: 14px;
 
     img {
-        width: 60px;
-        height: 60px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -1143,6 +1166,23 @@ ul.useful-link.list-single li {
     .event-status {
         border-color: rgba(255, 255, 255, 0.2);
         color: var(--white);
+    }
+
+    .event-card {
+        border-color: rgba(255, 255, 255, 0.12);
+
+        &.is-next {
+            border-color: var(--color-primary);
+        }
+
+        &:not(.is-next) .event-date {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+
+            .weekday {
+                opacity: 0.85;
+            }
+        }
     }
 
     .event-meta i {
@@ -1355,8 +1395,8 @@ ul.useful-link.list-single li {
     color: rgba(255, 255, 255, 0.8);
 
     img {
-        width: 34px;
-        height: 34px;
+        width: 48px;
+        height: 48px;
         border-radius: 50%;
         object-fit: cover;
         border: 2px solid var(--color-primary);

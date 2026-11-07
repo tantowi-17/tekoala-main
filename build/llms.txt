@@ -6,7 +6,10 @@ Tekoala menyediakan dua hal: (1) pelatihan dan bootcamp skill digital (web devel
 
 ## Event Mendatang
 
-- **Sharing Session: Data Analyst** bersama Elfrid Hasman (Data Analytics): Minggu, 8 November 2026, 19.00 – 21.00 WITA. Online (Zoom / Google Meet). Gratis (Internal komunitas Tekoala). Ngobrol santai seputar dunia data analyst: tools yang dipakai sehari-hari, contoh studi kasus nyata, dan cara memulai karier di bidang data. Daftar via WhatsApp https://wa.me/6282366667326.
+- **Sharing Session: Data Analyst** bersama Elfrid Hasman (Founder · Data Analytics): Minggu, 8 November 2026, 19.00 – 21.00 WITA. Online (Zoom / Google Meet). Gratis (Internal komunitas Tekoala). Ngobrol santai seputar dunia data analyst: tools yang dipakai sehari-hari, contoh studi kasus nyata, dan cara memulai karier di bidang data. Daftar via WhatsApp https://wa.me/6282366667326.
+- **Sharing Session: Jadi AI Engineer** bersama Tantowi (Founder · Software Engineer): Minggu, 15 November 2026, 19.00 – 21.00 WITA. Online (Zoom / Google Meet). Gratis (Internal komunitas Tekoala). Ngobrol santai soal jalan dari software engineer ke AI engineer: bikin chatbot & AI agent sendiri, tools, dan jalur karier AI engineer. Daftar via WhatsApp https://wa.me/6282366667326.
+- **Sharing Session: Jualan lewat Sosmed** bersama Gede Wardaya (Founder · Digital Marketing): Minggu, 22 November 2026, 19.00 – 21.00 WITA. Online (Zoom / Google Meet). Gratis (Internal komunitas Tekoala). Ngobrol santai soal jualan lewat media sosial: strategi konten yang bikin orang beli, caption & iklan singkat yang menjual, dan mengubah followers jadi pembeli. Daftar via WhatsApp https://wa.me/6282366667326.
+- **Sharing Session: AI untuk Bisnis** bersama Muhammad Awaluddin (Founder · AI Specialist): Minggu, 29 November 2026, 19.00 – 21.00 WITA. Online (Zoom / Google Meet). Gratis (Internal komunitas Tekoala). Ngobrol santai soal AI di sisi bisnis: AI untuk promosi & konten jualan, chatbot WhatsApp untuk layanan pelanggan, dan otomasi admin & laporan usaha. Daftar via WhatsApp https://wa.me/6282366667326.
 
 ## Program Pelatihan
 
@@ -34,10 +37,10 @@ Detail layanan: https://tekoala.id/layanan
 
 ## Tim
 
-- Tanto Wibowo: Software Engineer, 7+ tahun · Software Engineer.
-- Gede Wardaya: Digital Marketing, 7+ tahun · Digital Marketer.
-- Elfrid Hasman: Data Analytics, 6+ tahun · Data Analyst.
-- Muhammad Awaluddin: AI Specialist.
+- Tanto Wibowo: Founder · Software Engineer, 7+ tahun · Software Engineer.
+- Gede Wardaya: Founder · Digital Marketing, 7+ tahun · Digital Marketer.
+- Elfrid Hasman: Founder · Data Analytics, 6+ tahun · Data Analyst.
+- Muhammad Awaluddin: Founder · AI Specialist, 8+ tahun · Product & Project Manager.
 - Kredensial tim: Trainer Bersertifikasi BNSP, Asesor Kompetensi BNSP, Profesi Insinyur, Sertifikasi Praktisi.
 
 ## FAQ

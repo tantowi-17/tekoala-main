@@ -95,6 +95,8 @@
                     cd.toggle(!live);
                 }
             });
+            // highlight hanya event terdekat
+            $('.event-card').removeClass('is-next').first().addClass('is-next');
         }
 
         // simpan label asli (mis. "Event Minggu ini", "Segera") sebelum status diubah

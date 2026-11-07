@@ -277,10 +277,10 @@
         "items": [
             {
                 "name": "Tanto Wibowo",
-                "title": "Software Engineer",
+                "title": "Founder · Software Engineer",
                 "image": "../../assets/img/team/team01.jpeg",
                 "experience": "7+ tahun · Software Engineer",
-                "bio": "Insinyur profesional (IPP) yang aktif bekerja sebagai software engineer di Singapura sejak 2019, menangani platform web enterprise untuk klien internasional. Pernah menjabat CTO PT Digital Samudera Karya.",
+                "bio": "Insinyur profesional (IPP) yang aktif bekerja sebagai software engineer di Singapura sejak 2019, menangani platform web enterprise untuk klien internasional. Pernah menjabat CTO di salah satu startup di Makassar.",
                 "tags": ["Next.js & React", "Laravel", "AI Engineer"],
                 "program": {
                     "label": "Bootcamp Web Development",
@@ -293,7 +293,7 @@
             },
             {
                 "name": "Gede Wardaya",
-                "title": "Digital Marketing",
+                "title": "Founder · Digital Marketing",
                 "image": "../../assets/img/team/team03.jpeg",
                 "experience": "7+ tahun · Digital Marketer",
                 "bio": "Trainer & Asesor BNSP, CEO LPK Mentorbox Indonesia. Berpengalaman membangun website dan menjalankan kampanye iklan digital untuk berbagai bisnis.",
@@ -309,7 +309,7 @@
             },
             {
                 "name": "Elfrid Hasman",
-                "title": "Data Analytics",
+                "title": "Founder · Data Analytics",
                 "image": "../../assets/img/team/team02.jpeg",
                 "experience": "6+ tahun · Data Analyst",
                 "bio": "Data analyst di Telkomsel dan instruktur Power BI bersertifikasi BNSP. Mengelola kanal YouTube DataCraft by El (~5K subscriber).",
@@ -325,11 +325,11 @@
             },
             {
                 "name": "Muhammad Awaluddin",
-                "title": "AI Specialist",
+                "title": "Founder · AI Specialist",
                 "image": "../../assets/img/team/team04.jpeg",
-                "experience": "",
-                "bio": "",
-                "tags": [],
+                "experience": "8+ tahun · Product & Project Manager",
+                "bio": "Project Manager di Smart Inovasi sejak 2020 dan co-founder Walldev. Membangun produk dan sistem digital, termasuk sistem untuk Fakultas Kedokteran Universitas Hasanuddin.",
+                "tags": ["AI untuk Bisnis", "Product Management", "Scrum"],
                 "program": {
                     "label": "Bootcamp AI Specialist",
                     "url": "/pelatihan?bidang=ai#program"
