@@ -14,39 +14,23 @@
         "id": "proyek",
         "subTitle": "Karya Kami",
         "title": "Proyek yang Pernah Kami Kerjakan",
-        "filters": [
-            { "key": "website", "label": "Website" },
-            { "key": "sistem-desa", "label": "Sistem Desa" },
-            { "key": "toko-online", "label": "Toko Online" }
-        ],
+        "filters": [],
         "items": [
             {
-                "image": "../../assets/img/portfolio/work01.jpg",
+                "image": "../../assets/img/portfolio/banner1.jpg",
                 "category": "Website & Sistem Desa",
                 "filter": "sistem-desa",
                 "title": "Smart Desa",
                 "description": "Digitalisasi administrasi dan website Desa Tobadak, dari persuratan digital hingga pelatihan perangkat desa.",
                 "url": "/digital-desa"
-            },
-            {
-                "image": "../../assets/img/portfolio/work02.jpg",
-                "category": "Website Booking",
-                "filter": "website",
-                "title": "Book Villas",
-                "description": "Website pemesanan villa dengan katalog, ketersediaan, dan booking langsung."
-            },
-            {
-                "image": "../../assets/img/portfolio/work03.jpg",
-                "category": "Toko Online",
-                "filter": "toko-online",
-                "title": "Website eCommerce",
-                "description": "Toko online lengkap dengan katalog produk, keranjang, dan pembayaran."
             }
         ]
     },
     "testimonial": {
         "title": "Testimoni",
-        "types": ["klien"]
+        "types": [
+            "klien"
+        ]
     },
     "cta": {
         "subTitle": "Konsultasi Gratis",
