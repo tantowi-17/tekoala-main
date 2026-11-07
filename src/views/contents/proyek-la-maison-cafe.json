@@ -1,0 +1,89 @@
+{
+    "page_title": "Website Reservasi La Maison Café & Resto | Portofolio Tekoala",
+    "pageKey": "portofolio",
+    "meta": {
+        "description": "Kami merancang website bergaya vintage-modern lengkap dengan menu unggulan, galeri, ulasan, dan form reservasi.",
+        "path": "proyek-la-maison-cafe"
+    },
+    "breadcrumb": {
+        "title": "Website Reservasi La Maison Café & Resto",
+        "current": "Portofolio"
+    },
+    "caseStudy": {
+        "heroImage": "../../assets/img/portfolio/proyek/la-maison-cafe.jpg",
+        "heroAlt": "Tampilan Website Reservasi La Maison Café & Resto",
+        "liveUrl": "https://caffe-reservation-book.netlify.app/",
+        "tags": [
+            {
+                "label": "Website Café",
+                "url": "/portofolio"
+            },
+            {
+                "label": "Reservasi Online",
+                "url": "/portofolio"
+            }
+        ],
+        "title": "Website Reservasi La Maison Café & Resto",
+        "client": "Proyek demo Tekoala",
+        "scope": [
+            "UI/UX Design",
+            "Website responsif",
+            "Form reservasi meja"
+        ],
+        "problem": {
+            "summary": "Café dan restoran membutuhkan website yang menampilkan suasana tempat dan memudahkan pelanggan memesan meja tanpa harus menelepon.",
+            "points": [
+                "Pelanggan sulit melihat menu dan suasana sebelum datang.",
+                "Reservasi meja masih lewat chat atau telepon.",
+                "Brand dengan konsep vintage belum tampil di online."
+            ]
+        },
+        "solution": {
+            "summary": "Kami merancang website bergaya vintage-modern lengkap dengan menu unggulan, galeri, ulasan, dan form reservasi.",
+            "points": [
+                "Hero dan cerita brand.",
+                "Menu unggulan dan galeri.",
+                "Form reservasi meja online.",
+                "Bagian ulasan pelanggan."
+            ]
+        },
+        "results": {
+            "summary": "Calon pelanggan bisa melihat menu, suasana, dan memesan meja dalam satu halaman.",
+            "points": [
+                "Alur reservasi lebih singkat.",
+                "Brand tampil konsisten dan berkesan.",
+                "Tampilan nyaman di HP."
+            ]
+        },
+        "gallery": [
+            {
+                "image": "../../assets/img/portfolio/proyek/la-maison-cafe-full.jpg",
+                "alt": "Halaman lengkap La Maison Café & Resto"
+            }
+        ],
+        "lists": [
+            {
+                "title": "Fitur Website",
+                "items": [
+                    "Hero dan cerita brand.",
+                    "Menu unggulan.",
+                    "Galeri.",
+                    "Reservasi meja.",
+                    "Ulasan pelanggan."
+                ]
+            }
+        ],
+        "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Netlify"
+        ]
+    },
+    "cta": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Punya Proyek Serupa?",
+        "description": "Ceritakan kebutuhan Anda, kami balas dengan rekomendasi solusi dan estimasi biaya.",
+        "button": "Minta Penawaran"
+    }
+}

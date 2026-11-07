@@ -30,6 +30,8 @@
                                         <span>{{this.category}}</span>
                                     </div>
                                     <h2>{{this.title}}</h2>
+                                    {{#if this.description}}<p class="pf-desc">{{this.description}}</p>{{/if}}
+                                    {{#if this.tech}}<ul class="pf-tech">{{#each this.tech}}<li>{{this}}</li>{{/each}}</ul>{{/if}}
                                 </div>
                             </div>
                         {{#if this.url}}</a>{{else}}</div>{{/if}}

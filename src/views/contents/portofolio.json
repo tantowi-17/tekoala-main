@@ -14,15 +14,167 @@
         "id": "proyek",
         "subTitle": "Karya Kami",
         "title": "Proyek yang Pernah Kami Kerjakan",
-        "filters": [],
+        "filters": [
+            {
+                "key": "website",
+                "label": "Website"
+            },
+            {
+                "key": "sistem-desa",
+                "label": "Sistem Desa"
+            },
+            {
+                "key": "aplikasi",
+                "label": "Aplikasi Bisnis"
+            },
+            {
+                "key": "edukasi",
+                "label": "Edukasi"
+            }
+        ],
         "items": [
             {
-                "image": "../../assets/img/portfolio/banner1.jpg",
-                "category": "Website & Sistem Desa",
+                "image": "../../assets/img/portfolio/proyek/baleona.jpg",
+                "category": "Microsite Branding",
+                "filter": "website",
+                "title": "Baleona: Logo HUT Mamuju Tengah",
+                "description": "Microsite interaktif filosofi logo HUT ke-14 Mamuju Tengah: narasi visual, palet warna, unduh logo, dan photo booth.",
+                "url": "/proyek-baleona",
+                "tech": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "AOS",
+                    "Netlify"
+                ]
+            },
+            {
+                "image": "../../assets/img/portfolio/proyek/smart-desa.jpg",
+                "category": "Sistem Informasi Desa",
                 "filter": "sistem-desa",
                 "title": "Smart Desa",
-                "description": "Digitalisasi administrasi dan website Desa Tobadak, dari persuratan digital hingga pelatihan perangkat desa.",
-                "url": "/digital-desa"
+                "description": "Dashboard sistem informasi desa untuk kependudukan, layanan surat, arsip, dan statistik desa.",
+                "url": "/proyek-smart-desa",
+                "tech": [
+                    "HTML",
+                    "Bootstrap",
+                    "JavaScript",
+                    "Netlify"
+                ]
+            },
+            {
+                "image": "../../assets/img/portfolio/proyek/digital-desa.jpg",
+                "category": "Website & Sistem Desa",
+                "filter": "sistem-desa",
+                "title": "Website Desa Tobadak",
+                "description": "Website resmi dan sistem informasi Desa Tobadak: profil, statistik, PPID, layanan mandiri, dan peta wilayah.",
+                "url": "/digital-desa",
+                "tech": [
+                    "PHP",
+                    "jQuery",
+                    "Alpine.js",
+                    "Leaflet",
+                    "AOS"
+                ]
+            },
+            {
+                "image": "../../assets/img/portfolio/proyek/palongaan.jpg",
+                "category": "Website & Sistem Desa",
+                "filter": "sistem-desa",
+                "title": "Website Desa Palongaan",
+                "description": "Website resmi Desa Palongaan dengan profil, statistik, APBDes, PPID, pengaduan, dan layanan mandiri.",
+                "url": "/proyek-palongaan",
+                "tech": [
+                    "PHP",
+                    "Bootstrap",
+                    "jQuery",
+                    "Alpine.js",
+                    "Leaflet"
+                ]
+            },
+            {
+                "image": "../../assets/img/portfolio/proyek/kelas-cpns-online.jpg",
+                "category": "Platform Edukasi",
+                "filter": "edukasi",
+                "title": "Kelas CPNS Online",
+                "description": "Landing page dan platform belajar CPNS dengan simulasi CAT, soal SKD/SKB, dan analisis nilai.",
+                "url": "/proyek-kelas-cpns-online",
+                "tech": [
+                    "WordPress",
+                    "PHP",
+                    "jQuery",
+                    "Swiper"
+                ]
+            },
+            {
+                "image": "../../assets/img/portfolio/proyek/ikacanga.jpg",
+                "category": "Website Organisasi",
+                "filter": "website",
+                "title": "IKACANGA Mamuju Tengah",
+                "description": "Website organisasi duta budaya Mamuju Tengah: profil, budaya, event, galeri, dan blog.",
+                "url": "/proyek-ikacanga",
+                "tech": [
+                    "PHP",
+                    "Tailwind CSS",
+                    "Font Awesome"
+                ]
+            },
+            {
+                "image": "../../assets/img/portfolio/proyek/la-maison-cafe.jpg",
+                "category": "Website Reservasi",
+                "filter": "website",
+                "title": "La Maison Café & Resto",
+                "description": "Website café vintage-modern dengan menu unggulan, galeri, ulasan, dan reservasi meja online.",
+                "url": "/proyek-la-maison-cafe",
+                "tech": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Netlify"
+                ]
+            },
+            {
+                "image": "../../assets/img/portfolio/proyek/sawit-timbang.jpg",
+                "category": "Aplikasi Bisnis",
+                "filter": "aplikasi",
+                "title": "Sawit Timbang",
+                "description": "Sistem timbangan sawit digital: hitung Gross, Tare, Netto otomatis dengan dashboard dan laporan.",
+                "url": "/proyek-sawit-timbang",
+                "tech": [
+                    "HTML",
+                    "Bootstrap",
+                    "JavaScript",
+                    "Netlify"
+                ]
+            },
+            {
+                "image": "../../assets/img/portfolio/proyek/jelajah-makassar.jpg",
+                "category": "Website Direktori",
+                "filter": "website",
+                "title": "Jelajah Makassar",
+                "description": "Direktori wisata dan kuliner Kota Makassar lengkap dengan event dan paket travel.",
+                "url": "/proyek-jelajah-makassar",
+                "tech": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Font Awesome",
+                    "Netlify"
+                ]
+            },
+            {
+                "image": "../../assets/img/portfolio/proyek/ayam-po.jpg",
+                "category": "Aplikasi Bisnis",
+                "filter": "aplikasi",
+                "title": "Ayam PO Management",
+                "description": "Sistem manajemen purchase order ayam: dashboard omzet, status PO, pembayaran, dan laporan penjualan.",
+                "url": "/proyek-ayam-po",
+                "tech": [
+                    "HTML",
+                    "Bootstrap",
+                    "JavaScript",
+                    "Netlify"
+                ]
             }
         ]
     },

@@ -1,0 +1,89 @@
+{
+    "page_title": "Smart Desa: Sistem Informasi Desa | Portofolio Tekoala",
+    "pageKey": "portofolio",
+    "meta": {
+        "description": "Kami membuat dashboard sistem informasi desa yang menyatukan kependudukan, layanan surat, info desa, dan pengaturan dalam satu aplikasi.",
+        "path": "proyek-smart-desa"
+    },
+    "breadcrumb": {
+        "title": "Smart Desa: Sistem Informasi Desa",
+        "current": "Portofolio"
+    },
+    "caseStudy": {
+        "heroImage": "../../assets/img/portfolio/proyek/smart-desa.jpg",
+        "heroAlt": "Tampilan Smart Desa: Sistem Informasi Desa",
+        "liveUrl": "https://smart-desa.netlify.app/",
+        "tags": [
+            {
+                "label": "Sistem Desa",
+                "url": "/portofolio"
+            },
+            {
+                "label": "Dashboard",
+                "url": "/portofolio"
+            }
+        ],
+        "title": "Smart Desa: Sistem Informasi Desa",
+        "client": "Proyek demo Tekoala",
+        "scope": [
+            "UI/UX Dashboard",
+            "Modul kependudukan & surat",
+            "Manajemen pengguna & hak akses"
+        ],
+        "problem": {
+            "summary": "Pemerintah desa mengelola data penduduk, keluarga, dan surat secara manual atau terpisah-pisah.",
+            "points": [
+                "Data kependudukan tidak terpusat.",
+                "Pembuatan surat memakan waktu.",
+                "Sulit memantau aktivitas layanan desa."
+            ]
+        },
+        "solution": {
+            "summary": "Kami membuat dashboard sistem informasi desa yang menyatukan kependudukan, layanan surat, info desa, dan pengaturan dalam satu aplikasi.",
+            "points": [
+                "Data penduduk, kartu keluarga, mutasi, kelahiran, dan kematian.",
+                "Layanan surat, arsip, dan daftar persyaratan.",
+                "Manajemen artikel, galeri, dan pengaduan.",
+                "Pengguna dan hak akses bertingkat."
+            ]
+        },
+        "results": {
+            "summary": "Admin desa mendapat ringkasan aktivitas dan statistik dalam satu dashboard.",
+            "points": [
+                "Data lebih terstruktur dan mudah dicari.",
+                "Proses surat lebih cepat.",
+                "Statistik kependudukan terlihat langsung."
+            ]
+        },
+        "gallery": [
+            {
+                "image": "../../assets/img/portfolio/proyek/smart-desa-full.jpg",
+                "alt": "Halaman lengkap Smart Desa"
+            }
+        ],
+        "lists": [
+            {
+                "title": "Modul Utama",
+                "items": [
+                    "Kependudukan.",
+                    "Layanan surat dan arsip.",
+                    "Info desa dan pemerintah desa.",
+                    "Artikel, galeri, dan pengaduan.",
+                    "Pengguna dan hak akses."
+                ]
+            }
+        ],
+        "tech": [
+            "HTML",
+            "Bootstrap",
+            "JavaScript",
+            "Netlify"
+        ]
+    },
+    "cta": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Punya Proyek Serupa?",
+        "description": "Ceritakan kebutuhan Anda, kami balas dengan rekomendasi solusi dan estimasi biaya.",
+        "button": "Minta Penawaran"
+    }
+}

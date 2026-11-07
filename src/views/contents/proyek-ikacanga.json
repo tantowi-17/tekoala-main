@@ -1,0 +1,87 @@
+{
+    "page_title": "Website IKACANGA Mamuju Tengah | Portofolio Tekoala",
+    "pageKey": "portofolio",
+    "meta": {
+        "description": "Kami membangun website bernuansa budaya yang memuat profil organisasi, visi-misi, budaya, event, galeri, blog, dan kontak.",
+        "path": "proyek-ikacanga"
+    },
+    "breadcrumb": {
+        "title": "Website IKACANGA Mamuju Tengah",
+        "current": "Portofolio"
+    },
+    "caseStudy": {
+        "heroImage": "../../assets/img/portfolio/proyek/ikacanga.jpg",
+        "heroAlt": "Tampilan Website IKACANGA Mamuju Tengah",
+        "liveUrl": "https://ikacangamateng.com/",
+        "tags": [
+            {
+                "label": "Website Organisasi",
+                "url": "/portofolio"
+            },
+            {
+                "label": "Budaya",
+                "url": "/portofolio"
+            }
+        ],
+        "title": "Website IKACANGA Mamuju Tengah",
+        "client": "IKACANGA Mamuju Tengah",
+        "scope": [
+            "UI/UX Design",
+            "Pengembangan website",
+            "Halaman event, galeri & blog"
+        ],
+        "problem": {
+            "summary": "Organisasi duta budaya membutuhkan wadah resmi untuk memperkenalkan visi-misi, kegiatan, dan budaya Mamuju Tengah kepada masyarakat luas.",
+            "points": [
+                "Informasi organisasi dan kegiatan tersebar di media sosial.",
+                "Belum ada tempat tunggal untuk event, galeri, dan artikel.",
+                "Identitas organisasi belum tampil konsisten secara online."
+            ]
+        },
+        "solution": {
+            "summary": "Kami membangun website bernuansa budaya yang memuat profil organisasi, visi-misi, budaya, event, galeri, blog, dan kontak.",
+            "points": [
+                "Halaman Tentang, Visi & Misi yang jelas.",
+                "Seksi Budaya, Event, Gallery, dan Blog.",
+                "Tampilan responsif di HP dan desktop."
+            ]
+        },
+        "results": {
+            "summary": "Organisasi kini punya website resmi yang menjadi pusat informasi dan identitas digital.",
+            "points": [
+                "Informasi organisasi terpusat dan mudah dibagikan.",
+                "Event dan galeri dapat dipublikasikan secara rapi.",
+                "Citra organisasi lebih profesional."
+            ]
+        },
+        "gallery": [
+            {
+                "image": "../../assets/img/portfolio/proyek/ikacanga-full.jpg",
+                "alt": "Halaman lengkap IKACANGA Mamuju Tengah"
+            }
+        ],
+        "lists": [
+            {
+                "title": "Fitur Website",
+                "items": [
+                    "Profil, visi, dan misi organisasi.",
+                    "Halaman budaya Mamuju Tengah.",
+                    "Event dan galeri kegiatan.",
+                    "Blog / artikel.",
+                    "Halaman kontak."
+                ]
+            }
+        ],
+        "tech": [
+            "PHP",
+            "Tailwind CSS",
+            "Font Awesome"
+        ]
+    },
+    "cta": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Punya Proyek Serupa?",
+        "description": "Ceritakan kebutuhan Anda, kami balas dengan rekomendasi solusi dan estimasi biaya.",
+        "button": "Minta Penawaran"
+    }
+}

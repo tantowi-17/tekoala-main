@@ -20,6 +20,18 @@
                                 <div class="left-info"><h3>Klien</h3></div>
                                 <div class="right-info"><h3>{{this.client}}</h3></div>
                             </li>
+                            {{#if this.liveUrl}}
+                            <li>
+                                <div class="left-info"><h3>Website</h3></div>
+                                <div class="right-info"><a class="project-live-link" href="{{this.liveUrl}}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Kunjungi Website</a></div>
+                            </li>
+                            {{/if}}
+                            {{#if this.tech}}
+                            <li>
+                                <div class="left-info"><h3>Teknologi</h3></div>
+                                <div class="right-info"><ul class="pf-tech">{{#each this.tech}}<li>{{this}}</li>{{/each}}</ul></div>
+                            </li>
+                            {{/if}}
                             <li>
                                 <div class="left-info"><h3>Lingkup Kerja</h3></div>
                                 <div class="right-info"><p class="project-inner-tag">{{#each this.scope}}{{this}}{{#unless @last}} <br> {{/unless}}{{/each}}</p></div>

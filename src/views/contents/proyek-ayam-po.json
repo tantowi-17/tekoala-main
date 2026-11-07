@@ -1,0 +1,91 @@
+{
+    "page_title": "Ayam PO: Management Purchase Order | Portofolio Tekoala",
+    "pageKey": "portofolio",
+    "meta": {
+        "description": "Kami membangun sistem manajemen PO dengan dashboard, data pelanggan, produk, pembayaran, dan laporan penjualan.",
+        "path": "proyek-ayam-po"
+    },
+    "breadcrumb": {
+        "title": "Ayam PO: Management Purchase Order",
+        "current": "Portofolio"
+    },
+    "caseStudy": {
+        "heroImage": "../../assets/img/portfolio/proyek/ayam-po.jpg",
+        "heroAlt": "Tampilan Ayam PO: Management Purchase Order",
+        "liveUrl": "https://management-farm.netlify.app/dashboard",
+        "tags": [
+            {
+                "label": "Dashboard",
+                "url": "/portofolio"
+            },
+            {
+                "label": "Purchase Order",
+                "url": "/portofolio"
+            }
+        ],
+        "title": "Ayam PO: Management Purchase Order",
+        "client": "Proyek demo Tekoala",
+        "scope": [
+            "UI/UX Dashboard",
+            "Modul PO, pembayaran & pelanggan",
+            "Laporan penjualan"
+        ],
+        "problem": {
+            "summary": "Usaha penjualan ayam berbasis pre-order sulit memantau PO, status pembayaran, dan piutang pelanggan.",
+            "points": [
+                "PO dan pembayaran dicatat terpisah.",
+                "Sulit melihat PO pending dan piutang.",
+                "Rekap penjualan memakan waktu."
+            ]
+        },
+        "solution": {
+            "summary": "Kami membangun sistem manajemen PO dengan dashboard, data pelanggan, produk, pembayaran, dan laporan penjualan.",
+            "points": [
+                "Dashboard statistik PO, omzet, dan piutang.",
+                "Status PO dari pending sampai completed.",
+                "Status pembayaran Paid, DP, Unpaid.",
+                "Master data produk, kategori, dan pelanggan.",
+                "Laporan penjualan."
+            ]
+        },
+        "results": {
+            "summary": "Pemilik usaha melihat kondisi PO, omzet, dan piutang dalam satu layar.",
+            "points": [
+                "Status PO dan pembayaran terpantau.",
+                "Piutang lebih mudah ditagih.",
+                "Laporan siap dilihat kapan saja."
+            ]
+        },
+        "gallery": [
+            {
+                "image": "../../assets/img/portfolio/proyek/ayam-po-full.jpg",
+                "alt": "Halaman lengkap Ayam PO Management"
+            }
+        ],
+        "lists": [
+            {
+                "title": "Modul Utama",
+                "items": [
+                    "Purchase Orders.",
+                    "Payments.",
+                    "Customers.",
+                    "Produk dan kategori.",
+                    "Sales Report.",
+                    "Pengguna dan pengaturan."
+                ]
+            }
+        ],
+        "tech": [
+            "HTML",
+            "Bootstrap",
+            "JavaScript",
+            "Netlify"
+        ]
+    },
+    "cta": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Punya Proyek Serupa?",
+        "description": "Ceritakan kebutuhan Anda, kami balas dengan rekomendasi solusi dan estimasi biaya.",
+        "button": "Minta Penawaran"
+    }
+}

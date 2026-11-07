@@ -1,6 +1,6 @@
 {
     "page_title": "Studi Kasus: Transformasi Digital Desa Tobadak",
-    "pageKey": "digital-desa",
+    "pageKey": "portofolio",
     "meta": {
         "description": "Studi kasus Tekoala: digitalisasi administrasi dan website Desa Tobadak, Mamuju Tengah, dari persuratan digital hingga pelatihan perangkat desa.",
         "path": "digital-desa"
@@ -16,7 +16,7 @@
         "button": "Konsultasi Gratis"
     },
     "caseStudy": {
-        "heroImage": "../../assets/img/portfolio/banner1.jpg",
+        "heroImage": "../../assets/img/portfolio/proyek/digital-desa.jpg",
         "heroAlt": "Tampilan website Sistem Informasi Desa Tobadak",
         "tags": [
             {
@@ -66,6 +66,10 @@
         },
         "gallery": [
             {
+                "image": "../../assets/img/portfolio/proyek/digital-desa-full.jpg",
+                "alt": "Halaman lengkap website Desa Tobadak"
+            },
+            {
                 "image": "../../assets/img/portfolio/desa-thumb-1.jpg",
                 "alt": "Halaman website Desa Tobadak"
             },
@@ -86,6 +90,14 @@
                     "Website profil dan informasi desa."
                 ]
             }
+        ],
+        "liveUrl": "https://tobadak.desa.id/",
+        "tech": [
+            "PHP",
+            "jQuery",
+            "Alpine.js",
+            "Leaflet",
+            "AOS"
         ]
     }
 }

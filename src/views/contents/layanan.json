@@ -139,32 +139,6 @@
             }
         ]
     },
-    "portfolio": {
-        "bg": "bg-gray",
-        "subTitle": "Portofolio",
-        "title": "Proyek yang Pernah Kami Kerjakan",
-        "items": [
-            {
-                "image": "../../assets/img/portfolio/work01.jpg",
-                "category": "Website & Sistem Desa",
-                "title": "Smart",
-                "titleBold": "Desa",
-                "url": "/digital-desa"
-            },
-            {
-                "image": "../../assets/img/portfolio/work02.jpg",
-                "category": "Website Booking",
-                "title": "Book",
-                "titleBold": "Villas"
-            },
-            {
-                "image": "../../assets/img/portfolio/work03.jpg",
-                "category": "Toko Online",
-                "title": "Website",
-                "titleBold": "eCommerce"
-            }
-        ]
-    },
     "testimonial": {
         "title": "Testimoni",
         "types": [

@@ -1809,3 +1809,81 @@ ul.useful-link.list-single li {
     h3 { font-size: 22px; margin: 8px 0 10px; }
     p { margin-bottom: 14px; }
 }
+
+.project-author-details .right-info {
+    ul.list-disc {
+        display: block;
+        margin: 12px 0 0 20px;
+
+        li {
+            display: list-item;
+            list-style: disc;
+            border: 0;
+            padding: 0;
+            margin-bottom: 6px;
+        }
+    }
+
+    .project-live-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 20px;
+        border-radius: 30px;
+        border: 1px solid var(--color-primary);
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        transition: all 0.2s;
+
+        &:hover {
+            background: var(--color-primary);
+            color: var(--dark);
+        }
+    }
+}
+
+.bg-gray .portfolio-filters button,
+.portfolio-grid-area .portfolio-filters button {
+    color: inherit;
+    border-color: rgba(128, 128, 128, 0.4);
+
+    &.active,
+    &:hover {
+        color: var(--dark);
+    }
+}
+
+.pf-desc {
+    margin: 10px 0 14px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.pf-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        padding: 3px 12px;
+        border-radius: 30px;
+        border: 1px solid rgba(128, 128, 128, 0.45);
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.6;
+    }
+}
+
+.project-author-details ul li .pf-tech li {
+    display: inline-block;
+    border-top: 1px solid rgba(128, 128, 128, 0.45);
+    padding: 3px 12px;
+}
+
+.portfolio-list {
+    align-items: flex-start;
+}

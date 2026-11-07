@@ -1,0 +1,89 @@
+{
+    "page_title": "Kelas CPNS Online: Platform Tryout & Belajar | Portofolio Tekoala",
+    "pageKey": "portofolio",
+    "meta": {
+        "description": "Kami merancang landing page yang menjelaskan masalah peserta, menawarkan simulasi CAT real-time, soal SKD & SKB, dan analisis nilai per subtes.",
+        "path": "proyek-kelas-cpns-online"
+    },
+    "breadcrumb": {
+        "title": "Kelas CPNS Online: Platform Tryout & Belajar",
+        "current": "Portofolio"
+    },
+    "caseStudy": {
+        "heroImage": "../../assets/img/portfolio/proyek/kelas-cpns-online.jpg",
+        "heroAlt": "Tampilan Kelas CPNS Online: Platform Tryout & Belajar",
+        "liveUrl": "https://kelascpnsonline.com/",
+        "tags": [
+            {
+                "label": "Platform Edukasi",
+                "url": "/portofolio"
+            },
+            {
+                "label": "Landing Page",
+                "url": "/portofolio"
+            }
+        ],
+        "title": "Kelas CPNS Online: Platform Tryout & Belajar",
+        "client": "Kelas CPNS Online",
+        "scope": [
+            "Landing page konversi",
+            "Copywriting & struktur penawaran",
+            "Integrasi platform tryout"
+        ],
+        "problem": {
+            "summary": "Peserta CPNS bingung menyiapkan ujian, kesulitan latihan soal, dan sering tidak tahu kelemahan mereka.",
+            "points": [
+                "Bingung persiapan administrasi dan materi.",
+                "Belum menemukan mentor dan latihan yang tepat.",
+                "Hasil bimbel sebelumnya kurang memuaskan."
+            ]
+        },
+        "solution": {
+            "summary": "Kami merancang landing page yang menjelaskan masalah peserta, menawarkan simulasi CAT real-time, soal SKD & SKB, dan analisis nilai per subtes.",
+            "points": [
+                "Simulasi CAT dan tryout.",
+                "Analisis nilai TWK, TIU, TKP.",
+                "Pembahasan soal dan trik pengerjaan.",
+                "Alur pendaftaran yang jelas."
+            ]
+        },
+        "results": {
+            "summary": "Calon peserta memahami manfaat program dan mudah mendaftar.",
+            "points": [
+                "Pesan penawaran lebih jelas.",
+                "Struktur halaman fokus pada konversi.",
+                "Tampil baik di HP."
+            ]
+        },
+        "gallery": [
+            {
+                "image": "../../assets/img/portfolio/proyek/kelas-cpns-online-full.jpg",
+                "alt": "Halaman lengkap Kelas CPNS Online"
+            }
+        ],
+        "lists": [
+            {
+                "title": "Fitur Program",
+                "items": [
+                    "Simulasi CAT real-time.",
+                    "Soal SKD dan SKB.",
+                    "Analisis nilai per subtes.",
+                    "Pembahasan dan trik.",
+                    "Mentor."
+                ]
+            }
+        ],
+        "tech": [
+            "WordPress",
+            "PHP",
+            "jQuery",
+            "Swiper"
+        ]
+    },
+    "cta": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Punya Proyek Serupa?",
+        "description": "Ceritakan kebutuhan Anda, kami balas dengan rekomendasi solusi dan estimasi biaya.",
+        "button": "Minta Penawaran"
+    }
+}

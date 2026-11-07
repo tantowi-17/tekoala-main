@@ -1,0 +1,89 @@
+{
+    "page_title": "Sawit Timbang: Sistem Timbangan Sawit | Portofolio Tekoala",
+    "pageKey": "portofolio",
+    "meta": {
+        "description": "Kami membangun sistem jembatan timbang digital yang menghitung Gross, Tare, dan Netto otomatis, lengkap dengan laporan dan hak akses.",
+        "path": "proyek-sawit-timbang"
+    },
+    "breadcrumb": {
+        "title": "Sawit Timbang: Sistem Timbangan Sawit",
+        "current": "Portofolio"
+    },
+    "caseStudy": {
+        "heroImage": "../../assets/img/portfolio/proyek/sawit-timbang.jpg",
+        "heroAlt": "Tampilan Sawit Timbang: Sistem Timbangan Sawit",
+        "liveUrl": "https://timbangan-sawit.netlify.app/",
+        "tags": [
+            {
+                "label": "Aplikasi Web",
+                "url": "/portofolio"
+            },
+            {
+                "label": "Agribisnis",
+                "url": "/portofolio"
+            }
+        ],
+        "title": "Sawit Timbang: Sistem Timbangan Sawit",
+        "client": "Proyek demo Tekoala",
+        "scope": [
+            "Analisis alur timbang",
+            "Aplikasi web & dashboard",
+            "Halaman landing & harga langganan"
+        ],
+        "problem": {
+            "summary": "Penimbangan TBS di PKS dan RAM sering dicatat manual sehingga rawan salah hitung dan manipulasi data.",
+            "points": [
+                "Perhitungan Gross, Tare, dan Netto manual.",
+                "Riwayat timbangan bisa diubah.",
+                "Laporan tonase lambat disiapkan."
+            ]
+        },
+        "solution": {
+            "summary": "Kami membangun sistem jembatan timbang digital yang menghitung Gross, Tare, dan Netto otomatis, lengkap dengan laporan dan hak akses.",
+            "points": [
+                "Timbang masuk (Gross) dan keluar (Tare).",
+                "Netto dan harga bayar dihitung otomatis.",
+                "Riwayat terkunci setelah disimpan.",
+                "Dashboard tonase dan jumlah truk."
+            ]
+        },
+        "results": {
+            "summary": "Proses penimbangan lebih cepat dan datanya lebih terjaga.",
+            "points": [
+                "Kesalahan hitung manual berkurang.",
+                "Data aman dengan hak akses operator dan admin.",
+                "Laporan real-time."
+            ]
+        },
+        "gallery": [
+            {
+                "image": "../../assets/img/portfolio/proyek/sawit-timbang-full.jpg",
+                "alt": "Halaman lengkap Sawit Timbang"
+            }
+        ],
+        "lists": [
+            {
+                "title": "Fitur Sistem",
+                "items": [
+                    "Timbang masuk dan keluar.",
+                    "Perhitungan otomatis.",
+                    "Anti-fraud (riwayat terkunci).",
+                    "Dashboard real-time.",
+                    "Paket langganan."
+                ]
+            }
+        ],
+        "tech": [
+            "HTML",
+            "Bootstrap",
+            "JavaScript",
+            "Netlify"
+        ]
+    },
+    "cta": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Punya Proyek Serupa?",
+        "description": "Ceritakan kebutuhan Anda, kami balas dengan rekomendasi solusi dan estimasi biaya.",
+        "button": "Minta Penawaran"
+    }
+}

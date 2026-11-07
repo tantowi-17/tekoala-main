@@ -1,0 +1,90 @@
+{
+    "page_title": "Baleona: Logo HUT ke-14 Mamuju Tengah | Portofolio Tekoala",
+    "pageKey": "portofolio",
+    "meta": {
+        "description": "Kami membuat microsite interaktif yang menjelaskan filosofi Baleona, narasi visual, palet warna, panduan penggunaan, dan menyediakan unduhan logo serta photo booth.",
+        "path": "proyek-baleona"
+    },
+    "breadcrumb": {
+        "title": "Baleona: Logo HUT ke-14 Mamuju Tengah",
+        "current": "Portofolio"
+    },
+    "caseStudy": {
+        "heroImage": "../../assets/img/portfolio/proyek/baleona.jpg",
+        "heroAlt": "Tampilan Baleona: Logo HUT ke-14 Mamuju Tengah",
+        "liveUrl": "https://baleona.netlify.app/",
+        "tags": [
+            {
+                "label": "Microsite",
+                "url": "/portofolio"
+            },
+            {
+                "label": "Branding",
+                "url": "/portofolio"
+            }
+        ],
+        "title": "Baleona: Logo HUT ke-14 Mamuju Tengah",
+        "client": "HUT ke-14 Kabupaten Mamuju Tengah",
+        "scope": [
+            "Desain microsite",
+            "Narasi visual & palet warna",
+            "Photo booth dan unduh logo"
+        ],
+        "problem": {
+            "summary": "Makna logo HUT ke-14 Mamuju Tengah perlu disampaikan dan logonya mudah dipakai masyarakat serta instansi.",
+            "points": [
+                "Filosofi logo sulit dipahami bila hanya berupa gambar.",
+                "Panduan warna dan penggunaan tidak terdokumentasi.",
+                "Masyarakat butuh cara mudah mengunduh dan memakai logo."
+            ]
+        },
+        "solution": {
+            "summary": "Kami membuat microsite interaktif yang menjelaskan filosofi Baleona, narasi visual, palet warna, panduan penggunaan, dan menyediakan unduhan logo serta photo booth.",
+            "points": [
+                "Narasi filosofi dan makna logo.",
+                "Palet warna dengan kode HEX, RGB, dan CMYK yang bisa disalin.",
+                "Panduan penggunaan dan implementasi.",
+                "Unduh logo dan bingkai foto photo booth."
+            ]
+        },
+        "results": {
+            "summary": "Logo HUT tersampaikan dengan cerita yang jelas dan mudah dipakai publik.",
+            "points": [
+                "Panduan logo terpusat dalam satu tautan.",
+                "Masyarakat dapat unduh dan berpartisipasi lewat photo booth.",
+                "Tampilan interaktif dan modern."
+            ]
+        },
+        "gallery": [
+            {
+                "image": "../../assets/img/portfolio/proyek/baleona-full.jpg",
+                "alt": "Halaman lengkap Baleona: Logo HUT Mamuju Tengah"
+            }
+        ],
+        "lists": [
+            {
+                "title": "Fitur Microsite",
+                "items": [
+                    "Filosofi dan narasi visual.",
+                    "Palet warna yang bisa disalin.",
+                    "Panduan penggunaan.",
+                    "Unduh logo.",
+                    "Photo booth bingkai foto."
+                ]
+            }
+        ],
+        "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "AOS",
+            "Netlify"
+        ]
+    },
+    "cta": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Punya Proyek Serupa?",
+        "description": "Ceritakan kebutuhan Anda, kami balas dengan rekomendasi solusi dan estimasi biaya.",
+        "button": "Minta Penawaran"
+    }
+}

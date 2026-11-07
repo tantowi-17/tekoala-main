@@ -1,0 +1,91 @@
+{
+    "page_title": "Website Resmi Desa Palongaan | Portofolio Tekoala",
+    "pageKey": "portofolio",
+    "meta": {
+        "description": "Kami membangun website resmi desa berbasis sistem informasi desa yang memuat profil, statistik, APBDes, PPID, produk hukum, dan layanan.",
+        "path": "proyek-palongaan"
+    },
+    "breadcrumb": {
+        "title": "Website Resmi Desa Palongaan",
+        "current": "Portofolio"
+    },
+    "caseStudy": {
+        "heroImage": "../../assets/img/portfolio/proyek/palongaan.jpg",
+        "heroAlt": "Tampilan Website Resmi Desa Palongaan",
+        "liveUrl": "https://palongaan.desa.id/",
+        "tags": [
+            {
+                "label": "Web Desa",
+                "url": "/portofolio"
+            },
+            {
+                "label": "Digitalisasi Desa",
+                "url": "/portofolio"
+            }
+        ],
+        "title": "Website Resmi Desa Palongaan",
+        "client": "Pemdes Palongaan",
+        "scope": [
+            "Website resmi desa",
+            "Profil, statistik & informasi publik",
+            "Layanan mandiri & PPID"
+        ],
+        "problem": {
+            "summary": "Desa membutuhkan kanal resmi untuk transparansi informasi publik, statistik, dan layanan kepada warga.",
+            "points": [
+                "Informasi desa tidak terpusat.",
+                "Data statistik dan APBDes sulit diakses warga.",
+                "Layanan dan pengaduan belum online."
+            ]
+        },
+        "solution": {
+            "summary": "Kami membangun website resmi desa berbasis sistem informasi desa yang memuat profil, statistik, APBDes, PPID, produk hukum, dan layanan.",
+            "points": [
+                "Profil, visi-misi, sejarah, dan SOTK desa.",
+                "Statistik penduduk, pendidikan, pekerjaan, dan IDM.",
+                "APBDes, produk hukum, dan pembangunan.",
+                "Pengaduan, layanan mandiri, dan e-stunting.",
+                "PPID."
+            ]
+        },
+        "results": {
+            "summary": "Warga mengakses informasi dan layanan desa secara online.",
+            "points": [
+                "Transparansi informasi publik meningkat.",
+                "Data statistik mudah diakses.",
+                "Desa punya identitas digital resmi."
+            ]
+        },
+        "gallery": [
+            {
+                "image": "../../assets/img/portfolio/proyek/palongaan-full.jpg",
+                "alt": "Halaman lengkap Website Desa Palongaan"
+            }
+        ],
+        "lists": [
+            {
+                "title": "Fitur Website",
+                "items": [
+                    "Profil dan SOTK desa.",
+                    "Statistik dan IDM.",
+                    "APBDes dan produk hukum.",
+                    "Pengaduan dan layanan mandiri.",
+                    "PPID."
+                ]
+            }
+        ],
+        "tech": [
+            "PHP",
+            "Bootstrap",
+            "jQuery",
+            "Alpine.js",
+            "Leaflet"
+        ]
+    },
+    "cta": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Punya Proyek Serupa?",
+        "description": "Ceritakan kebutuhan Anda, kami balas dengan rekomendasi solusi dan estimasi biaya.",
+        "button": "Minta Penawaran"
+    }
+}

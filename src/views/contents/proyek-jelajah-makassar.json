@@ -1,0 +1,90 @@
+{
+    "page_title": "Jelajah Makassar: Direktori Wisata & Kuliner | Portofolio Tekoala",
+    "pageKey": "portofolio",
+    "meta": {
+        "description": "Kami membuat direktori wisata dan kuliner Makassar dengan kategori, daftar event, dan paket perjalanan.",
+        "path": "proyek-jelajah-makassar"
+    },
+    "breadcrumb": {
+        "title": "Jelajah Makassar: Direktori Wisata & Kuliner",
+        "current": "Portofolio"
+    },
+    "caseStudy": {
+        "heroImage": "../../assets/img/portfolio/proyek/jelajah-makassar.jpg",
+        "heroAlt": "Tampilan Jelajah Makassar: Direktori Wisata & Kuliner",
+        "liveUrl": "https://jelajah-makassar.netlify.app/",
+        "tags": [
+            {
+                "label": "Direktori Wisata",
+                "url": "/portofolio"
+            },
+            {
+                "label": "Kuliner",
+                "url": "/portofolio"
+            }
+        ],
+        "title": "Jelajah Makassar: Direktori Wisata & Kuliner",
+        "client": "Proyek demo Tekoala",
+        "scope": [
+            "UI/UX Design",
+            "Direktori destinasi & kuliner",
+            "Halaman event & paket travel"
+        ],
+        "problem": {
+            "summary": "Wisatawan kesulitan menemukan informasi destinasi, kuliner khas, dan event di Makassar dalam satu tempat.",
+            "points": [
+                "Informasi tersebar di banyak sumber.",
+                "Sulit membandingkan tempat makan dan destinasi.",
+                "Event wisata mudah terlewat."
+            ]
+        },
+        "solution": {
+            "summary": "Kami membuat direktori wisata dan kuliner Makassar dengan kategori, daftar event, dan paket perjalanan.",
+            "points": [
+                "Direktori destinasi (sejarah, alam, hiburan).",
+                "Kuliner khas dan lokasi tempat makan.",
+                "Kalender event.",
+                "Paket travel dan kontak."
+            ]
+        },
+        "results": {
+            "summary": "Pengunjung mendapat panduan wisata Makassar yang rapi dan mudah dijelajahi.",
+            "points": [
+                "Informasi terpusat.",
+                "Navigasi per kategori yang jelas.",
+                "Tampil menarik di HP."
+            ]
+        },
+        "gallery": [
+            {
+                "image": "../../assets/img/portfolio/proyek/jelajah-makassar-full.jpg",
+                "alt": "Halaman lengkap Jelajah Makassar"
+            }
+        ],
+        "lists": [
+            {
+                "title": "Fitur Website",
+                "items": [
+                    "Destinasi wisata.",
+                    "Kuliner khas.",
+                    "Event mendatang.",
+                    "Paket travel.",
+                    "Hubungi kami."
+                ]
+            }
+        ],
+        "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Font Awesome",
+            "Netlify"
+        ]
+    },
+    "cta": {
+        "subTitle": "Konsultasi Gratis",
+        "title": "Punya Proyek Serupa?",
+        "description": "Ceritakan kebutuhan Anda, kami balas dengan rekomendasi solusi dan estimasi biaya.",
+        "button": "Minta Penawaran"
+    }
+}
