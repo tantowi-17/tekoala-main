@@ -47,15 +47,9 @@
         <p>Lihat detailnya di <a href="/pelatihan">halaman Program Pelatihan</a>.</p>
     `,
         "bootcamp": `
-        💡 Biaya bootcamp (harga early bird):
-        <ul>
-            <li>- Bootcamp Web Development: <strong>Rp 2.499.000</strong></li>
-            <li>- Bootcamp Digital Marketing: <strong>Rp 1.999.000</strong></li>
-            <li>- Bootcamp AI Specialist: <strong>Rp 1.799.000</strong></li>
-            <li>- Bootcamp Data Analytics: <strong>Rp 1.999.000</strong></li>
-            <li>- Kelas singkat mulai <strong>Rp 249.000</strong></li>
-        </ul>
-        <p>Tersedia opsi cicilan. Tanya admin: <a href="https://wa.me/6282366667326" target="_blank"><i class="far fa-phone"></i> +62 823 6666 7326</a></p>
+        💡 Biaya program untuk batch berikutnya <strong>segera kami umumkan</strong>.<br>
+        Daftar pra-pendaftaran sekarang untuk dapat info harga & jadwal paling awal.
+        <p>Tanya admin: <a href="https://wa.me/6282366667326" target="_blank"><i class="far fa-phone"></i> +62 823 6666 7326</a></p>
     `,
         "jadwal": `
         📅 Jadwal batch terbaru selalu kami umumkan di Instagram <a href="https://www.instagram.com/tekoala_" target="_blank">@tekoala_</a> dan WhatsApp.<br>
