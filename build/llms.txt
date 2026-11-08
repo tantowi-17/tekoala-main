@@ -13,13 +13,13 @@ Tekoala menyediakan dua hal: (1) pelatihan dan bootcamp skill digital (web devel
 
 ## Program Pelatihan
 
-- **Bootcamp Web Development** (Bootcamp, 10 Minggu, level Pemula, bidang Web Development): HTML, CSS, JavaScript, React, backend & database, hingga deploy. Lulus dengan 3 proyek portofolio. Biaya: Rp 2.499.000 (normal Rp 4.999.000).
-- **Bootcamp Digital Marketing** (Bootcamp, 8 Minggu, level Pemula - Menengah, bidang Digital Marketing): Strategi konten, copywriting, Meta & TikTok Ads, Google Ads, SEO, dan analitik dengan praktik budget iklan nyata. Biaya: Rp 1.999.000 (normal Rp 3.999.000).
-- **Bootcamp AI Specialist** (Bootcamp, 6 Minggu, level Pemula - Menengah, bidang AI): Prompt engineering, AI untuk konten & riset, otomasi workflow (n8n/Zapier), hingga membangun chatbot dan AI agent sederhana. Biaya: Rp 1.799.000 (normal Rp 3.499.000).
-- **Bootcamp Data Analytics** (Bootcamp, 8 Minggu, level Pemula, bidang Data): Spreadsheet, SQL, Python dasar, dan dashboard Looker Studio/Power BI. Lulus dengan portofolio analisis data studi kasus nyata. Biaya: Rp 1.999.000 (normal Rp 3.999.000).
-- **Website Bisnis Tanpa Coding** (Kelas Singkat, 2 Minggu, level Pemula, bidang Web Development): Bangun website company profile atau toko online sendiri dengan WordPress, siap online di akhir kelas. Biaya: Rp 499.000 (normal Rp 999.000).
-- **Meta & TikTok Ads untuk UMKM** (Kelas Singkat, 2 Minggu, level Pemula, bidang Digital Marketing): Setup akun iklan, targeting, materi iklan yang menjual, dan membaca hasil kampanye untuk usaha kecil. Biaya: Rp 449.000 (normal Rp 899.000).
-- **Workshop AI untuk Konten & Produktivitas** (Workshop, 1 Hari, level Semua Level, bidang AI): Pakai AI untuk riset, menulis konten, desain, dan otomasi pekerjaan harian, langsung dipraktikkan. Biaya: Rp 249.000.
+- **Bootcamp Web Development** (Bootcamp, 10 Minggu, level Pemula, bidang Web Development): HTML, CSS, JavaScript, React, backend & database, hingga deploy. Lulus dengan 3 proyek portofolio. Biaya: Segera Hadir.
+- **Bootcamp Digital Marketing** (Bootcamp, 8 Minggu, level Pemula - Menengah, bidang Digital Marketing): Strategi konten, copywriting, Meta & TikTok Ads, Google Ads, SEO, dan analitik dengan praktik budget iklan nyata. Biaya: Segera Hadir.
+- **Bootcamp AI Specialist** (Bootcamp, 6 Minggu, level Pemula - Menengah, bidang AI): Prompt engineering, AI untuk konten & riset, otomasi workflow (n8n/Zapier), hingga membangun chatbot dan AI agent sederhana. Biaya: Segera Hadir.
+- **Bootcamp Data Analytics** (Bootcamp, 8 Minggu, level Pemula, bidang Data): Spreadsheet, SQL, Python dasar, dan dashboard Looker Studio/Power BI. Lulus dengan portofolio analisis data studi kasus nyata. Biaya: Segera Hadir.
+- **Website Bisnis Tanpa Coding** (Kelas Singkat, 2 Minggu, level Pemula, bidang Web Development): Bangun website company profile atau toko online sendiri dengan WordPress, siap online di akhir kelas. Biaya: Segera Hadir.
+- **Meta & TikTok Ads untuk UMKM** (Kelas Singkat, 2 Minggu, level Pemula, bidang Digital Marketing): Setup akun iklan, targeting, materi iklan yang menjual, dan membaca hasil kampanye untuk usaha kecil. Biaya: Segera Hadir.
+- **Workshop AI untuk Konten & Produktivitas** (Workshop, 1 Hari, level Semua Level, bidang AI): Pakai AI untuk riset, menulis konten, desain, dan otomasi pekerjaan harian, langsung dipraktikkan. Biaya: Segera Hadir.
 - **Pelatihan Instansi & Desa** (In-House, 1 - 5 Hari, level Custom, bidang Instansi & Desa): Pelatihan untuk perangkat desa, dinas, sekolah, dan perusahaan. Materi, jadwal, dan lokasi menyesuaikan. Biaya: Sesuai Kebutuhan.
 
 Daftar lengkap dan filter kelas: https://tekoala.id/pelatihan

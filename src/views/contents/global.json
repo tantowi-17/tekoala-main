@@ -222,8 +222,7 @@
                 "level": "Pemula",
                 "title": "Bootcamp Web Development",
                 "description": "HTML, CSS, JavaScript, React, backend & database, hingga deploy. Lulus dengan 3 proyek portofolio.",
-                "priceNormal": "Rp 4.999.000",
-                "price": "Rp 2.499.000"
+                "price": "Segera Hadir"
             },
             {
                 "icon": "fas fa-bullhorn",
@@ -233,8 +232,7 @@
                 "level": "Pemula - Menengah",
                 "title": "Bootcamp Digital Marketing",
                 "description": "Strategi konten, copywriting, Meta & TikTok Ads, Google Ads, SEO, dan analitik dengan praktik budget iklan nyata.",
-                "priceNormal": "Rp 3.999.000",
-                "price": "Rp 1.999.000"
+                "price": "Segera Hadir"
             },
             {
                 "icon": "fas fa-robot",
@@ -244,8 +242,7 @@
                 "level": "Pemula - Menengah",
                 "title": "Bootcamp AI Specialist",
                 "description": "Prompt engineering, AI untuk konten & riset, otomasi workflow (n8n/Zapier), hingga membangun chatbot dan AI agent sederhana.",
-                "priceNormal": "Rp 3.499.000",
-                "price": "Rp 1.799.000"
+                "price": "Segera Hadir"
             },
             {
                 "icon": "fas fa-chart-bar",
@@ -255,8 +252,7 @@
                 "level": "Pemula",
                 "title": "Bootcamp Data Analytics",
                 "description": "Spreadsheet, SQL, Python dasar, dan dashboard Looker Studio/Power BI. Lulus dengan portofolio analisis data studi kasus nyata.",
-                "priceNormal": "Rp 3.999.000",
-                "price": "Rp 1.999.000"
+                "price": "Segera Hadir"
             },
             {
                 "icon": "fas fa-store",
@@ -266,8 +262,7 @@
                 "level": "Pemula",
                 "title": "Website Bisnis Tanpa Coding",
                 "description": "Bangun website company profile atau toko online sendiri dengan WordPress, siap online di akhir kelas.",
-                "priceNormal": "Rp 999.000",
-                "price": "Rp 499.000"
+                "price": "Segera Hadir"
             },
             {
                 "icon": "fas fa-chart-line",
@@ -277,8 +272,7 @@
                 "level": "Pemula",
                 "title": "Meta & TikTok Ads untuk UMKM",
                 "description": "Setup akun iklan, targeting, materi iklan yang menjual, dan membaca hasil kampanye untuk usaha kecil.",
-                "priceNormal": "Rp 899.000",
-                "price": "Rp 449.000"
+                "price": "Segera Hadir"
             },
             {
                 "icon": "fas fa-lightbulb",
@@ -288,7 +282,7 @@
                 "level": "Semua Level",
                 "title": "Workshop AI untuk Konten & Produktivitas",
                 "description": "Pakai AI untuk riset, menulis konten, desain, dan otomasi pekerjaan harian, langsung dipraktikkan.",
-                "price": "Rp 249.000"
+                "price": "Segera Hadir"
             },
             {
                 "icon": "fas fa-landmark",

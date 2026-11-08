@@ -1758,17 +1758,30 @@ ul.useful-link.list-single li {
     button {
         padding: 8px 22px;
         border-radius: 30px;
-        border: 1px solid rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         background: transparent;
+        color: var(--white);
         font-weight: 600;
         cursor: pointer;
-        transition: all 0.2s;
+        transition: all 0.25s ease;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            display: none !important;
+        }
+
+        &:hover {
+            border-color: var(--color-primary);
+            color: var(--white);
+            background: transparent;
+        }
 
         &.active,
-        &:hover {
+        &.active:hover {
             background: var(--color-primary);
             border-color: var(--color-primary);
-            color: var(--dark);
+            color: var(--dark) !important;
         }
     }
 }
@@ -1843,16 +1856,7 @@ ul.useful-link.list-single li {
     }
 }
 
-.bg-gray .portfolio-filters button,
-.portfolio-grid-area .portfolio-filters button {
-    color: inherit;
-    border-color: rgba(128, 128, 128, 0.4);
 
-    &.active,
-    &:hover {
-        color: var(--dark);
-    }
-}
 
 .pf-desc {
     margin: 10px 0 14px;

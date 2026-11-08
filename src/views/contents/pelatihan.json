@@ -43,8 +43,8 @@
                 "active": true,
                 "name": "Bootcamp Web Development",
                 "note": "10 minggu, kelas live",
-                "prefix": "Rp",
-                "price": "2,49jt",
+                "prefix": "",
+                "price": "Segera Hadir",
                 "suitable": "Untuk calon developer & freelancer",
                 "features": [
                     "20+ sesi live bersama mentor",
@@ -57,8 +57,8 @@
             {
                 "name": "Bootcamp Digital Marketing",
                 "note": "8 minggu, kelas live",
-                "prefix": "Rp",
-                "price": "1,99jt",
+                "prefix": "",
+                "price": "Segera Hadir",
                 "suitable": "Untuk pemilik usaha & marketer",
                 "features": [
                     "16+ sesi live bersama mentor",
@@ -69,7 +69,7 @@
                 ]
             }
         ],
-        "footnote": "Harga early bird untuk batch terdekat. Tersedia opsi cicilan, <a href=\"/kontak\">hubungi kami</a> untuk detailnya."
+        "footnote": "Jadwal dan rincian investasi batch terdekat akan segera dibuka. <a href=\"/kontak\">Hubungi kami</a> untuk informasi pra-pendaftaran."
     },
     "process": {
         "subTitle": "Alur Belajar",
