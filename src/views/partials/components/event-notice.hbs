@@ -1,5 +1,5 @@
-{{!-- Di beranda event sudah tampil di kartu hero, jadi notifikasi tidak ditampilkan --}}
-{{#unless (eq @root.pageKey "index")}}
+{{!-- Di beranda event sudah tampil di kartu hero, dan di halaman daftar tidak perlu ditampilkan --}}
+{{#unless (or (eq @root.pageKey "index") (eq @root.pageKey "daftar"))}}
 {{#with (upcomingEvents @root.events) as |list|}}
 {{#each list}}
 {{#if @first}}
@@ -11,7 +11,7 @@
         <strong>{{this.title}}</strong>
         <small>{{this.dateLabel}} · {{this.timeLabel}} · {{this.price}}</small>
     </div>
-    <a href="/#event" class="event-notice-link" data-track="event_notice_click" data-track-event-name="{{this.title}}">Lihat</a>
+    <a href="/daftar?item={{slug this.title}}" class="event-notice-link" data-track="event_notice_click" data-track-event-name="{{this.title}}">Daftar</a>
     <button type="button" class="event-notice-close" aria-label="Tutup notifikasi event" data-event-notice-close><i class="fas fa-times"></i></button>
 </div>
 {{/if}}

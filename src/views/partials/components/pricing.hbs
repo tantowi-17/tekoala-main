@@ -24,8 +24,7 @@
                             </div>
                             <h2><sup>{{this.prefix}}</sup>{{this.price}}</h2>
                             <a class="btn btn-sm circle {{#if this.active}}btn-gradient{{else}}btn-light{{/if}} effect"
-                                href="https://wa.me/{{@root.phone}}?text={{urlencode (concat 'Halo Tekoala, saya tertarik dengan paket: ' this.name)}}"
-                                target="_blank" rel="noopener"
+                                {{#if this.registerUrl}}href="{{this.registerUrl}}"{{else}}href="https://wa.me/{{@root.phone}}?text={{urlencode (concat 'Halo Tekoala, saya tertarik dengan paket: ' this.name)}}" target="_blank" rel="noopener"{{/if}}
                                 data-track="pricing_click" data-track-plan="{{this.name}}">{{#if this.cta}}{{this.cta}}{{else}}Daftar Sekarang{{/if}}</a>
                         </div>
                         <div class="right">

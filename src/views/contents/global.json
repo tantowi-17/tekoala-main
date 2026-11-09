@@ -222,7 +222,8 @@
                 "level": "Pemula",
                 "title": "Bootcamp Web Development",
                 "description": "HTML, CSS, JavaScript, React, backend & database, hingga deploy. Lulus dengan 3 proyek portofolio.",
-                "price": "Segera Hadir"
+                "price": "Segera Hadir",
+                "isPaid": true
             },
             {
                 "icon": "fas fa-bullhorn",
@@ -232,7 +233,8 @@
                 "level": "Pemula - Menengah",
                 "title": "Bootcamp Digital Marketing",
                 "description": "Strategi konten, copywriting, Meta & TikTok Ads, Google Ads, SEO, dan analitik dengan praktik budget iklan nyata.",
-                "price": "Segera Hadir"
+                "price": "Segera Hadir",
+                "isPaid": true
             },
             {
                 "icon": "fas fa-robot",
@@ -242,7 +244,8 @@
                 "level": "Pemula - Menengah",
                 "title": "Bootcamp AI Specialist",
                 "description": "Prompt engineering, AI untuk konten & riset, otomasi workflow (n8n/Zapier), hingga membangun chatbot dan AI agent sederhana.",
-                "price": "Segera Hadir"
+                "price": "Segera Hadir",
+                "isPaid": true
             },
             {
                 "icon": "fas fa-chart-bar",
@@ -252,7 +255,8 @@
                 "level": "Pemula",
                 "title": "Bootcamp Data Analytics",
                 "description": "Spreadsheet, SQL, Python dasar, dan dashboard Looker Studio/Power BI. Lulus dengan portofolio analisis data studi kasus nyata.",
-                "price": "Segera Hadir"
+                "price": "Segera Hadir",
+                "isPaid": true
             },
             {
                 "icon": "fas fa-store",
@@ -262,7 +266,8 @@
                 "level": "Pemula",
                 "title": "Website Bisnis Tanpa Coding",
                 "description": "Bangun website company profile atau toko online sendiri dengan WordPress, siap online di akhir kelas.",
-                "price": "Segera Hadir"
+                "price": "Segera Hadir",
+                "isPaid": true
             },
             {
                 "icon": "fas fa-chart-line",
@@ -272,7 +277,8 @@
                 "level": "Pemula",
                 "title": "Meta & TikTok Ads untuk UMKM",
                 "description": "Setup akun iklan, targeting, materi iklan yang menjual, dan membaca hasil kampanye untuk usaha kecil.",
-                "price": "Segera Hadir"
+                "price": "Segera Hadir",
+                "isPaid": true
             },
             {
                 "icon": "fas fa-lightbulb",
@@ -282,7 +288,8 @@
                 "level": "Semua Level",
                 "title": "Workshop AI untuk Konten & Produktivitas",
                 "description": "Pakai AI untuk riset, menulis konten, desain, dan otomasi pekerjaan harian, langsung dipraktikkan.",
-                "price": "Segera Hadir"
+                "price": "Segera Hadir",
+                "isPaid": true
             },
             {
                 "icon": "fas fa-landmark",
@@ -293,9 +300,15 @@
                 "title": "Pelatihan Instansi & Desa",
                 "description": "Pelatihan untuk perangkat desa, dinas, sekolah, dan perusahaan. Materi, jadwal, dan lokasi menyesuaikan.",
                 "price": "Sesuai Kebutuhan",
-                "cta": "Konsultasi Gratis"
+                "cta": "Konsultasi Gratis",
+                "isPaid": true
             }
         ]
+    },
+    "registration": {
+        "_catatan": "Tempel URL Web App Google Apps Script (berakhiran /exec) pada sheetEndpoint setelah deploy script di tracking/google-sheets-apps-script.js. appToken dipakai memvalidasi request.",
+        "sheetEndpoint": "https://script.google.com/macros/s/AKfycbzS8XUlVPw1U-y7LYqGlmeXr3R3YtR5hDlqlMa61stRzwVpFUBKAicKJL4sZBaT9_fS/exec",
+        "appToken": "tkl_reg_2026_v1"
     },
     "tracking": {
         "_catatan": "Isi setelah membuat akun. gtmId: dari tagmanager.google.com (format GTM-XXXXXXX). GA4, Google Ads, dan Meta Pixel diatur DI DALAM GTM (lihat TRACKING.md), bukan di sini. googleSiteVerification: isi kode 'content' dari meta tag verifikasi Google Search Console (opsional jika verifikasi via DNS/GTM). Kosongkan untuk menonaktifkan.",
@@ -303,7 +316,7 @@
         "googleSiteVerification": ""
     },
     "events": {
-        "_catatan": "Event tampil otomatis di beranda + notifikasi semua halaman selama belum selesai (dicek di browser pengunjung, jadi hilang sendiri setelah 'end' walau tidak build ulang). start/end format ISO dengan zona waktu: +08:00 = WITA, +07:00 = WIB. Hapus/biarkan event lama, tidak masalah.",
+        "_catatan": "Event tampil otomatis di beranda + notifikasi semua halaman selama belum selesai (dicek di browser pengunjung, jadi hilang sendiri setelah 'end' walau tidak build ulang). start/end format ISO dengan zona waktu: +08:00 = WITA, +07:00 = WIB. isPaid: false = Form Kelas Gratis (10 field), isPaid: true = Form Kelas Berbayar (4 field).",
         "items": [
             {
                 "title": "Sharing Session: Data Analyst",
@@ -318,9 +331,10 @@
                 "timeLabel": "19.00 – 21.00 WITA",
                 "format": "Online (Zoom / Google Meet)",
                 "price": "Gratis",
+                "isPaid": false,
                 "audience": "Internal komunitas Tekoala",
                 "category": "data",
-                "cta": "Daftar via WhatsApp"
+                "cta": "Daftar Sekarang"
             },
             {
                 "title": "Sharing Session: Jadi AI Engineer",
@@ -335,9 +349,10 @@
                 "timeLabel": "19.00 – 21.00 WITA",
                 "format": "Online (Zoom / Google Meet)",
                 "price": "Gratis",
+                "isPaid": false,
                 "audience": "Internal komunitas Tekoala",
                 "category": "ai",
-                "cta": "Daftar via WhatsApp"
+                "cta": "Daftar Sekarang"
             },
             {
                 "title": "Sharing Session: Jualan lewat Sosmed",
@@ -352,9 +367,10 @@
                 "timeLabel": "19.00 – 21.00 WITA",
                 "format": "Online (Zoom / Google Meet)",
                 "price": "Gratis",
+                "isPaid": false,
                 "audience": "Internal komunitas Tekoala",
                 "category": "digital-marketing",
-                "cta": "Daftar via WhatsApp"
+                "cta": "Daftar Sekarang"
             },
             {
                 "title": "Sharing Session: AI untuk Bisnis",
@@ -369,9 +385,10 @@
                 "timeLabel": "19.00 – 21.00 WITA",
                 "format": "Online (Zoom / Google Meet)",
                 "price": "Gratis",
+                "isPaid": false,
                 "audience": "Internal komunitas Tekoala",
                 "category": "ai",
-                "cta": "Daftar via WhatsApp"
+                "cta": "Daftar Sekarang"
             }
         ]
     }

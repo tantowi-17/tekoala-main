@@ -42,6 +42,7 @@
             {
                 "active": true,
                 "name": "Bootcamp Web Development",
+                "registerUrl": "/daftar?item=bootcamp-web-development",
                 "note": "10 minggu, kelas live",
                 "prefix": "",
                 "price": "Segera Hadir",
@@ -56,6 +57,7 @@
             },
             {
                 "name": "Bootcamp Digital Marketing",
+                "registerUrl": "/daftar?item=bootcamp-digital-marketing",
                 "note": "8 minggu, kelas live",
                 "prefix": "",
                 "price": "Segera Hadir",

@@ -20,7 +20,7 @@
     /* ==================================================
         Form kontak -> WhatsApp
     ================================================== */
-    $('.wa-form').on('submit', function (e) {
+    $('.wa-form:not(.reg-form)').on('submit', function (e) {
         e.preventDefault();
 
         const form = $(this);
@@ -46,6 +46,342 @@
     });
 
     /* ==================================================
+        Form Registrasi Event & Kelas -> Google Sheets
+        - Mode Gratis (10 field + multiple input social media)
+        - Mode Berbayar (4 field inti)
+        - Proteksi: Honeypot, timing anti-bot, rate-limit,
+          & sanitasi Formula Injection Google Sheets
+    ================================================== */
+    $('.reg-form').each(function () {
+        const form = $(this);
+        const select = form.find('[data-reg-select]');
+        const msg = form.find('[data-reg-msg]');
+        const submitBtn = form.find('[data-reg-submit]');
+        const submitText = form.find('[data-reg-submit-text]');
+        const socmedList = form.find('[data-socmed-list]');
+        const socmedAdd = form.find('[data-socmed-add]');
+        const successBox = $('[data-reg-success]');
+        const modePill = $('[data-reg-mode-pill]');
+        const badge = $('[data-reg-badge]');
+        const loadedAt = Date.now();
+        const MAX_SOCMED = 5;
+
+        // Sanitasi teks & cegah Formula Injection di Google Sheets (=, +, -, @)
+        function sanitizeCell(value, maxLen) {
+            let s = String(value || '')
+                .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '')
+                .trim();
+            if (maxLen && s.length > maxLen) s = s.slice(0, maxLen);
+            if (/^[=+\-@\t\r]/.test(s)) s = "'" + s;
+            return s;
+        }
+
+        function isPaidSelected() {
+            const opt = select.find('option:selected');
+            return String(opt.data('paid')) === 'true';
+        }
+
+        function syncMode() {
+            const opt = select.find('option:selected');
+            const paid = isPaidSelected();
+
+            // Update kartu ringkasan di kolom kiri
+            badge
+                .toggleClass('is-paid', paid)
+                .toggleClass('is-free', !paid)
+                .text(paid ? 'Kelas Berbayar' : 'Kelas Gratis');
+            $('[data-reg-kind]').text(opt.data('kind') || '-');
+            $('[data-reg-title]').text(opt.data('title') || '-');
+            $('[data-reg-schedule]').text(opt.data('schedule') || '-');
+            $('[data-reg-speaker]').text(opt.data('speaker') || '-');
+            $('[data-reg-format]').text(opt.data('format') || '-');
+            $('[data-reg-price]').text(opt.data('price') || (paid ? 'Berbayar' : 'Gratis'));
+
+            // Update pill indikator mode formulir
+            modePill
+                .toggleClass('is-paid', paid)
+                .toggleClass('is-free', !paid)
+                .html(
+                    paid
+                        ? '<i class="fas fa-credit-card"></i> Formulir Kelas Berbayar'
+                        : '<i class="fas fa-check-circle"></i> Formulir Kelas Gratis'
+                );
+
+            // Cek apakah event sudah selesai (past event)
+            const endVal = opt.data('end');
+            const isEnded = endVal && Date.now() > Date.parse(endVal);
+
+            if (isEnded) {
+                modePill
+                    .removeClass('is-paid is-free')
+                    .addClass('is-ended')
+                    .html('<i class="fas fa-lock"></i> Pendaftaran Sudah Ditutup');
+                badge
+                    .removeClass('is-paid is-free')
+                    .addClass('is-ended')
+                    .text('Event Selesai');
+                submitBtn.prop('disabled', true);
+                submitText.text('Pendaftaran Ditutup');
+                msg.addClass('ended-notice').text('Event ini telah selesai diselenggarakan. Pendaftaran peserta baru sudah ditutup.');
+            } else {
+                modePill.removeClass('is-ended');
+                badge.removeClass('is-ended');
+                submitBtn.prop('disabled', false);
+                submitText.text('Daftar Sekarang');
+                msg.removeClass('ended-notice').text('');
+            }
+
+            // Sembunyikan/tampilkan field khusus Kelas Gratis
+            form.find('[data-free-only]').prop('hidden', paid);
+            form.find('[data-free-required]').prop('required', !paid && !isEnded);
+
+            const smoother = window.ScrollSmoother && window.ScrollSmoother.get();
+            if (smoother) setTimeout(() => smoother.refresh(), 50);
+        }
+
+        // Multiple input Social Media
+        function updateSocmedButtons() {
+            const rows = socmedList.find('[data-socmed-row]');
+            rows.each(function (idx) {
+                $(this).find('[data-socmed-remove]').prop('hidden', rows.length <= 1);
+                $(this).find('.reg-socmed-input').prop('required', idx === 0 && !isPaidSelected());
+            });
+            socmedAdd.prop('hidden', rows.length >= MAX_SOCMED);
+        }
+
+        socmedAdd.on('click', function () {
+            const rows = socmedList.find('[data-socmed-row]');
+            if (rows.length >= MAX_SOCMED) return;
+            const clone = rows.first().clone();
+            clone.find('.reg-socmed-input').val('').prop('required', false);
+            socmedList.append(clone);
+            updateSocmedButtons();
+            const smoother = window.ScrollSmoother && window.ScrollSmoother.get();
+            if (smoother) smoother.refresh();
+        });
+
+        socmedList.on('click', '[data-socmed-remove]', function () {
+            if (socmedList.find('[data-socmed-row]').length <= 1) return;
+            $(this).closest('[data-socmed-row]').remove();
+            updateSocmedButtons();
+            const smoother = window.ScrollSmoother && window.ScrollSmoother.get();
+            if (smoother) smoother.refresh();
+        });
+
+        // Pilih otomatis dari query URL: ?item=... atau ?event=... atau ?kelas=...
+        const params = new URLSearchParams(window.location.search);
+        const requestedSlug = params.get('item') || params.get('event') || params.get('kelas');
+        if (requestedSlug && select.find('option[value="' + CSS.escape(requestedSlug) + '"]').length) {
+            select.val(requestedSlug);
+        }
+        select.on('change', function () {
+            msg.text('').removeClass('success');
+            syncMode();
+            updateSocmedButtons();
+        });
+
+        syncMode();
+        updateSocmedButtons();
+
+        // Reset untuk daftar kelas lainnya
+        $('[data-reg-reset]').on('click', function () {
+            form[0].reset();
+            socmedList.find('[data-socmed-row]:gt(0)').remove();
+            successBox.prop('hidden', true);
+            form.prop('hidden', false);
+            msg.text('').removeClass('success');
+            syncMode();
+            updateSocmedButtons();
+        });
+
+        form.on('submit', async function (e) {
+            e.preventDefault();
+            msg.removeClass('success').text('');
+
+            // Tolak jika event sudah selesai
+            const optCurrent = select.find('option:selected');
+            const endCurrent = optCurrent.data('end');
+            if (endCurrent && Date.now() > Date.parse(endCurrent)) {
+                msg.addClass('ended-notice').text('Maaf, event ini sudah selesai. Pendaftaran sudah ditutup.');
+                return;
+            }
+
+            // 1. Proteksi Honeypot anti-bot
+            if ($.trim(form.find('[name="website_url"]').val() || '') !== '') {
+                return;
+            }
+
+            // 2. Proteksi waktu pengisian minimum (anti auto-submit bot)
+            if (Date.now() - loadedAt < 2000) {
+                msg.text('Mohon periksa kembali data Anda sebelum mengirim.');
+                return;
+            }
+
+            // 3. Proteksi Cooldown / Rate-limit (15 detik antar pengiriman)
+            try {
+                const lastSubmit = parseInt(sessionStorage.getItem('tkl_reg_ts') || '0', 10);
+                if (Date.now() - lastSubmit < 15000) {
+                    msg.text('Pendaftaran Anda baru saja dikirim. Mohon tunggu beberapa detik.');
+                    return;
+                }
+            } catch (err) {}
+
+            const opt = select.find('option:selected');
+            const paid = isPaidSelected();
+            const getVal = (name, max) => sanitizeCell(form.find('[name="' + name + '"]').val(), max);
+
+            const nama = getVal('nama', 120);
+            const email = getVal('email', 120);
+            const rawWa = String(form.find('[name="no_wa"]').val() || '').replace(/[\s\-().]/g, '');
+            const noWa = sanitizeCell(rawWa, 20);
+            const alamat = getVal('alamat', 350);
+
+            if (!nama || nama.length < 2) {
+                msg.text('Mohon isi nama lengkap Anda.');
+                return;
+            }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+                msg.text('Mohon masukkan alamat email yang valid.');
+                return;
+            }
+            if (!/^(\+?62|0)8[0-9]{7,13}$/.test(rawWa)) {
+                msg.text('Mohon masukkan nomor WhatsApp aktif yang valid (contoh: 081234567890).');
+                return;
+            }
+            if (!alamat || alamat.length < 5) {
+                msg.text('Mohon isi alamat domisili lengkap Anda.');
+                return;
+            }
+
+            let ttl = '';
+            let socialMedia = '';
+            let pendidikan = '';
+            let pekerjaan = '';
+            let jabatan = '';
+            let perusahaan = '';
+
+            if (!paid) {
+                const tempatLahir = getVal('tempat_lahir', 80);
+                const tanggalLahir = String(form.find('[name="tanggal_lahir"]').val() || '').trim();
+                if (!tempatLahir || !tanggalLahir) {
+                    msg.text('Mohon lengkapi Tempat dan Tanggal Lahir Anda.');
+                    return;
+                }
+                const parts = tanggalLahir.split('-');
+                const formattedDate = parts.length === 3 ? parts[2] + '-' + parts[1] + '-' + parts[0] : tanggalLahir;
+                ttl = sanitizeCell(tempatLahir + ', ' + formattedDate, 120);
+
+                const socmedEntries = [];
+                let invalidSocmed = false;
+                socmedList.find('[data-socmed-row]').each(function () {
+                    const platform = sanitizeCell($(this).find('.reg-socmed-platform').val(), 30);
+                    const urlVal = $.trim($(this).find('.reg-socmed-input').val() || '');
+                    if (!urlVal) return;
+                    if (urlVal.length < 2 || /\s/.test(urlVal)) {
+                        invalidSocmed = true;
+                        return;
+                    }
+                    socmedEntries.push(platform + ': ' + sanitizeCell(urlVal, 200));
+                });
+
+                if (invalidSocmed || !socmedEntries.length) {
+                    msg.text('Mohon isi minimal 1 URL atau username Social Media tanpa spasi.');
+                    return;
+                }
+                socialMedia = sanitizeCell(socmedEntries.join(' | '), 1000);
+
+                pendidikan = getVal('pendidikan', 60);
+                pekerjaan = getVal('pekerjaan', 80);
+                jabatan = getVal('jabatan', 100);
+                perusahaan = getVal('perusahaan', 120);
+
+                if (!pendidikan || !pekerjaan || !jabatan || !perusahaan) {
+                    msg.text('Mohon lengkapi Pendidikan Terakhir, Pekerjaan, Jabatan, dan Perusahaan/Instansi.');
+                    return;
+                }
+            }
+
+            const payload = {
+                token: String(form.data('token') || ''),
+                timestamp: new Date().toISOString(),
+                formType: paid ? 'paid' : 'free',
+                statusLabel: paid ? 'Berbayar' : 'Gratis',
+                itemSlug: sanitizeCell(select.val(), 120),
+                itemTitle: sanitizeCell(opt.data('title'), 160),
+                itemKind: sanitizeCell(opt.data('kind'), 80),
+                itemPrice: sanitizeCell(opt.data('price'), 60),
+                nama,
+                email,
+                noWa,
+                alamat,
+                ttl,
+                socialMedia,
+                pendidikan,
+                pekerjaan,
+                jabatan,
+                perusahaan
+            };
+
+            const waLines = [
+                'Halo Tekoala, saya telah mengisi formulir pendaftaran:',
+                '• Kegiatan: ' + payload.itemTitle + ' (' + payload.statusLabel + ')',
+                '• Nama: ' + nama,
+                '• Email: ' + email,
+                '• No. WA: ' + rawWa
+            ];
+            if (!paid) {
+                waLines.push('• Instansi/Kampus: ' + perusahaan + ' (' + jabatan + ')');
+            } else {
+                waLines.push('', 'Mohon info langkah selanjutnya untuk pendaftaran kelas ini.');
+            }
+            const waUrl = 'https://wa.me/' + form.data('phone') + '?text=' + encodeURIComponent(waLines.join('\n'));
+            $('[data-reg-wa-btn]').attr('href', waUrl);
+
+            const endpoint = $.trim(form.data('endpoint') || '');
+            submitBtn.prop('disabled', true);
+            submitText.text('Menyimpan pendaftaran...');
+
+            try {
+                if (endpoint) {
+                    const res = await fetch(endpoint, {
+                        method: 'POST',
+                        mode: 'cors',
+                        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                        body: JSON.stringify(payload)
+                    });
+                    const data = await res.json().catch(() => ({ ok: true }));
+                    if (data && data.ok === false) {
+                        throw new Error(data.error || 'Gagal menyimpan data.');
+                    }
+                }
+
+                try { sessionStorage.setItem('tkl_reg_ts', String(Date.now())); } catch (err) {}
+                trackEvent('event_register_submit', {
+                    item_title: payload.itemTitle,
+                    form_type: payload.formType
+                });
+
+                form.prop('hidden', true);
+                $('[data-reg-success-title]').text('Pendaftaran ' + payload.itemTitle + ' Berhasil!');
+                $('[data-reg-success-desc]').text(
+                    endpoint
+                        ? 'Data Anda sudah tercatat di sistem Tekoala. Silakan klik tombol di bawah jika ingin konfirmasi langsung via WhatsApp.'
+                        : 'Data Anda telah disiapkan. Klik tombol di bawah untuk mengirim konfirmasi pendaftaran ke WhatsApp Admin.'
+                );
+                successBox.prop('hidden', false);
+
+                const smoother = window.ScrollSmoother && window.ScrollSmoother.get();
+                if (smoother) smoother.refresh();
+            } catch (err) {
+                msg.text('Terjadi kendala jaringan saat menyimpan. Silakan coba lagi atau hubungi WhatsApp kami.');
+            } finally {
+                submitBtn.prop('disabled', false);
+                submitText.text('Daftar Sekarang');
+            }
+        });
+    });
+
+    /* ==================================================
         Event: hitung mundur, status, dan sembunyikan otomatis setelah selesai
     ================================================== */
     const eventEls = $('[data-event-end]');
@@ -61,18 +397,46 @@
                 const end = Date.parse(el.data('event-end'));
                 const live = now >= start && now <= end;
 
-                if (now > end) {
-                    el.remove();
-                    if (!$('.event-card').length) $('#event').remove();
-                    // hero: tampilkan kartu cadangan (mentor) jika event terdekat sudah lewat
-                    if (!$('.hero-event').length) $('[data-event-fallback]').prop('hidden', false);
-                    const smoother = window.ScrollSmoother && window.ScrollSmoother.get();
-                    if (smoother) smoother.refresh();
-                    return;
+                // Jika event di Hero selesai, ganti dengan mentor fallback
+                if (el.hasClass('hero-event')) {
+                    if (now > end) {
+                        el.remove();
+                        $('[data-event-fallback]').prop('hidden', false);
+                        const smoother = window.ScrollSmoother && window.ScrollSmoother.get();
+                        if (smoother) smoother.refresh();
+                        return;
+                    }
                 }
-                el.toggleClass('is-live', live);
+
+                const isEnded = now > end;
+                el.toggleClass('is-ended', isEnded);
+                el.toggleClass('is-live', !isEnded && live);
+
                 const status = el.find('[data-event-status]');
-                status.text(live ? 'Sedang berlangsung' : status.data('label'));
+                if (isEnded) {
+                    status.text('Selesai');
+                } else if (live) {
+                    status.text('Sedang berlangsung');
+                } else {
+                    status.text(status.data('label'));
+                }
+
+                // Update tombol aksi di event card
+                const actionBtn = el.find('[data-event-action-btn]');
+                if (actionBtn.length) {
+                    if (isEnded) {
+                        actionBtn
+                            .addClass('disabled is-ended')
+                            .removeAttr('href')
+                            .attr('aria-disabled', 'true');
+                        actionBtn.find('[data-btn-text]').text('Pendaftaran Ditutup');
+                        actionBtn.find('i').attr('class', 'fas fa-lock');
+                    } else {
+                        actionBtn
+                            .removeClass('disabled is-ended')
+                            .removeAttr('aria-disabled');
+                    }
+                }
 
                 const cd = el.find('[data-countdown]');
                 if (cd.length) {
@@ -95,8 +459,9 @@
                     cd.toggle(!live);
                 }
             });
-            // highlight hanya event terdekat
-            $('.event-card').removeClass('is-next').first().addClass('is-next');
+            // highlight hanya event mendatang terdekat (bukan yang sudah selesai)
+            $('.event-card').removeClass('is-next');
+            $('.event-card:not(.is-ended)').first().addClass('is-next');
         }
 
         // simpan label asli (mis. "Event Minggu ini", "Segera") sebelum status diubah

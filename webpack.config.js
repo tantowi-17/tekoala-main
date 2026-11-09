@@ -168,6 +168,9 @@ module.exports = {
                     json: (context) => JSON.stringify(context),
                     eq: (a, b) => a === b,
                     // event yang belum selesai saat build (browser juga menyembunyikan event lewat)
+                                        allEvents: (events) => ((events && events.items) || [])
+                        .slice()
+                        .sort((a, b) => new Date(a.start) - new Date(b.start)),
                     upcomingEvents: (events) => ((events && events.items) || [])
                         .filter((e) => e && e.end && new Date(e.end) >= new Date())
                         .sort((a, b) => new Date(a.start) - new Date(b.start)),

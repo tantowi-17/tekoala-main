@@ -21,10 +21,11 @@
   - Antara `start` dan `end`: elemen mendapat `.is-live` dan status berubah menjadi "Sedang berlangsung".
   - Setelah `end`: elemen dihapus. Section `#event` ikut hilang jika semua kartu sudah dihapus.
   - Kartu pertama yang tersisa mendapat `.is-next` (highlight).
-- Event dipakai di tiga tempat:
-  - Section `components/events.hbs` (grid 2 kolom).
+- Event dipakai di empat tempat:
+  - Section `components/events.hbs` (grid 2 kolom, tombol mengarah ke `/daftar?item=<slug>`).
   - Hero `components/banner.hbs`. Hanya event terdekat yang tampil. Setelah selesai, hero beralih ke kartu mentor (`data-event-fallback`).
   - Notifikasi `components/event-notice.hbs`.
+  - Halaman pendaftaran `/daftar` (`pages/daftar.hbs` + `components/register.hbs`): otomatis mendeteksi `isPaid: false` (Form Kelas Gratis 10 field + multiple input social media) atau `isPaid: true` (Form Kelas Berbayar 4 field) dan mengirim data ke Google Sheets via `registration.sheetEndpoint` di `global.json` (script backend tersedia di `tracking/google-sheets-apps-script.js`).
 
 ## Program pelatihan
 

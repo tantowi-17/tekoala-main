@@ -69,8 +69,8 @@
                             {{#if this.priceNormal}}<del>{{this.priceNormal}}</del>{{/if}}
                             <strong>{{this.price}}</strong>
                         </div>
-                        <a href="https://wa.me/{{@root.phone}}?text={{urlencode (concat 'Halo Tekoala, saya mau daftar / tanya program: ' this.title)}}"
-                            target="_blank" rel="noopener" class="btn btn-sm circle btn-gradient effect program-btn"
+                        <a href="/daftar?item={{slug this.title}}"
+                            class="btn btn-sm circle btn-gradient effect program-btn"
                             data-track="program_register_click" data-track-program="{{this.title}}" data-track-category="{{this.category}}">
                             {{#if this.cta}}{{this.cta}}{{else}}Daftar Sekarang{{/if}}
                         </a>

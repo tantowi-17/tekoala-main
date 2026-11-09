@@ -1,0 +1,45 @@
+{
+    "page_title": "Formulir Pendaftaran Event & Kelas",
+    "pageKey": "daftar",
+    "meta": {
+        "description": "Formulir pendaftaran resmi Sharing Session, Workshop, dan Bootcamp Tekoala Academy. Pilih event gratis atau kelas berbayar.",
+        "path": "daftar"
+    },
+    "breadcrumb": {
+        "title": "Pendaftaran Kelas & Event",
+        "description": "Lengkapi data di bawah ini untuk mengamankan kursi Anda di Sharing Session atau Program Pelatihan Tekoala.",
+        "current": "Daftar"
+    },
+    "register": {
+        "subTitle": "Formulir Pendaftaran",
+        "title": "Daftar Event & Kelas",
+        "description": "Pilih kegiatan yang ingin Anda ikuti. Formulir akan menyesuaikan secara otomatis untuk kelas gratis maupun kelas berbayar.",
+        "educations": [
+            "SMA / SMK / Sederajat",
+            "Diploma (D1 - D3)",
+            "Sarjana (S1 / D4)",
+            "Magister (S2)",
+            "Doktor (S3)",
+            "Lainnya"
+        ],
+        "jobs": [
+            "Pelajar / Mahasiswa",
+            "Fresh Graduate / Mencari Kerja",
+            "Karyawan Swasta",
+            "ASN / PNS / BUMN",
+            "Perangkat Desa / Instansi",
+            "Freelancer / Profesional",
+            "Wirausaha / Pemilik UMKM",
+            "Lainnya"
+        ],
+        "socialPlatforms": [
+            "Instagram",
+            "LinkedIn",
+            "TikTok",
+            "Facebook",
+            "X / Twitter",
+            "YouTube",
+            "Lainnya"
+        ]
+    }
+}

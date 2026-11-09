@@ -1,0 +1,260 @@
+<!-- Start Registration
+============================================= -->
+<div class="contact-area relative default-padding" id="form-daftar">
+    <div class="container">
+        <div class="contact-style-one-items">
+            <div class="row">
+                <div class="col-tact-stye-one col-lg-4">
+                    <div class="contact-style-one-info">
+                        <!-- Ringkasan Kelas / Event Terpilih -->
+                        <div class="reg-summary-card" data-reg-summary>
+                            <div class="reg-summary-top">
+                                <span class="reg-type-badge is-free" data-reg-badge>Kelas Gratis</span>
+                                <span class="reg-summary-kind" data-reg-kind>Event Sharing Session</span>
+                            </div>
+                            <h3 class="reg-summary-title" data-reg-title>Pilih Event atau Kelas</h3>
+                            <ul class="reg-summary-meta">
+                                <li><i class="far fa-calendar-alt"></i> <span data-reg-schedule>-</span></li>
+                                <li><i class="fas fa-chalkboard-teacher"></i> <span data-reg-speaker>-</span></li>
+                                <li><i class="fas fa-layer-group"></i> <span data-reg-format>-</span></li>
+                                <li><i class="fas fa-tag"></i> Biaya: <strong data-reg-price>Gratis</strong></li>
+                            </ul>
+                        </div>
+
+                        <ul class="contact-address mt-30">
+                            <li>
+                                <div class="info">
+                                    <h4>Butuh Bantuan Pendaftaran?</h4>
+                                    <p>Tim kami siap membantu jika Anda mengalami kendala saat mengisi formulir.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="phone-link" href="https://wa.me/{{@root.phone}}?text={{urlencode 'Halo Tekoala, saya butuh bantuan pendaftaran kelas/event.'}}" target="_blank" rel="noopener"
+                                    data-track="contact_whatsapp" data-track-location="register_page"><i class="fab fa-whatsapp"></i> {{@root.phoneDisplay}}</a>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <h4>Email Resmi</h4>
+                                    <a href="mailto:{{@root.email}}">{{@root.email}}</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-tact-stye-one col-lg-7 offset-lg-1">
+                    <div class="contact-form-style-one">
+                        <div class="reg-form-head">
+                            <h4 class="sub-title">{{this.subTitle}}</h4>
+                            <span class="reg-mode-pill is-free" data-reg-mode-pill>
+                                <i class="fas fa-check-circle"></i> Formulir Kelas Gratis
+                            </span>
+                        </div>
+                        <h2 class="title">{{this.title}}</h2>
+                        <p>{{this.description}}</p>
+
+                        <form class="contact-form wa-form reg-form"
+                            data-endpoint="{{@root.registration.sheetEndpoint}}"
+                            data-token="{{@root.registration.appToken}}"
+                            data-phone="{{@root.phone}}"
+                            novalidate>
+
+                            <!-- Honeypot anti-bot (disembunyikan dari pengguna asli) -->
+                            <div class="reg-hp" aria-hidden="true">
+                                <label for="reg-website-url">Jangan diisi</label>
+                                <input id="reg-website-url" type="text" name="website_url" tabindex="-1" autocomplete="off">
+                            </div>
+
+                            <!-- Pilihan Kegiatan (Event / Program) -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label class="reg-label" for="reg-item-select">Pilih Event / Kelas yang Diikuti *</label>
+                                        <select id="reg-item-select" class="form-control" name="item_slug" data-reg-select required>
+                                            {{#with (allEvents @root.events) as |eventList|}}
+                                            {{#if eventList.length}}
+                                            <optgroup label="Event Sharing Session">
+                                                {{#each eventList}}
+                                                <option value="{{slug this.title}}"
+                                                    data-paid="{{#if this.isPaid}}true{{else}}false{{/if}}"
+                                                    data-start="{{this.start}}"
+                                                    data-end="{{this.end}}"
+                                                    data-kind="Event Sharing Session"
+                                                    data-title="{{this.title}}"
+                                                    data-price="{{this.price}}"
+                                                    data-schedule="{{this.dayLabel}}, {{this.dateLabel}} · {{this.timeLabel}}"
+                                                    data-speaker="{{this.speaker}} ({{this.speakerRole}})"
+                                                    data-format="{{this.format}}">
+                                                    [{{#if this.isPaid}}Berbayar{{else}}Gratis{{/if}}] {{this.title}} — {{this.dateLabel}}
+                                                </option>
+                                                {{/each}}
+                                            </optgroup>
+                                            {{/if}}
+                                            {{/with}}
+                                            {{#if @root.programCatalog.items.length}}
+                                            <optgroup label="Program Pelatihan &amp; Kelas">
+                                                {{#each @root.programCatalog.items}}
+                                                <option value="{{slug this.title}}"
+                                                    data-paid="{{#if this.isPaid}}true{{else}}false{{/if}}"
+                                                    data-kind="{{this.format}} · {{this.category}}"
+                                                    data-title="{{this.title}}"
+                                                    data-price="{{this.price}}"
+                                                    data-schedule="Durasi {{this.duration}} · Level {{this.level}}"
+                                                    data-speaker="Mentor Praktisi Tekoala"
+                                                    data-format="{{this.format}} ({{this.category}})">
+                                                    [{{#if this.isPaid}}Berbayar{{else}}Gratis{{/if}}] {{this.title}} ({{this.format}})
+                                                </option>
+                                                {{/each}}
+                                            </optgroup>
+                                            {{/if}}
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 1. Nama Lengkap -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control" name="nama" placeholder="Nama lengkap sesuai identitas *" type="text" maxlength="120" autocomplete="name" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2. Email & 3. No. WhatsApp -->
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control" name="email" placeholder="Alamat Email aktif *" type="email" maxlength="120" autocomplete="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control" name="no_wa" placeholder="No. WhatsApp aktif (mis. 0812...) *" type="tel" inputmode="tel" maxlength="20" autocomplete="tel" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4. Tempat, Tanggal Lahir (Khusus Kelas Gratis) -->
+                            <div class="row" data-free-only>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="reg-label" for="reg-tempat-lahir">Tempat Lahir *</label>
+                                        <input id="reg-tempat-lahir" class="form-control" name="tempat_lahir" placeholder="Kota / Kabupaten tempat lahir *" type="text" maxlength="80" data-free-required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="reg-label" for="reg-tanggal-lahir">Tanggal Lahir *</label>
+                                        <input id="reg-tanggal-lahir" class="form-control" name="tanggal_lahir" type="date" data-free-required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 5. Alamat Domisili (Gratis & Berbayar) -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group comments">
+                                        <textarea class="form-control reg-textarea-short" name="alamat" placeholder="Alamat domisili lengkap (Jalan, Kecamatan, Kota/Kabupaten) *" maxlength="350" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 6. URL Social Media - Multiple Input (Khusus Kelas Gratis) -->
+                            <div class="row" data-free-only>
+                                <div class="col-lg-12">
+                                    <div class="form-group reg-socmed-group">
+                                        <div class="reg-socmed-header">
+                                            <label class="reg-label">URL / Akun Social Media *</label>
+                                            <button type="button" class="reg-socmed-add" data-socmed-add>
+                                                <i class="fas fa-plus"></i> Tambah Social Media
+                                            </button>
+                                        </div>
+                                        <div class="reg-socmed-list" data-socmed-list>
+                                            <div class="reg-socmed-row" data-socmed-row>
+                                                <select class="form-control reg-socmed-platform" name="socmed_platform[]" aria-label="Platform Social Media">
+                                                    {{#each this.socialPlatforms}}
+                                                    <option value="{{this}}">{{this}}</option>
+                                                    {{/each}}
+                                                </select>
+                                                <input class="form-control reg-socmed-input" name="socmed_url[]" type="text" maxlength="200" placeholder="https://instagram.com/username atau @username *" data-free-required>
+                                                <button type="button" class="reg-socmed-remove" data-socmed-remove aria-label="Hapus baris" hidden>
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 7. Pendidikan Terakhir & 8. Pekerjaan (Khusus Kelas Gratis) -->
+                            <div class="row" data-free-only>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <select class="form-control" name="pendidikan" aria-label="Pendidikan Terakhir" data-free-required>
+                                            <option value="">Pendidikan Terakhir *</option>
+                                            {{#each this.educations}}
+                                            <option value="{{this}}">{{this}}</option>
+                                            {{/each}}
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <select class="form-control" name="pekerjaan" aria-label="Pekerjaan Saat Ini" data-free-required>
+                                            <option value="">Pekerjaan Saat Ini *</option>
+                                            {{#each this.jobs}}
+                                            <option value="{{this}}">{{this}}</option>
+                                            {{/each}}
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 9. Jabatan & 10. Perusahaan (Khusus Kelas Gratis) -->
+                            <div class="row" data-free-only>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control" name="jabatan" placeholder="Jabatan / Posisi (isi '-' jika Mahasiswa) *" type="text" maxlength="100" data-free-required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control" name="perusahaan" placeholder="Nama Perusahaan / Instansi / Kampus *" type="text" maxlength="120" data-free-required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" data-reg-submit>
+                                        <i class="fas fa-paper-plane"></i> <span data-reg-submit-text>Daftar Sekarang</span>
+                                    </button>
+                                    <p class="form-consent">Data Anda dienkripsi saat pengiriman dan diproses secara aman sesuai <a href="/kebijakan-privasi">Kebijakan Privasi</a> kami.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 alert-notification">
+                                <div class="alert-msg wa-form-msg" data-reg-msg role="alert" aria-live="polite"></div>
+                            </div>
+                        </form>
+
+                        <!-- Box Konfirmasi Sukses -->
+                        <div class="reg-success-box" data-reg-success hidden>
+                            <div class="reg-success-icon"><i class="fas fa-check"></i></div>
+                            <h3 data-reg-success-title>Pendaftaran Berhasil Tercatat!</h3>
+                            <p data-reg-success-desc>Data pendaftaran Anda telah tersimpan di sistem kami.</p>
+                            <div class="reg-success-actions">
+                                <a class="btn btn-sm circle btn-gradient effect" data-reg-wa-btn href="#" target="_blank" rel="noopener">
+                                    <i class="fab fa-whatsapp"></i> Konfirmasi ke WhatsApp Admin
+                                </a>
+                                <button type="button" class="reg-reset-btn" data-reg-reset>Daftar Kelas Lainnya</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Registration -->

@@ -1,12 +1,12 @@
 <!-- Start Event Mendatang
 ============================================= -->
-{{#with (upcomingEvents @root.events) as |list|}}
+{{#with (allEvents @root.events) as |list|}}
 {{#if list.length}}
 <div class="event-area default-padding-top" id="event">
     <div class="container">
         <div class="site-heading text-center">
-            <h4 class="sub-title">Event Mendatang</h4>
-            <h2 class="title split-text">Jangan Sampai Ketinggalan</h2>
+            <h4 class="sub-title">Event Sharing Session</h4>
+            <h2 class="title split-text">Jadwal &amp; Sesi Diskusi</h2>
         </div>
         <div class="event-grid">
         {{#each list}}
@@ -44,10 +44,10 @@
                     <div><strong data-cd="s">--</strong><span>Detik</span></div>
                 </div>
                 <a class="btn btn-sm circle btn-gradient effect event-btn"
-                    href="https://wa.me/{{@root.phone}}?text={{urlencode (concat 'Halo Tekoala, saya mau ikut ' this.title ' (' this.dayLabel ', ' this.dateLabel ' ' this.timeLabel ').')}}"
-                    target="_blank" rel="noopener"
+                    href="/daftar?item={{slug this.title}}"
+                    data-event-action-btn
                     data-track="event_register_click" data-track-event-name="{{this.title}}">
-                    <i class="fab fa-whatsapp"></i> {{#if this.cta}}{{this.cta}}{{else}}Daftar Sekarang{{/if}}
+                    <i class="fas fa-user-plus"></i> <span data-btn-text>{{#if this.cta}}{{this.cta}}{{else}}Daftar Sekarang{{/if}}</span>
                 </a>
             </div>
         </article>
